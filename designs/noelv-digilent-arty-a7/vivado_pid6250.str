@@ -1159,3 +1159,4 @@ dismissDialog("Open Elaborated Design"); // by (cl)
 selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
 dismissDialog("Critical Messages"); // S (cl)
 // [GUI Memory]: 161 MB (+21694kb) [00:28:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,347 MB. GUI used memory: 97 MB. Current time: 1/17/23, 3:24:37 PM CET

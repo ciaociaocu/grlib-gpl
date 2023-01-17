@@ -1211,3 +1211,4 @@ selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
 dismissDialog("Critical Messages"); // S (cl)
 // [GUI Memory]: 165 MB (+692kb) [00:07:01]
 // HMemoryUtils.trashcanNow. Engine heap size: 3,422 MB. GUI used memory: 103 MB. Current time: 1/17/23, 2:56:07 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,422 MB. GUI used memory: 99 MB. Current time: 1/17/23, 3:26:07 PM CET
