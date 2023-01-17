@@ -1,0 +1,7 @@
+JDF B
+PROJECT leon5mp
+DESIGN leon5mp Normal
+DEVKIT XC7K325T2ffg900
+ENTRY EDIF
+MODULE ./synplify/leon5mp.edf
+MODSTYLE leon5mp Normal

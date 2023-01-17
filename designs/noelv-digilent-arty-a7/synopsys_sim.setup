@@ -1,0 +1,9 @@
+
+grlib : vcs/grlib
+techmap : vcs/techmap
+eth : vcs/eth
+gaisler : vcs/gaisler
+work : vcs/work
+WORK > work
+timebase = ps
+

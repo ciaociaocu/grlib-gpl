@@ -1,0 +1,8 @@
+[Device]
+Family = ;
+PartNumber = xc7k325t-2ffg900;
+Package = ;
+PartType = xc7k325t;
+Speed = -2;
+Operating_condition = COM;
+Status = Production;

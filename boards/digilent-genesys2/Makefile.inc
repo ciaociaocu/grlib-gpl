@@ -1,0 +1,10 @@
+TECHNOLOGY=Kintex7
+PART=xc7k325t
+PACKAGE=ffg900
+SPEED=-2
+SYNFREQ=60
+PROMGENPAR=-c FF -s 8192 -u 0 $(TOP).bit -p mcs -spi -w -o digilent-nexys-video-xc7a200t
+MANUFACTURER=Xilinx
+MGCTECHNOLOGY=$(TECHNOLOGY)
+MGCPACKAGE=$(PACKAGE)
+

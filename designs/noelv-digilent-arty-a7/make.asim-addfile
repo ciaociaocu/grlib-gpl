@@ -1,0 +1,14 @@
+
+addfile -vhdl ./rtl/axi_mig3_7series.vhd
+addfile -vhdl ./../../boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd
+addfile -vhdl ./rtl/clockers_mig.vhd
+addfile -vhdl ./config.vhd
+addfile -vhdl ./cfg/config_local.vhd
+addfile -vhdl ./../noelv-generic/rtl/core/rev.vhd
+addfile -vhdl ./../noelv-generic/rtl/core/cfgmap.vhd
+addfile -vhdl ./../noelv-generic/rtl/core/noelvcore.vhd
+addfile -vhdl ./rtl/ahbrom.vhd
+addfile -vhdl ./rtl/ahbrom64.vhd
+addfile -vhdl ./rtl/ahbrom128.vhd
+addfile -vhdl ./rtl/noelvmp.vhd
+addfile -vhdl ./tb/testbench.vhd
