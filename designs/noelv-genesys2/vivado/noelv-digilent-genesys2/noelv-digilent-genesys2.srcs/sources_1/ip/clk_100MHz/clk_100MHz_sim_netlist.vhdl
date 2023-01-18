@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Tue Jan 17 14:23:57 2023
+-- Date        : Tue Jan 17 18:37:48 2023
 -- Host        : coding running 64-bit Ubuntu 20.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz_sim_netlist.vhdl
@@ -17,7 +17,6 @@ use UNISIM.VCOMPONENTS.ALL;
 entity clk_100MHz_clk_100MHz_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
@@ -31,7 +30,6 @@ architecture STRUCTURE of clk_100MHz_clk_100MHz_clk_wiz is
   signal clk_out1_clk_100MHz : STD_LOGIC;
   signal clkfbout_buf_clk_100MHz : STD_LOGIC;
   signal clkfbout_clk_100MHz : STD_LOGIC;
-  signal reset_high : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -163,15 +161,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => '0',
       PSINCDEC => '0',
       PWRDWN => '0',
-      RST => reset_high
-    );
-mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => resetn,
-      O => reset_high
+      RST => '0'
     );
 end STRUCTURE;
 library IEEE;
@@ -181,7 +171,6 @@ use UNISIM.VCOMPONENTS.ALL;
 entity clk_100MHz is
   port (
     clk_out1 : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
@@ -197,7 +186,6 @@ inst: entity work.clk_100MHz_clk_100MHz_clk_wiz
       clk_in1_n => clk_in1_n,
       clk_in1_p => clk_in1_p,
       clk_out1 => clk_out1,
-      locked => locked,
-      resetn => resetn
+      locked => locked
     );
 end STRUCTURE;

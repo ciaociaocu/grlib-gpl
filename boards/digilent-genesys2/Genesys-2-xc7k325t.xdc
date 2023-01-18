@@ -4,14 +4,15 @@
 ### - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 # Clock Signal
-#create_clock -period 3.332 -name clk300 [get_ports clk300p]
+#create_clock -add -period 3.332 -name clk300 -waveform {0.000 1.666} [get_ports clk300p]
 set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets clocker100MHz/inst/clk_in1_clk_100MHz]
 set_property -dict { PACKAGE_PIN AD11  IOSTANDARD LVDS     } [get_ports { clk300n }]; #IO_L12N_T1_MRCC_33 Sch=sysclk_n
 set_property -dict { PACKAGE_PIN AD12  IOSTANDARD LVDS     } [get_ports { clk300p }]; #IO_L12P_T1_MRCC_33 Sch=sysclk_p
 
 create_clock -period 100.000 -name ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck -waveform {0.000 50.000} [get_pins ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/u0/TCK]
-create_clock -period 40.000 -name eth_rx_clk -waveform {0.000 20.000} [get_ports eth_rxck]
-create_clock -period 40.000 -name eth_tx_clk -waveform {0.000 20.000} [get_ports eth_txck]
+#125MHz
+create_clock -period 8.000 -name eth_rx_clk -waveform {0.000 4.000} [get_ports eth_rxck]  
+create_clock -period 8.000 -name eth_tx_clk -waveform {0.000 4.000} [get_ports eth_txck]
 set_clock_groups -asynchronous -group [get_clocks clkm_clockers] -group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]
 set_clock_groups -asynchronous -group [get_clocks eth_rx_clk] -group [get_clocks clkm_clockers]
 set_clock_groups -asynchronous -group [get_clocks eth_tx_clk] -group [get_clocks clkm_clockers]
@@ -25,6 +26,7 @@ set_clock_groups -asynchronous -group [get_clocks clk_pll_i] -group [get_clocks 
 set_clock_groups -asynchronous -group [get_clocks eth_tx_clk] -group [get_clocks clk_pll_i]
 set_clock_groups -asynchronous -group [get_clocks clk_pll_i] -group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]
 
+set_false_path -from [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck] -to [get_clocks clkm_clockers]
 
 # Buttons
 set_property -dict { PACKAGE_PIN E18   IOSTANDARD LVCMOS12 } [get_ports { btn[0] }]; #IO_25_17 Sch=btnc

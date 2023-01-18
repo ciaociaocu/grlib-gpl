@@ -18,3 +18,16 @@ wait_on_run mig_synth_1
 launch_runs mig_cdc_synth_1
 wait_on_run mig_cdc_synth_1
 synth_design -rtl -name rtl_1
+set_property target_simulator XSim [current_project]
+launch_simulation
+source testbench.tcl
+run all
+close_sim
+close_design
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+file copy -force /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/noelvmp.bit

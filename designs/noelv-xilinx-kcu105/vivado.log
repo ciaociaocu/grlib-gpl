@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Jan 16 21:52:14 2023
-# Process ID: 34398
+# Start of session at: Tue Jan 17 15:34:12 2023
+# Process ID: 28607
 # Current directory: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-xilinx-kcu105
 # Command line: vivado -mode gui -source ./vivado/noelvmp_vivado.tcl
 # Log file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-xilinx-kcu105/vivado.log
@@ -533,7 +533,7 @@ WARNING: [IP_Flow 19-2162] IP 'sem_ultra_0' is locked:
 Top: noelvmp
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7219.621 ; gain = 153.617 ; free physical = 3451 ; free virtual = 48138
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7103.746 ; gain = 150.586 ; free physical = 154 ; free virtual = 42784
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'noelvmp' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-xilinx-kcu105/rtl/noelvmp.vhd:123]
 	Parameter fabtech bound to: 60 - type: integer 
@@ -5148,7 +5148,7 @@ WARNING: [Synth 8-3331] design ahbrom128 has unconnected port ahbsi[hwdata][117]
 WARNING: [Synth 8-3331] design ahbrom128 has unconnected port ahbsi[hwdata][116]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 8610.863 ; gain = 1544.859 ; free physical = 782 ; free virtual = 45267
+Finished RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 8498.590 ; gain = 1545.430 ; free physical = 423 ; free virtual = 41733
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -5161,10 +5161,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 8610.863 ; gain = 1544.859 ; free physical = 1026 ; free virtual = 45514
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 8498.590 ; gain = 1545.430 ; free physical = 679 ; free virtual = 41984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 8610.863 ; gain = 1544.859 ; free physical = 1026 ; free virtual = 45514
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 8498.590 ; gain = 1545.430 ; free physical = 679 ; free virtual = 41984
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -5367,16 +5367,16 @@ INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core0/noelv0/cpu
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core0/noelv0/cpuloop[0].core/u0/tbmem_gen.tbmem0/mem64[6].ram0/nopar.s64.xu.x0/x2/a8.u5/a6.B18.x[0].r0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core0/noelv0/cpuloop[0].core/u0/tbmem_gen.tbmem0/mem64[7].ram0/nopar.s64.xu.x0/x1/a8.u5/a6.B18.x[0].r0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core0/noelv0/cpuloop[0].core/u0/tbmem_gen.tbmem0/mem64[7].ram0/nopar.s64.xu.x0/x2/a8.u5/a6.B18.x[0].r0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9068.332 ; gain = 0.000 ; free physical = 484 ; free virtual = 44952
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8956.078 ; gain = 0.000 ; free physical = 509 ; free virtual = 41448
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 23 instances were transformed.
   BUFG => BUFGCE: 1 instances
   IBUF => IBUF (IBUFCTRL, INBUF): 13 instances
   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 9 instances
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:02:38 ; elapsed = 00:02:20 . Memory (MB): peak = 9085.961 ; gain = 2019.957 ; free physical = 794 ; free virtual = 45268
-504 Infos, 412 Warnings, 3 Critical Warnings and 0 Errors encountered.
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:33 ; elapsed = 00:02:14 . Memory (MB): peak = 8980.711 ; gain = 2027.551 ; free physical = 841 ; free virtual = 41802
+504 Infos, 413 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:41 ; elapsed = 00:02:25 . Memory (MB): peak = 9085.961 ; gain = 2170.152 ; free physical = 794 ; free virtual = 45268
+synth_design: Time (s): cpu = 00:02:42 ; elapsed = 00:02:19 . Memory (MB): peak = 8980.711 ; gain = 2418.859 ; free physical = 841 ; free virtual = 41802
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 17 01:47:04 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 18 01:37:25 2023...

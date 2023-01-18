@@ -1,0 +1,1122 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Jan 18 00:14:45 2023
+| Host         : coding running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_methodology -file noelvmp_methodology_drc_routed.rpt -pb noelvmp_methodology_drc_routed.pb -rpx noelvmp_methodology_drc_routed.rpx
+| Design       : noelvmp
+| Device       : xc7a100ticsg324-1L
+| Speed File   : -1L
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 215
++-----------+------------------+------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                          | Violations |
++-----------+------------------+------------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                          | 117        |
+| LUTAR-1   | Warning          | LUT drives async reset alert                         | 5          |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain      | 12         |
+| SYNTH-10  | Warning          | Wide multiplier                                      | 16         |
+| TIMING-9  | Warning          | Unknown CDC Logic                                    | 1          |
+| TIMING-10 | Warning          | Missing property on synchronizer                     | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                        | 13         |
+| TIMING-24 | Warning          | Overridden Max delay datapath only                   | 20         |
+| TIMING-28 | Warning          | Auto-derived clock referenced by a timing constraint | 12         |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects          | 2          |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF                    | 16         |
++-----------+------------------+------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/gupdff.updff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[done_sync1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[qual_rdata]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[run]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[datashft0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[done_sync]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[holdn]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[inshift]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[prun]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][33]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][34]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[addr][9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Critical Warning
+Non-clocked sequential cell  
+The clock pin core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr2_reg[datashft][9]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell core0/noelv0/grplic0/r[priorities][10][0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[done_sync1]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[qual_rdata]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[run]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][2]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][3]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][4]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][5]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][6]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][7]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][8]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[addrlo][9]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][0]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][10]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][11]/CLR, core0/ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2_reg[data][12]/CLR (the first 15 of 156 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell core0/rst0/rst_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[0]/CLR, core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[1]/CLR, core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[2]/CLR, core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[3]/CLR, core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[4]/CLR, core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/rstout_reg_inv/PRE, core0/eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[0]/CLR, core0/eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[1]/CLR, core0/eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[2]/CLR, core0/eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[3]/CLR, core0/eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[4]/CLR, core0/eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/rstout_reg_inv/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/ram_empty_i_i_4__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, mig_ahb_gen.ddrc/MCB_CDC/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__0/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__1/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__10/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__11/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__12/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__13/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__14/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__15/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__16/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__17/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__18/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__2/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__3/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__4/PRE (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][0]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][10]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][11]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][12]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][13]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][14]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][1]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][2]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][3]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][4]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][5]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][6]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][7]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][8]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][9]/PRE (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X6Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X12Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X12Y121 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X13Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X9Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X10Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X11Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X11Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X11Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X10Y121 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X15Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X7Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/ of size 15x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__0 of size 18x15, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1 of size 15x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3 of size 15x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__4 of size 18x15, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__5 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__7 of size 18x15, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__9 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1] of size 15x15, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on eth_col relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on eth_crs relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_dv relative to clock(s) eth_rx_clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[0] relative to clock(s) eth_rx_clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[1] relative to clock(s) eth_rx_clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[2] relative to clock(s) eth_rx_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[3] relative to clock(s) eth_rx_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxerr relative to clock(s) eth_rx_clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_en relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on eth_txd[0] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on eth_txd[1] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on eth_txd[2] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on eth_txd[3] relative to clock(s) eth_tx_clk
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 48). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 52). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 54). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 60). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 62). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 44). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#7 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 46). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#8 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 50). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#9 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 56). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#10 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 58). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#11 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 48). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#12 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 52). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#13 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 54). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#14 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 60). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#15 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clk_pll_i and clkm_clockers overrides a set_max_delay -datapath_only (position 62). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#16 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 44). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#17 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 46). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#18 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 50). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#19 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 56). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#20 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 18 in the Timing Constraints window in Vivado IDE) between clocks clkm_clockers and clk_pll_i overrides a set_max_delay -datapath_only (position 58). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_pll_i is referenced by name inside timing constraint (see constraint position 17 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_pll_i is referenced by name inside timing constraint (see constraint position 18 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#3 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_pll_i is referenced by name inside timing constraint (see constraint position 19 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#4 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_pll_i is referenced by name inside timing constraint (see constraint position 20 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#5 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_pll_i is referenced by name inside timing constraint (see constraint position 21 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#6 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_pll_i is referenced by name inside timing constraint (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#7 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clkm_clockers is referenced by name inside timing constraint (see constraint position 13 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clockers0/plle2_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#8 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clkm_clockers is referenced by name inside timing constraint (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clockers0/plle2_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#9 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clkm_clockers is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clockers0/plle2_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#10 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clkm_clockers is referenced by name inside timing constraint (see constraint position 16 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clockers0/plle2_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#11 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clkm_clockers is referenced by name inside timing constraint (see constraint position 17 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clockers0/plle2_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#12 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clkm_clockers is referenced by name inside timing constraint (see constraint position 18 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clockers0/plle2_adv_inst/CLKOUT3]
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '28' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc (Line: 344)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/constraints/mig.xdc (Line: 356)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

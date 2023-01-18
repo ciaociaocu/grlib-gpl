@@ -69,7 +69,6 @@ entity noelvmp is
     -- Clock and Reset
     clk300p          : in    std_ulogic;
     clk300n          : in    std_ulogic;
-    cpu_resetn       : in    std_ulogic; 
     -- LEDs. 0: off, 1: on
     led                : out   std_logic_vector(7 downto 0);
     -- Buttons 0: not pressed, 1: pressed
@@ -114,8 +113,15 @@ end;
 architecture rtl of noelvmp is
   constant OEPOL        : integer := padoen_polarity(padtech);
   constant BOARD_FREQ : integer := 300000;                                -- CLK input frequency in KHz
-  constant CPU_FREQ     : integer := BOARD_FREQ * CFG_CLKMUL / CFG_CLKDIV; -- cpu frequency in KHz
-
+  
+  function CPU_FREQ return integer is
+  begin
+    if CFG_MIG_7SERIES = 1 then
+      return BOARD_FREQ / 3 * 10 / 6 / 2;
+    end if;
+    return BOARD_FREQ * CFG_CLKMUL / CFG_CLKDIV;
+  end;
+  
   -------------------------------------
   -- Misc
   signal vcc            : std_ulogic;
@@ -184,10 +190,13 @@ architecture rtl of noelvmp is
   signal dmreset        : std_logic;
   signal cpu0errn       : std_logic;
  
+  -- test 100MHz
+  signal counter        : integer;
+  signal temp           : std_logic;
+  
   component clk_100MHz
     port(
     clk_out1     : out    std_logic;    
-    resetn       : in     std_logic; 
     locked       : out    std_logic;      
     clk_in1_p    : in     std_logic;   
     clk_in1_n    : in     std_logic); 
@@ -223,6 +232,7 @@ architecture rtl of noelvmp is
     debug_rgmii_phy_rx : out std_logic_vector(31 downto 0)
     );
   end component;
+  
 begin
 
   ----------------------------------------------------------------------
@@ -236,8 +246,8 @@ begin
   
     
   rst_pad : inpad 
-    generic map (tech => padtech, level => cmos, voltage => x18v)
-    port map (cpu_resetn, reset_button);
+    generic map (tech => padtech)
+    port map (btn(0), reset_button);
 
   -- Reset button is active high
   resetn <= not reset_button;
@@ -249,8 +259,7 @@ begin
   
   clocker100MHz: clk_100MHz
     port map(
-    clk_out1     => CLK100MHZ,    
-    resetn       => resetn,   
+    clk_out1     => CLK100MHZ,  
     locked       => open,      
     clk_in1_p    => clk300p,   
     clk_in1_n    => clk300n); 
@@ -266,8 +275,25 @@ begin
     locked      => pll_locked
   );
 
-  lock <= calib_done when CFG_MIG_7SERIES = 1 else cgo.clklock;
-
+  lock <= calib_done and pll_locked;
+  
+  led(4) <= calib_done;
+  led(5) <= lock;
+  led(6) <= reset_button;
+  
+  -- test 100MHz, the led7 should breath in 500ms.
+  process(CLK100MHZ)
+  begin
+    if(CLK100MHZ'EVENT and CLK100MHZ='1') then
+        if(counter=50000000) then
+            counter<=0;
+            temp<=not temp;
+        else
+            counter<=counter+1;
+        end if;
+    end if;
+  end process;
+  led(7) <= temp;
   ----------------------------------------------------------------------
   ---  NOEL-V SUBSYSTEM ------------------------------------------------
   ----------------------------------------------------------------------
@@ -548,6 +574,7 @@ begin
 
     calib_done  <= '1';
     mmcm_locked <= '1';
+    clkm        <= clkm_gen;
 
     axi_mem_gen : if (CFG_L2_AXI = 1) generate
       mig_axiram : aximem
@@ -720,25 +747,35 @@ begin
           debug_rgmii_phy_rx=> open
         );
 
-      emdio_pad : iopad generic map (tech => padtech, level => cmos, voltage => x18v)
+      emdio_pad : iopad generic map (tech => padtech)
         port map (eth_mdio, rgmiio.mdio_o, rgmiio.mdio_oe, rgmiii.mdio_i);
-
-      emdc_pad : outpad generic map (tech => padtech, level => cmos, voltage => x18v)
+      
+      erxc_pad : inpad generic map (tech => padtech) 
+        port map (eth_rxck, rgmiii.rx_clk);
+      
+      eint_pad : inpad generic map (tech => padtech)
+        port map (eth_int_b, rgmiii.mdint);
+      
+      erxd_pad : inpadv generic map (tech => padtech, width => 4) 
+        port map (eth_rxd, rgmiii.rxd(3 downto 0));
+      
+      erxdv_pad : inpad generic map (tech => padtech) 
+        port map (eth_rxctl, rgmiii.rx_dv);
+            
+      etxc_pad : inpad generic map (tech => padtech) 
+        port map (eth_txck, rgmiio.tx_clk);
+                
+      emdc_pad : outpad generic map (tech => padtech)
         port map (eth_mdc, rgmiio.mdc);
 
-      eint_pad : inpad generic map (tech => padtech, level => cmos, voltage => x18v)
-        port map (eth_int_b, rgmiii.mdint);
+      etxd_pad : outpadv generic map (tech => padtech, width => 4) 
+        port map (eth_txd, rgmiio.txd(3 downto 0));
 
-      erst_pad : outpad generic map (tech => padtech, level => cmos, voltage => x18v)
-        port map (eth_phyrst_n, rgmiio.reset);
-
-      rgmiii.rx_clk           <= eth_rxck;      
-      rgmiii.rxd(3 downto 0)  <= eth_rxd;
-      rgmiii.rx_dv            <= eth_rxctl;
-      
-      rgmiio.tx_clk           <= eth_txck;        
-      eth_txd                 <= rgmiio.txd(3 downto 0);
-      eth_tx_en               <= rgmiio.tx_en; 
+      etxen_pad : outpad generic map (tech => padtech) 
+        port map (eth_tx_en, rgmiio.tx_en);
+        
+      erst_pad : outpad generic map (tech => padtech)
+        port map (eth_phyrst_n, rgmiio.reset);   
       
     end block eth_block;
   end generate;

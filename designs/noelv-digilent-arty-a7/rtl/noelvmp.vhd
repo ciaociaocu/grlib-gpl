@@ -222,10 +222,10 @@ begin
   --lock <= calib_done and pll_locked and mmcm_locked;
   lock <= calib_done and pll_locked;
 
-  --led(4) <= calib_done;
-  --led(5) <= lock;
-  --led(6) <= reset_button;
-  --led(7) <= rstn;
+  led(0) <= calib_done;
+  led(1) <= lock;
+  led(2) <= reset_button;
+  led(3) <= rstn;
 
   ----------------------------------------------------------------------
   ---  NOEL-V SUBSYSTEM ------------------------------------------------
@@ -620,11 +620,11 @@ begin
 -----------------------------------------------------------------------
   gpio0 : if CFG_GRGPIO_ENABLE /= 0 generate
 
-    gpled_pads : for i in 0 to 3 generate
-      gpled_pad : outpad
-        generic map (tech => padtech, level => cmos, voltage => x18v)
-        port map (led(i), gpio_o(i+16));
-    end generate gpled_pads;
+--    gpled_pads : for i in 0 to 3 generate
+--      gpled_pad : outpad
+--        generic map (tech => padtech, level => cmos, voltage => x18v)
+--        port map (led(i), gpio_o(i+16));
+--    end generate gpled_pads;
 
     gpsw_pads : for i in 0 to 2 generate
       gpsw_pad : inpad

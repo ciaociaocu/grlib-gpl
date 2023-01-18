@@ -73,7 +73,6 @@
     // Clock out ports
     .clk_out1(clk_out1),     // output clk_out1
     // Status and control signals
-    .resetn(resetn), // input resetn
     .locked(locked),       // output locked
    // Clock in ports
     .clk_in1_p(clk_in1_p),    // input clk_in1_p
