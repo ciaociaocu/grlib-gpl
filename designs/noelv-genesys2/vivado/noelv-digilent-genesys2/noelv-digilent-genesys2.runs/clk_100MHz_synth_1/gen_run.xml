@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="clk_100MHz_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1673977048">
+<GenRun Id="clk_100MHz_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1674235727">
   <File Type="VDS-TIMING-PB" Name="clk_100MHz_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="clk_100MHz_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="clk_100MHz.dcp"/>
@@ -13,7 +13,7 @@
     <File Path="$PSRCDIR/sources_1/ip/clk_100MHz/clk_100MHz.xci">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../clk_100MHz.xci"/>
-        <Attr Name="ImportTime" Val="1673972255"/>
+        <Attr Name="ImportTime" Val="1674035642"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -28,7 +28,7 @@
     <File Path="$PSRCDIR/sources_1/ip/clk_100MHz/clk_100MHz.xci">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../clk_100MHz.xci"/>
-        <Attr Name="ImportTime" Val="1673972255"/>
+        <Attr Name="ImportTime" Val="1674035642"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

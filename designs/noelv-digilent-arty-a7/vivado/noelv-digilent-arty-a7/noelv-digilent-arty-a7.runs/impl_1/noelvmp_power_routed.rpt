@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Wed Jan 18 00:15:05 2023
+| Date             : Fri Jan 20 23:06:26 2023
 | Host             : coding running 64-bit Ubuntu 20.04.5 LTS
 | Command          : report_power -file noelvmp_power_routed.rpt -pb noelvmp_power_summary_routed.pb -rpx noelvmp_power_routed.rpx
 | Design           : noelvmp
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.042        |
+| Total On-Chip Power (W)  | 1.038        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.949        |
+| Dynamic (W)              | 0.945        |
 | Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 95.2         |
-| Junction Temperature (C) | 29.8         |
+| Max Ambient (C)          | 95.3         |
+| Junction Temperature (C) | 29.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,9 +52,9 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       28 |       --- |             --- |
+| Clocks                   |     0.048 |       28 |       --- |             --- |
 | Slice Logic              |     0.077 |    92510 |       --- |             --- |
-|   LUT as Logic           |     0.073 |    54998 |     63400 |           86.75 |
+|   LUT as Logic           |     0.073 |    54942 |     63400 |           86.66 |
 |   Register               |     0.001 |    25119 |    126800 |           19.81 |
 |   CARRY4                 |     0.001 |     1477 |     15850 |            9.32 |
 |   LUT as Distributed RAM |     0.001 |      812 |     19000 |            4.27 |
@@ -62,7 +62,7 @@ Table of Contents
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Shift Register  |    <0.001 |      147 |     19000 |            0.77 |
 |   Others                 |     0.000 |      521 |       --- |             --- |
-| Signals                  |     0.117 |    79302 |       --- |             --- |
+| Signals                  |     0.116 |    79461 |       --- |             --- |
 | Block RAM                |     0.015 |       56 |       135 |           41.48 |
 | MMCM                     |     0.088 |        1 |         6 |           16.67 |
 | PLL                      |     0.217 |        2 |         6 |           33.33 |
@@ -71,7 +71,7 @@ Table of Contents
 | PHASER                   |     0.111 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.093 |          |           |                 |
-| Total                    |     1.042 |          |           |                 |
+| Total                    |     1.038 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,7 +81,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       0.950 |     0.330 |       0.318 |      0.012 |
+| Vccint    |       0.950 |     0.325 |       0.314 |      0.012 |
 | Vccaux    |       1.800 |     0.283 |       0.267 |      0.017 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -175,27 +175,26 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| noelvmp                  |     0.949 |
+| noelvmp                  |     0.945 |
 |   clockers0              |     0.100 |
-|   core0                  |     0.209 |
-|     ahbjtaggen0.ahbjtag0 |     0.003 |
+|   core0                  |     0.206 |
+|     ahbjtaggen0.ahbjtag0 |     0.002 |
 |       newcom.jtagcom0    |     0.001 |
-|       tap0               |     0.002 |
 |     eth0.e1              |     0.008 |
 |       m100.u0            |     0.008 |
-|     noelv0               |     0.197 |
+|     noelv0               |     0.195 |
 |       ac0                |     0.004 |
 |       ahbtrace0          |     0.001 |
-|       cpuloop[0].core    |     0.187 |
+|       cpuloop[0].core    |     0.185 |
 |       dm0                |     0.002 |
 |   eth0.etxd_pad          |     0.001 |
 |   eth0.pci_p_clk5_r_pad  |     0.003 |
 |     xcv.x0               |     0.003 |
-|   mig_ahb_gen.ddrc       |     0.634 |
+|   mig_ahb_gen.ddrc       |     0.633 |
 |     MCB_CDC              |     0.007 |
 |       inst               |     0.007 |
-|     MCB_inst             |     0.622 |
-|       u_mig_mig          |     0.620 |
+|     MCB_inst             |     0.621 |
+|       u_mig_mig          |     0.619 |
 |     bridge               |     0.004 |
 |       ahb2axibx          |     0.004 |
 +--------------------------+-----------+

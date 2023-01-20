@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Tue Jan 17 14:53:00 2023
+// Date        : Fri Jan 20 18:33:04 2023
 // Host        : coding running 64-bit Ubuntu 20.04.5 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig_cdc/mig_cdc_sim_netlist.v

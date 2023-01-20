@@ -190,6 +190,7 @@ architecture rtl of noelvmp is
   signal dmbreak        : std_logic;
   signal dmreset        : std_logic;
   signal cpu0errn       : std_logic;
+  
 begin
 
   ----------------------------------------------------------------------
@@ -205,8 +206,8 @@ begin
   resetn <= not reset_button;
 
   rst1 : rstgen
-    --port map (resetn, clkm, '1', migrstn, open);
-    port map (resetn, clkm, pll_locked, migrstn, open);
+    --port map (resetn, clkm_gen, '1', migrstn, open);
+    port map (resetn, clkm_gen, pll_locked, migrstn, open);
 
   clockers0 : entity work.clockers_mig
   port map (
@@ -222,11 +223,11 @@ begin
   --lock <= calib_done and pll_locked and mmcm_locked;
   lock <= calib_done and pll_locked;
 
-  led(0) <= calib_done;
-  led(1) <= lock;
-  led(2) <= reset_button;
+  led(0) <= pll_locked;
+  led(1) <= migrstn;
+  led(2) <= calib_done;
   led(3) <= rstn;
-
+  
   ----------------------------------------------------------------------
   ---  NOEL-V SUBSYSTEM ------------------------------------------------
   ----------------------------------------------------------------------
@@ -242,7 +243,7 @@ begin
     disas       => disas)
   port map (
     -- Clock & reset
-    clkm        => clkm, 
+    clkm        => clkm_gen, 
     resetn      => resetn,
     lock        => lock,
     rstno       => rstn,
@@ -413,7 +414,6 @@ begin
           ui_clk          => clkm_mig,
           ui_clk_sync_rst => open
           );
-    clkm <= clkm_gen;
   end generate;
 
   no_mig_gen : if (CFG_MIG_7SERIES = 0) generate  
@@ -563,7 +563,7 @@ begin
           pipe    => 0)
         port map (
           rst     => rstn,
-          clk     => clkm,
+          clk     => clkm_gen,
           ahbsi   => rom_ahbsi1,
           ahbso   => rom_ahbso1);
     end generate;
@@ -576,7 +576,7 @@ begin
           pipe    => 0)
         port map (
           rst     => rstn,
-          clk     => clkm,
+          clk     => clkm_gen,
           ahbsi   => rom_ahbsi1,
           ahbso   => rom_ahbso1);
     end generate;
@@ -589,7 +589,7 @@ begin
           pipe    => 0)
         port map (
           rst     => rstn,
-          clk     => clkm,
+          clk     => clkm_gen,
           ahbsi   => rom_ahbsi1,
           ahbso   => rom_ahbso1);
     end generate;

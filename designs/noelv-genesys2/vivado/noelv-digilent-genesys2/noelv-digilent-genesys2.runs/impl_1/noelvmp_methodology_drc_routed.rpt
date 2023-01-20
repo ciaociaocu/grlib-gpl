@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Jan 18 01:33:09 2023
+| Date         : Fri Jan 20 23:43:44 2023
 | Host         : coding running 64-bit Ubuntu 20.04.5 LTS
 | Command      : report_methodology -file noelvmp_methodology_drc_routed.rpt -pb noelvmp_methodology_drc_routed.pb -rpx noelvmp_methodology_drc_routed.rpx
 | Design       : noelvmp
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 386
+             Violations found: 385
 +-----------+------------------+------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                          | Violations |
 +-----------+------------------+------------------------------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell                          | 294        |
-| LUTAR-1   | Warning          | LUT drives async reset alert                         | 7          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                         | 6          |
 | PDRC-190  | Warning          | Suboptimally placed synchronized register chain      | 12         |
 | SYNTH-10  | Warning          | Wide multiplier                                      | 16         |
 | TIMING-9  | Warning          | Unknown CDC Logic                                    | 1          |
@@ -1524,7 +1524,7 @@ Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell eth0.eth_block.rgmii0/syncreg_delay_c_sel/gmiimode0.r[er]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[0]/CLR, eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell eth0.eth_block.rgmii0/syncreg_delay_c_sel/gmiimode0.r[crs][0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[0]/CLR, eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
@@ -1542,69 +1542,64 @@ LUT drives async reset alert
 LUT cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][0]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][10]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][11]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][12]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][13]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][14]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][1]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][2]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][3]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][4]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][5]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][6]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][7]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][8]/PRE, mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_iodelay_ctrl/rst_ref_sync_r_reg[0][9]/PRE (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#7 Warning
-LUT drives async reset alert  
-LUT cell temp_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) rst1/async.r_reg[0]/CLR, rst1/async.r_reg[1]/CLR, rst1/async.r_reg[2]/CLR, rst1/async.r_reg[3]/CLR, rst1/async.r_reg[4]/CLR, rst1/async.rstoutl_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X42Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X38Y164 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X37Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X37Y165 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X40Y168 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X37Y169 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X38Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X40Y163 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X40Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X37Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X39Y159 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X39Y164 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X39Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X36Y164 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X37Y160 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X39Y166 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X41Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X38Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X36Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X38Y166 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X38Y159 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X36Y168 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X38Y163 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X36Y166 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 SYNTH-10#1 Warning
@@ -1885,7 +1880,7 @@ Related violations: <none>
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '29' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc (Line: 398)
+Current XDC: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc (Line: 345)
 Related violations: <none>
 
 XDCB-5#2 Warning

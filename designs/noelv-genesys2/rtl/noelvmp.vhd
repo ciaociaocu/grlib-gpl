@@ -196,8 +196,7 @@ architecture rtl of noelvmp is
   
   component clk_100MHz
     port(
-    clk_out1     : out    std_logic;    
-    locked       : out    std_logic;      
+    clk_out1     : out    std_logic;         
     clk_in1_p    : in     std_logic;   
     clk_in1_n    : in     std_logic); 
   end component;
@@ -254,13 +253,11 @@ begin
 
   rst1 : rstgen
     --port map (resetn, clkm, '1', migrstn, open);
-    generic map (acthigh => 1)
-    port map (resetn, clkm, pll_locked, migrstn, open);
+    port map (resetn, clkm_gen, pll_locked, migrstn, open);
   
   clocker100MHz: clk_100MHz
     port map(
-    clk_out1     => CLK100MHZ,  
-    locked       => open,      
+    clk_out1     => CLK100MHZ,   
     clk_in1_p    => clk300p,   
     clk_in1_n    => clk300n); 
   
@@ -277,23 +274,22 @@ begin
 
   lock <= calib_done and pll_locked;
   
-  led(4) <= calib_done;
-  led(5) <= lock;
-  led(6) <= reset_button;
+  
+  
   
   -- test 100MHz, the led7 should breath in 500ms.
-  process(CLK100MHZ)
-  begin
-    if(CLK100MHZ'EVENT and CLK100MHZ='1') then
-        if(counter=50000000) then
-            counter<=0;
-            temp<=not temp;
-        else
-            counter<=counter+1;
-        end if;
-    end if;
-  end process;
-  led(7) <= temp;
+--  process(CLK100MHZ)
+--  begin
+--    if(CLK100MHZ'EVENT and CLK100MHZ='1') then
+--        if(counter=50000000) then
+--            counter<=0;
+--            temp<=not temp;
+--        else
+--            counter<=counter+1;
+--        end if;
+--    end if;
+--  end process;
+
   ----------------------------------------------------------------------
   ---  NOEL-V SUBSYSTEM ------------------------------------------------
   ----------------------------------------------------------------------
@@ -776,7 +772,11 @@ begin
         
       erst_pad : outpad generic map (tech => padtech)
         port map (eth_phyrst_n, rgmiio.reset);   
-      
+    
+      led(4) <= eth_int_b;
+      led(5) <= eth_rxctl;
+--      led(6) <= rgmiii.mdint;
+--      led(7) <= rgmiio.mdc;
     end block eth_block;
   end generate;
     

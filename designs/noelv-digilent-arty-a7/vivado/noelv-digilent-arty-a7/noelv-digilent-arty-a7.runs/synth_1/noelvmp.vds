@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Jan 17 23:58:43 2023
-# Process ID: 420009
+# Start of session at: Fri Jan 20 22:49:14 2023
+# Process ID: 332556
 # Current directory: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1
 # Command line: vivado -log noelvmp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source noelvmp.tcl
 # Log file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/noelvmp.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100ti'
 INFO: [Device 21-403] Loading part xc7a100ticsg324-1L
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 420060 
+INFO: Helper process launched with PID 332584 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1753.074 ; gain = 154.719 ; free physical = 3278 ; free virtual = 36353
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1753.105 ; gain = 154.719 ; free physical = 724 ; free virtual = 38639
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'noelvmp' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:114]
 	Parameter fabtech bound to: 50 - type: integer 
@@ -32,7 +32,7 @@ INFO: [Synth 8-638] synthesizing module 'noelvmp' [/home/zhichao/Downloads/GRLIB
 	Parameter voltage bound to: 3 - type: integer 
 	Parameter filter bound to: 0 - type: integer 
 	Parameter strength bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'inpad' declared at '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/inpad.vhd:32' bound to instance 'rst_pad' of component 'inpad' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:201]
+INFO: [Synth 8-3491] module 'inpad' declared at '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/inpad.vhd:32' bound to instance 'rst_pad' of component 'inpad' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:202]
 INFO: [Synth 8-638] synthesizing module 'inpad' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/inpad.vhd:39]
 	Parameter tech bound to: 50 - type: integer 
 	Parameter level bound to: 0 - type: integer 
@@ -61,7 +61,7 @@ INFO: [Synth 8-256] done synthesizing module 'inpad' (3#1) [/home/zhichao/Downlo
 	Parameter syncrst bound to: 0 - type: integer 
 	Parameter scanen bound to: 0 - type: integer 
 	Parameter syncin bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'rstgen' declared at '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd:32' bound to instance 'rst1' of component 'rstgen' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:207]
+INFO: [Synth 8-3491] module 'rstgen' declared at '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd:32' bound to instance 'rst1' of component 'rstgen' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:208]
 INFO: [Synth 8-638] synthesizing module 'rstgen' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd:49]
 	Parameter acthigh bound to: 0 - type: integer 
 	Parameter syncrst bound to: 0 - type: integer 
@@ -3376,10 +3376,10 @@ INFO: [Synth 8-226] default block is never used [/home/zhichao/Downloads/GRLIB/g
 INFO: [Synth 8-226] default block is never used [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/axi.vhd:573]
 INFO: [Synth 8-256] done synthesizing module 'ahb2axib' (78#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axib.vhd:78]
 INFO: [Synth 8-256] done synthesizing module 'ahb2axi4b' (79#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axi4b.vhd:78]
-INFO: [Synth 8-6157] synthesizing module 'mig_cdc' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-420009-coding/realtime/mig_cdc_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mig_cdc' (80#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-420009-coding/realtime/mig_cdc_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mig' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-420009-coding/realtime/mig_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mig' (81#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-420009-coding/realtime/mig_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mig_cdc' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-332556-coding/realtime/mig_cdc_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mig_cdc' (80#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-332556-coding/realtime/mig_cdc_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mig' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-332556-coding/realtime/mig_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig' (81#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/.Xil/Vivado-332556-coding/realtime/mig_stub.v:5]
 WARNING: [Synth 8-3848] Net ui_clk in module/entity ahb2axi_mig3_arty_a7 does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd:75]
 WARNING: [Synth 8-3848] Net ui_clk_sync_rst in module/entity ahb2axi_mig3_arty_a7 does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd:76]
 WARNING: [Synth 8-3848] Net ahbsi_bridge[hmaster] in module/entity ahb2axi_mig3_arty_a7 does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd:253]
@@ -3766,7 +3766,7 @@ WARNING: [Synth 8-3331] design ahbrom128 has unconnected port ahbsi[hwdata][77]
 WARNING: [Synth 8-3331] design ahbrom128 has unconnected port ahbsi[hwdata][76]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 3097.027 ; gain = 1498.672 ; free physical = 2344 ; free virtual = 35442
+Finished RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 3097.059 ; gain = 1498.672 ; free physical = 329 ; free virtual = 37479
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3779,17 +3779,17 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 3097.027 ; gain = 1498.672 ; free physical = 2552 ; free virtual = 35650
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 3097.059 ; gain = 1498.672 ; free physical = 635 ; free virtual = 37784
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 3097.027 ; gain = 1498.672 ; free physical = 2552 ; free virtual = 35650
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 3097.059 ; gain = 1498.672 ; free physical = 635 ; free virtual = 37784
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'eth0.etxc_pad/xcv2.u0/g2.ttl0.ip' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-432] The IBUFG primitive 'eth0.erxc_pad/xcv2.u0/g2.ttl0.ip' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:332]
+WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:333]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd:51]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd:679]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd:51]
@@ -3816,12 +3816,7 @@ Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/
 Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig_cdc/mig_cdc/mig_cdc_in_context.xdc] for cell 'mig_ahb_gen.ddrc/MCB_CDC'
 Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig_cdc/mig_cdc/mig_cdc_in_context.xdc] for cell 'mig_ahb_gen.ddrc/MCB_CDC'
 Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc]
-WARNING: [Vivado 12-508] No pins matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/u0/TCK'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:9]
-INFO: [Timing 38-2] Deriving generated clocks [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
-WARNING: [Vivado 12-627] No clocks matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-2] Deriving generated clocks [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:13]
 WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
 INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
 CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
@@ -3856,10 +3851,6 @@ CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
 WARNING: [Vivado 12-627] No clocks matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:25]
 INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:25]
-WARNING: [Vivado 12-180] No cells matched 'ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[done_sync1]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:28]
-WARNING: [Vivado 12-180] No cells matched 'ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[done_sync]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:29]
-WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxstart][0]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:30]
-WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxstart][1]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:31]
 WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxwrite][0]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:32]
 WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxwrite][1]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:33]
 WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxdone][0]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:34]
@@ -3958,16 +3949,16 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/noelvmp_prop
 Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/voltage_config.xdc]
 Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/voltage_config.xdc]
 Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:330]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:330]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:334]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:338]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:338]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:340]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:340]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:341]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:344]
-WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {NAME =~ */u_iodelay_ctrl/sys_rst_i}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:347]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:402]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:402]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:404]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:406]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:406]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:408]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:408]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:409]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:412]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {NAME =~ */u_iodelay_ctrl/sys_rst_i}'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:415]
 Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/noelvmp_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/noelvmp_propImpl.xdc].
@@ -3978,7 +3969,7 @@ Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/noelvmp_jtag.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/noelvmp_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3371.496 ; gain = 0.000 ; free physical = 1765 ; free virtual = 34886
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3370.496 ; gain = 0.000 ; free physical = 246 ; free virtual = 37063
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 48 instances were transformed.
   IBUFG => IBUF: 2 instances
@@ -3986,10 +3977,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S36 => RAMB36E1: 16 instances
   RAMB16_S36_S36 => RAMB36E1: 29 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3371.496 ; gain = 0.000 ; free physical = 1765 ; free virtual = 34886
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3370.496 ; gain = 0.000 ; free physical = 245 ; free virtual = 37062
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'mig_ahb_gen.ddrc/MCB_CDC' at clock pin 'm_axi_aclk' is different from the actual clock period '12.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:33 ; elapsed = 00:01:30 . Memory (MB): peak = 3371.496 ; gain = 1773.141 ; free physical = 2442 ; free virtual = 35563
+Finished Constraint Validation : Time (s): cpu = 00:01:35 ; elapsed = 00:01:32 . Memory (MB): peak = 3370.496 ; gain = 1772.109 ; free physical = 875 ; free virtual = 37696
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 ---------------------------------------------------------------------------------
@@ -3997,7 +3988,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:33 ; elapsed = 00:01:30 . Memory (MB): peak = 3371.496 ; gain = 1773.141 ; free physical = 2441 ; free virtual = 35562
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:35 ; elapsed = 00:01:32 . Memory (MB): peak = 3370.496 ; gain = 1772.109 ; free physical = 875 ; free virtual = 37696
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -4101,7 +4092,7 @@ Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  /
 Applied set_property DONT_TOUCH = true for \mig_ahb_gen.ddrc /MCB_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for \mig_ahb_gen.ddrc /MCB_CDC. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:30 . Memory (MB): peak = 3371.496 ; gain = 1773.141 ; free physical = 2433 ; free virtual = 35555
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:32 . Memory (MB): peak = 3370.496 ; gain = 1772.109 ; free physical = 868 ; free virtual = 37689
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "v[hawindow]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "v[control][haltreq]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -4595,7 +4586,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[mdio_state]' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'syncregs.r_reg[state]' using encoding 'sequential' in module 'ahb2axib'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:34 ; elapsed = 00:03:39 . Memory (MB): peak = 4189.480 ; gain = 2591.125 ; free physical = 1772 ; free virtual = 33194
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:43 ; elapsed = 00:03:49 . Memory (MB): peak = 4188.480 ; gain = 2590.094 ; free physical = 5092 ; free virtual = 39529
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6890,6 +6881,7 @@ INFO: [Synth 8-3886] merging instance 'u0i_18/itrace/syncrregs.r_reg[itraceo][id
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "op2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-3936] Found unconnected internal register 'syncrregs.r_reg[cevt]' and it is trimmed from '6' to '3' bits. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
@@ -7018,8 +7010,9 @@ INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address
 INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "len" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:12 ; elapsed = 00:05:20 . Memory (MB): peak = 4193.402 ; gain = 2595.047 ; free physical = 1253 ; free virtual = 32860
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:27 ; elapsed = 00:05:36 . Memory (MB): peak = 4192.402 ; gain = 2594.016 ; free physical = 5066 ; free virtual = 39734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7134,14 +7127,14 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'mig_ahb_gen.ddrc/MCB_inst/ui_clk' to pin 'mig_ahb_gen.ddrc/MCB_inst/bbstub_ui_clk/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:19 ; elapsed = 00:05:26 . Memory (MB): peak = 4193.402 ; gain = 2595.047 ; free physical = 1026 ; free virtual = 32756
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:34 ; elapsed = 00:05:43 . Memory (MB): peak = 4192.402 ; gain = 2594.016 ; free physical = 4843 ; free virtual = 39634
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 info: optimization accepted worst group hill climbing move (-382.0/oG.CP 594.0ps)
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:41 ; elapsed = 00:08:55 . Memory (MB): peak = 4193.402 ; gain = 2595.047 ; free physical = 654 ; free virtual = 32445
+Finished Timing Optimization : Time (s): cpu = 00:08:59 ; elapsed = 00:09:14 . Memory (MB): peak = 4192.402 ; gain = 2594.016 ; free physical = 2505 ; free virtual = 37822
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7215,7 +7208,7 @@ INFO: [Synth 8-6837] The timing for the instance u0i_19/ramrf.rf0/p4d.x7/inf.x0/
 INFO: [Synth 8-6837] The timing for the instance i_0/mig_ahb_gen.ddrc/bridge/ahb2axibx/wbuffer/inf.x0/rfd_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance i_0/mig_ahb_gen.ddrc/bridge/ahb2axibx/wbuffer/inf.x0/rfd_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:01 ; elapsed = 00:09:15 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 688 ; free virtual = 31657
+Finished Technology Mapping : Time (s): cpu = 00:09:20 ; elapsed = 00:09:34 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 2250 ; free virtual = 37561
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7373,7 +7366,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:09:12 ; elapsed = 00:09:26 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 631 ; free virtual = 31693
+Finished IO Insertion : Time (s): cpu = 00:09:30 ; elapsed = 00:09:46 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 2059 ; free virtual = 37463
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -7386,7 +7379,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:09:12 ; elapsed = 00:09:26 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 632 ; free virtual = 31694
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:31 ; elapsed = 00:09:46 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 2017 ; free virtual = 37421
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7398,25 +7391,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:21 ; elapsed = 00:09:35 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 631 ; free virtual = 31693
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:40 ; elapsed = 00:09:56 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 1574 ; free virtual = 36978
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:09:21 ; elapsed = 00:09:35 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 631 ; free virtual = 31693
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:40 ; elapsed = 00:09:56 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 1574 ; free virtual = 36978
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:09:23 ; elapsed = 00:09:37 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 631 ; free virtual = 31694
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:43 ; elapsed = 00:09:58 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 1515 ; free virtual = 36919
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:09:23 ; elapsed = 00:09:38 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 631 ; free virtual = 31694
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:43 ; elapsed = 00:09:59 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 1509 ; free virtual = 36913
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -7729,11 +7722,11 @@ Report Instance Areas:
 |256   |    \xcv.x0                                  |unisim_inpad__parameterized1          |     1|
 +------+---------------------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:23 ; elapsed = 00:09:38 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 631 ; free virtual = 31694
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:43 ; elapsed = 00:09:59 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 1508 ; free virtual = 36913
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 19336 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:08:59 ; elapsed = 00:09:24 . Memory (MB): peak = 4201.406 ; gain = 2328.582 ; free physical = 4467 ; free virtual = 35537
-Synthesis Optimization Complete : Time (s): cpu = 00:09:24 ; elapsed = 00:09:42 . Memory (MB): peak = 4201.406 ; gain = 2603.051 ; free physical = 4493 ; free virtual = 35538
+Synthesis finished with 0 errors, 0 critical warnings and 19436 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:09:19 ; elapsed = 00:09:46 . Memory (MB): peak = 4200.406 ; gain = 2328.582 ; free physical = 5417 ; free virtual = 40966
+Synthesis Optimization Complete : Time (s): cpu = 00:09:44 ; elapsed = 00:10:04 . Memory (MB): peak = 4200.406 ; gain = 2602.020 ; free physical = 5443 ; free virtual = 40966
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2651 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'eth0.erxc_pad/xcv2.u0/g2.ttl0.ip' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
@@ -7741,7 +7734,7 @@ WARNING: [Netlist 29-432] The IBUFG primitive 'eth0.etxc_pad/xcv2.u0/g2.ttl0.ip'
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4245.508 ; gain = 0.000 ; free physical = 4445 ; free virtual = 35492
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4244.508 ; gain = 0.000 ; free physical = 5640 ; free virtual = 41219
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 54 instances were transformed.
   IBUFG => IBUF: 2 instances
@@ -7751,13 +7744,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S36_S36 => RAMB36E1: 29 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-1028 Infos, 669 Warnings, 9 Critical Warnings and 0 Errors encountered.
+1029 Infos, 663 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:32 ; elapsed = 00:09:50 . Memory (MB): peak = 4245.508 ; gain = 2861.191 ; free physical = 4677 ; free virtual = 35724
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4245.508 ; gain = 0.000 ; free physical = 4677 ; free virtual = 35724
+synth_design: Time (s): cpu = 00:09:52 ; elapsed = 00:10:13 . Memory (MB): peak = 4244.508 ; gain = 2859.191 ; free physical = 5963 ; free virtual = 41363
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4244.508 ; gain = 0.000 ; free physical = 5963 ; free virtual = 41362
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/synth_1/noelvmp.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4269.520 ; gain = 24.012 ; free physical = 4674 ; free virtual = 35732
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4268.520 ; gain = 24.012 ; free physical = 5695 ; free virtual = 41104
 INFO: [runtcl-4] Executing : report_utilization -file noelvmp_utilization_synth.rpt -pb noelvmp_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 18 00:08:48 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 20 22:59:43 2023...

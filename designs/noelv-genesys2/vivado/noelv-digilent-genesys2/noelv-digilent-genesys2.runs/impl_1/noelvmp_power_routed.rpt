@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Wed Jan 18 01:33:28 2023
+| Date             : Fri Jan 20 23:44:03 2023
 | Host             : coding running 64-bit Ubuntu 20.04.5 LTS
 | Command          : report_power -file noelvmp_power_routed.rpt -pb noelvmp_power_summary_routed.pb -rpx noelvmp_power_routed.rpx
 | Design           : noelvmp
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.383        |
+| Total On-Chip Power (W)  | 1.401        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.209        |
-| Device Static (W)        | 0.174        |
+| Dynamic (W)              | 1.228        |
+| Device Static (W)        | 0.173        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 82.5         |
 | Junction Temperature (C) | 27.5         |
@@ -52,26 +52,26 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.071 |       33 |       --- |             --- |
-| Slice Logic              |     0.087 |    93506 |       --- |             --- |
-|   LUT as Logic           |     0.082 |    55558 |    203800 |           27.26 |
-|   Register               |     0.002 |    25340 |    407600 |            6.22 |
-|   CARRY4                 |     0.002 |     1487 |     50950 |            2.92 |
+| Clocks                   |     0.068 |       33 |       --- |             --- |
+| Slice Logic              |     0.093 |    92940 |       --- |             --- |
+|   LUT as Logic           |     0.089 |    55329 |    203800 |           27.15 |
+|   Register               |     0.002 |    25217 |    407600 |            6.19 |
+|   CARRY4                 |     0.002 |     1479 |     50950 |            2.90 |
 |   LUT as Distributed RAM |     0.001 |      832 |     64000 |            1.30 |
 |   F7/F8 Muxes            |    <0.001 |     1147 |    203800 |            0.56 |
 |   BUFG                   |    <0.001 |        4 |        32 |           12.50 |
 |   LUT as Shift Register  |    <0.001 |      148 |     64000 |            0.23 |
-|   Others                 |     0.000 |      571 |       --- |             --- |
-| Signals                  |     0.113 |    80470 |       --- |             --- |
-| Block RAM                |     0.008 |       56 |       445 |           12.58 |
-| MMCM                     |     0.194 |        2 |        10 |           20.00 |
-| PLL                      |     0.218 |        2 |        10 |           20.00 |
+|   Others                 |     0.000 |      527 |       --- |             --- |
+| Signals                  |     0.123 |    79997 |       --- |             --- |
+| Block RAM                |     0.012 |       39 |       445 |            8.76 |
+| MMCM                     |     0.088 |        1 |        10 |           10.00 |
+| PLL                      |     0.323 |        3 |        10 |           30.00 |
 | DSPs                     |     0.005 |       18 |       840 |            2.14 |
-| I/O                      |     0.322 |       84 |       500 |           16.80 |
+| I/O                      |     0.323 |       84 |       500 |           16.80 |
 | PHASER                   |     0.188 |       20 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
-| Static Power             |     0.174 |          |           |                 |
-| Total                    |     1.383 |          |           |                 |
+| Static Power             |     0.173 |          |           |                 |
+| Total                    |     1.401 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,12 +81,12 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.417 |       0.341 |      0.076 |
-| Vccaux    |       1.800 |     0.339 |       0.310 |      0.029 |
+| Vccint    |       1.000 |     0.445 |       0.369 |      0.076 |
+| Vccaux    |       1.800 |     0.333 |       0.305 |      0.029 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
-| Vcco15    |       1.500 |     0.132 |       0.131 |      0.001 |
+| Vcco15    |       1.500 |     0.133 |       0.132 |      0.001 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       2.000 |     0.054 |       0.054 |      0.000 |
@@ -143,7 +143,7 @@ Table of Contents
 | clk300p                                                                                                                                                   | clk300p                                                                                                                                                                                                |             3.3 |
 | clk_out1_clk_100MHz                                                                                                                                       | clocker100MHz/inst/clk_out1_clk_100MHz                                                                                                                                                                 |            10.0 |
 | clk_pll_i                                                                                                                                                 | mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |            12.0 |
-| clkfbout_clk_100MHz                                                                                                                                       | clocker100MHz/inst/clkfbout_clk_100MHz                                                                                                                                                                 |            10.0 |
+| clkfbout_clk_100MHz                                                                                                                                       | clocker100MHz/inst/clkfbout_clk_100MHz                                                                                                                                                                 |             3.3 |
 | clkm_clockers                                                                                                                                             | clockers0/clkm_clockers                                                                                                                                                                                |            25.0 |
 | eth_rx_clk                                                                                                                                                | eth_rxck                                                                                                                                                                                               |             8.0 |
 | freq_refclk                                                                                                                                               | mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/freq_refclk                                                                                                                                  |             1.5 |
@@ -180,28 +180,30 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| noelvmp                   |     1.209 |
-|   clocker100MHz           |     0.111 |
-|     inst                  |     0.111 |
-|   clockers0               |     0.102 |
-|   core0                   |     0.218 |
+| noelvmp                   |     1.228 |
+|   clocker100MHz           |     0.112 |
+|     inst                  |     0.112 |
+|   clockers0               |     0.103 |
+|   core0                   |     0.231 |
 |     ahbjtaggen0.ahbjtag0  |     0.003 |
+|       newcom.jtagcom0     |     0.001 |
 |       tap0                |     0.002 |
-|     eth0.e1               |     0.016 |
-|       m100.u0             |     0.016 |
-|     noelv0                |     0.198 |
-|       ac0                 |     0.004 |
+|     eth0.e1               |     0.017 |
+|       m100.u0             |     0.017 |
+|     noelv0                |     0.210 |
+|       ac0                 |     0.005 |
 |       ahbtrace0           |     0.001 |
-|       cpuloop[0].core     |     0.187 |
+|       cpuloop[0].core     |     0.198 |
 |       dm0                 |     0.002 |
+|       gpt0                |     0.001 |
 |   eth0.eth_block.etxd_pad |     0.001 |
-|   mig_ahb_gen.ddrc        |     0.774 |
+|   mig_ahb_gen.ddrc        |     0.777 |
 |     MCB_CDC               |     0.008 |
 |       inst                |     0.008 |
-|     MCB_inst              |     0.763 |
+|     MCB_inst              |     0.764 |
 |       u_mig_mig           |     0.761 |
-|     bridge                |     0.002 |
-|       ahb2axibx           |     0.002 |
+|     bridge                |     0.005 |
+|       ahb2axibx           |     0.005 |
 +---------------------------+-----------+
 
 

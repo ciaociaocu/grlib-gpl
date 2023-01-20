@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Jan 17 14:25:53 2023
-# Process ID: 6250
+# Start of session at: Fri Jan 20 17:27:27 2023
+# Process ID: 3817
 # Current directory: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7
 # Command line: vivado -mode gui -source ./vivado/noelvmp_vivado.tcl
 # Log file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado.log
@@ -18,16 +18,59 @@ wait_on_run mig_synth_1
 launch_runs mig_cdc_synth_1
 wait_on_run mig_cdc_synth_1
 synth_design -rtl -name rtl_1
-set_property target_simulator XSim [current_project]
-launch_simulation
-source testbench.tcl
-run all
-close_sim
-close_design
-synth_design -rtl -name rtl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
-file copy -force /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/noelvmp.bit
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

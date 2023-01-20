@@ -60,14 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-63466-coding/incrSyn
+  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 4
   create_project -in_memory -part xc7k325tffg900-2
   set_property design_mode GateLvl [current_fileset]

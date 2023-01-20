@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue Jan 17 18:37:48 2023
+| Date         : Fri Jan 20 18:29:07 2023
 | Host         : coding running 64-bit Ubuntu 20.04.5 LTS
 | Command      : report_utilization -file clk_100MHz_utilization_synth.rpt -pb clk_100MHz_utilization_synth.pb
 | Design       : clk_100MHz
@@ -119,8 +119,8 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 | BUFGCTRL   |    2 |     0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |        40 |  0.00 |
-| MMCME2_ADV |    1 |     0 |        10 | 10.00 |
-| PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
+| MMCME2_ADV |    0 |     0 |        10 |  0.00 |
+| PLLE2_ADV  |    1 |     0 |        10 | 10.00 |
 | BUFMRCE    |    0 |     0 |        20 |  0.00 |
 | BUFHCE     |    0 |     0 |       168 |  0.00 |
 | BUFR       |    0 |     0 |        40 |  0.00 |
@@ -148,13 +148,13 @@ Table of Contents
 7. Primitives
 -------------
 
-+------------+------+---------------------+
-|  Ref Name  | Used | Functional Category |
-+------------+------+---------------------+
-| BUFG       |    2 |               Clock |
-| MMCME2_ADV |    1 |               Clock |
-| IBUFDS     |    1 |                  IO |
-+------------+------+---------------------+
++-----------+------+---------------------+
+|  Ref Name | Used | Functional Category |
++-----------+------+---------------------+
+| BUFG      |    2 |               Clock |
+| PLLE2_ADV |    1 |               Clock |
+| IBUFDS    |    1 |                  IO |
++-----------+------+---------------------+
 
 
 8. Black Boxes
