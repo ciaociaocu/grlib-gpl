@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Jan 20 23:43:44 2023
+| Date         : Tue Jan 24 01:59:44 2023
 | Host         : coding running 64-bit Ubuntu 20.04.5 LTS
 | Command      : report_methodology -file noelvmp_methodology_drc_routed.rpt -pb noelvmp_methodology_drc_routed.pb -rpx noelvmp_methodology_drc_routed.rpx
 | Design       : noelvmp
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 385
+             Violations found: 406
 +-----------+------------------+------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                          | Violations |
 +-----------+------------------+------------------------------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                          | 294        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                          | 315        |
 | LUTAR-1   | Warning          | LUT drives async reset alert                         | 6          |
 | PDRC-190  | Warning          | Suboptimally placed synchronized register chain      | 12         |
 | SYNTH-10  | Warning          | Wide multiplier                                      | 16         |
@@ -1454,60 +1454,165 @@ Related violations: <none>
 
 TIMING-17#283 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/rgmii_tx_ctl/xil.xil0/V7.U0/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/no_clk_mux0.use90degtxclk01.rgmii_tx_clk/xil.xil0/V7.U0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#284 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/rgmii_txd[0].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/rgmii_tx_ctl/xil.xil0/V7.U0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#285 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/rgmii_txd[1].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/rgmii_txd[0].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#286 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/rgmii_txd[2].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/rgmii_txd[1].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#287 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/rgmii_txd[3].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/rgmii_txd[2].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#288 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/tx_en_reg/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/rgmii_txd[3].ddr_oreg0/xil.xil0/V7.U0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#289 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/txd_reg[0]/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/syncreg_status[0].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#290 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/txd_reg[1]/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/syncreg_status[0].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#291 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/txd_reg[2]/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/syncreg_status[13].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#292 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/txd_reg[3]/C is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/syncreg_status[13].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#293 Critical Warning
 Non-clocked sequential cell  
-The clock pin eth0.eth_block.rgmii0/useclkmux0.tecclkmux.clkmux10_100/tec.xil.buf/buf/I0 is not reached by a timing clock
+The clock pin eth0.eth_block.rgmii0/syncreg_status[1].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#294 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[1].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#295 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[2].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#296 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[2].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#297 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[3].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#298 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[3].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#299 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[4].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#300 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[4].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#301 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[5].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#302 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[5].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#303 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[6].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#304 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[6].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#305 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[7].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#306 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[7].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#307 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[8].syncreg3/sync0.syncreg.syncregs[1].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#308 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/syncreg_status[8].syncreg3/sync0.syncreg.syncregs[2].dff/y1.q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#309 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/tx_en_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#310 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/txd_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#311 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/txd_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#312 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/txd_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#313 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/txd_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#314 Critical Warning
+Non-clocked sequential cell  
+The clock pin eth0.eth_block.rgmii0/useclkmux0.tecclkmux.clkmux10_100/tec.xil.buf/buf/I0 is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#315 Critical Warning
 Non-clocked sequential cell  
 The clock pin eth0.eth_block.rgmii0/useclkmux0.tecclkmux.clkmux10_100/tec.xil.buf/buf/I1 is not reached by a timing clock
 Related violations: <none>
@@ -1524,7 +1629,7 @@ Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell eth0.eth_block.rgmii0/syncreg_delay_c_sel/gmiimode0.r[crs][0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[0]/CLR, eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell eth0.eth_block.rgmii0/r[irq][0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[0]/CLR, eth0.eth_block.rgmii0/clk_tx_rst/syncinrst.genrst_syncreg_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
@@ -1544,62 +1649,62 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X38Y164 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X40Y178 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X37Y165 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X36Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X37Y169 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X40Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X40Y163 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X39Y177 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X37Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X39Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X39Y164 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X41Y178 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X36Y164 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X39Y179 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X39Y166 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X41Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X38Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X43Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X38Y166 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X38Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X36Y168 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X38Y177 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X36Y166 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X37Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 SYNTH-10#1 Warning

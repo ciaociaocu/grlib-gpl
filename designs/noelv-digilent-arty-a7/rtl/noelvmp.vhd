@@ -225,8 +225,8 @@ begin
 
   led(0) <= pll_locked;
   led(1) <= migrstn;
-  led(2) <= calib_done;
-  led(3) <= rstn;
+  led(2) <= etho.mdc;
+  led(3) <= etho.tx_en;
   
   ----------------------------------------------------------------------
   ---  NOEL-V SUBSYSTEM ------------------------------------------------

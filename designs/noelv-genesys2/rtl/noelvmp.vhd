@@ -103,7 +103,7 @@ entity noelvmp is
     eth_rxck                : in    std_ulogic;
     eth_rxctl               : in    std_ulogic;
     eth_rxd                 : in    std_logic_vector(3 downto 0);
-    eth_txck                : in   std_ulogic;
+    eth_txck                : out   std_ulogic;
     eth_txd                 : out   std_logic_vector(3 downto 0);
     eth_tx_en               : out   std_ulogic
     
@@ -168,7 +168,7 @@ architecture rtl of noelvmp is
   signal ethi : eth_in_type;
   signal etho : eth_out_type;
   signal eth_apbi       : apb_slv_in_type;
-  signal eth_apbo       : apb_slv_out_type := apb_none;
+  signal eth_apbo       : apb_slv_out_type;
   
   -- Memory
   signal mem_aximi      : axi_somi_type;
@@ -717,16 +717,16 @@ begin
 
       rgmii0 : rgmii
         generic map (
-          pindex          => GRETH_PHY_PINDEX,
-          paddr           => GRETH_PHY_PADDR,
-          pmask           => GRETH_PHY_PMASK,
+          pindex          => GRETH_PINDEX,
+          paddr           => GRETH_PADDR,
+          pmask           => GRETH_PMASK,
           tech            => fabtech,
-          gmii            => 0,
-          debugmem        => 1,
+          gmii            => 1,
+          debugmem        => 0,
           abits           => 8,
           no_clk_mux      => 0,
-          pirq            => GRETH_PHY_PIRQ,
-          use90degtxclk   => 1,
+          pirq            => GRETH_PIRQ,
+          use90degtxclk   => 0,
           mode100         => 0         
         )
         port map (
@@ -738,7 +738,7 @@ begin
           apb_clk=> clkm,
           apb_rstn=> resetn,
           apbi=> eth_apbi,
-          apbo=> open,
+          apbo=> eth_apbo,
           debug_rgmii_phy_tx=> open,
           debug_rgmii_phy_rx=> open
         );
@@ -758,7 +758,7 @@ begin
       erxdv_pad : inpad generic map (tech => padtech) 
         port map (eth_rxctl, rgmiii.rx_dv);
             
-      etxc_pad : inpad generic map (tech => padtech) 
+      etxc_pad :outpad generic map (tech => padtech) 
         port map (eth_txck, rgmiio.tx_clk);
                 
       emdc_pad : outpad generic map (tech => padtech)
@@ -775,8 +775,10 @@ begin
     
       led(4) <= eth_int_b;
       led(5) <= eth_rxctl;
---      led(6) <= rgmiii.mdint;
---      led(7) <= rgmiio.mdc;
+--      led(6) <= etho.tx_en;  ----etho.tx_en = 0;
+--      led(7) <= etho.mdc;    ----etho.mdc = 1;
+      led(6) <= etho.speed;  ----etho.speed = 1;
+      led(7) <= etho.gbit;   ----etho.gbit = 0;
     end block eth_block;
   end generate;
     

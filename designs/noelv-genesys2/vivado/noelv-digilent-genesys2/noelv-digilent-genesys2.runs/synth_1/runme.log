@@ -13,13 +13,13 @@ Command: synth_design -top noelvmp -part xc7k325tffg900-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
-INFO: [Common 17-86] Your Synthesis license expires in 19 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 15 day(s)
 INFO: [Common 17-1686] The version limit for your license is '2023.01' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 451029 
+INFO: Helper process launched with PID 297517 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1795.863 ; gain = 151.719 ; free physical = 7700 ; free virtual = 43106
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1795.801 ; gain = 151.688 ; free physical = 2832 ; free virtual = 38719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'noelvmp' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:113]
 	Parameter fabtech bound to: 49 - type: integer 
@@ -78,9 +78,9 @@ INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/zhichao/Downl
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd:56]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'rstgen' (4#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd:49]
-INFO: [Synth 8-3491] module 'clk_100MHz' declared at '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/clk_100MHz_stub.v:5' bound to instance 'clocker100MHz' of component 'clk_100MHz' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:258]
-INFO: [Synth 8-6157] synthesizing module 'clk_100MHz' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/clk_100MHz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_100MHz' (5#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/clk_100MHz_stub.v:5]
+INFO: [Synth 8-3491] module 'clk_100MHz' declared at '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/clk_100MHz_stub.v:5' bound to instance 'clocker100MHz' of component 'clk_100MHz' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:258]
+INFO: [Synth 8-6157] synthesizing module 'clk_100MHz' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/clk_100MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_100MHz' (5#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/clk_100MHz_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'clockers_mig' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/clockers_mig.vhd:19]
 INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/clockers_mig.vhd:28]
 INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/clockers_mig.vhd:33]
@@ -3262,10 +3262,10 @@ INFO: [Synth 8-226] default block is never used [/home/zhichao/Downloads/GRLIB/g
 INFO: [Synth 8-226] default block is never used [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/axi.vhd:573]
 INFO: [Synth 8-256] done synthesizing module 'ahb2axib' (77#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axib.vhd:78]
 INFO: [Synth 8-256] done synthesizing module 'ahb2axi4b' (78#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axi4b.vhd:78]
-INFO: [Synth 8-6157] synthesizing module 'mig_cdc' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/mig_cdc_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mig_cdc' (79#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/mig_cdc_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mig' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/mig_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mig' (80#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-450999-coding/realtime/mig_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mig_cdc' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/mig_cdc_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mig_cdc' (79#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/mig_cdc_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mig' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/mig_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig' (80#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/.Xil/Vivado-297479-coding/realtime/mig_stub.v:5]
 WARNING: [Synth 8-3848] Net ui_clk in module/entity ahb2axi_mig3_arty_a7 does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd:75]
 WARNING: [Synth 8-3848] Net ui_clk_sync_rst in module/entity ahb2axi_mig3_arty_a7 does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd:76]
 WARNING: [Synth 8-3848] Net ahbsi_bridge[hmaster] in module/entity ahb2axi_mig3_arty_a7 does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd:253]
@@ -3339,28 +3339,28 @@ INFO: [Synth 8-256] done synthesizing module 'ahbrom128' (82#1) [/home/zhichao/D
 	Parameter voltage bound to: 12 - type: integer 
 	Parameter filter bound to: 0 - type: integer 
 	Parameter strength bound to: 0 - type: integer 
-	Parameter pindex bound to: 5 - type: integer 
-	Parameter paddr bound to: 2128 - type: integer 
-	Parameter pmask bound to: 4080 - type: integer 
+	Parameter pindex bound to: 4 - type: integer 
+	Parameter paddr bound to: 2112 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
 	Parameter tech bound to: 49 - type: integer 
-	Parameter gmii bound to: 0 - type: integer 
-	Parameter debugmem bound to: 1 - type: integer 
+	Parameter gmii bound to: 1 - type: integer 
+	Parameter debugmem bound to: 0 - type: integer 
 	Parameter abits bound to: 8 - type: integer 
 	Parameter no_clk_mux bound to: 0 - type: integer 
-	Parameter pirq bound to: 6 - type: integer 
-	Parameter use90degtxclk bound to: 1 - type: integer 
+	Parameter pirq bound to: 5 - type: integer 
+	Parameter use90degtxclk bound to: 0 - type: integer 
 	Parameter mode100 bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'rgmii' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:78]
-	Parameter pindex bound to: 5 - type: integer 
-	Parameter paddr bound to: 2128 - type: integer 
-	Parameter pmask bound to: 4080 - type: integer 
+	Parameter pindex bound to: 4 - type: integer 
+	Parameter paddr bound to: 2112 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
 	Parameter tech bound to: 49 - type: integer 
-	Parameter gmii bound to: 0 - type: integer 
-	Parameter debugmem bound to: 1 - type: integer 
+	Parameter gmii bound to: 1 - type: integer 
+	Parameter debugmem bound to: 0 - type: integer 
 	Parameter abits bound to: 8 - type: integer 
 	Parameter no_clk_mux bound to: 0 - type: integer 
-	Parameter pirq bound to: 6 - type: integer 
-	Parameter use90degtxclk bound to: 1 - type: integer 
+	Parameter pirq bound to: 5 - type: integer 
+	Parameter use90degtxclk bound to: 0 - type: integer 
 	Parameter mode100 bound to: 0 - type: integer 
 	Parameter tech bound to: 49 - type: integer 
 	Parameter rsel bound to: 0 - type: integer 
@@ -3388,6 +3388,8 @@ INFO: [Synth 8-256] done synthesizing module 'clkmux' (85#1) [/home/zhichao/Down
 	Parameter tech bound to: 49 - type: integer 
 	Parameter buftype bound to: 2 - type: integer 
 	Parameter tech bound to: 49 - type: integer 
+WARNING: [Synth 8-614] signal 'sync_gbit' is read in the process but is not in the sensitivity list [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:433]
+WARNING: [Synth 8-614] signal 'clkedge_sync' is read in the process but is not in the sensitivity list [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:433]
 WARNING: [Synth 8-614] signal 'sync_speed' is read in the process but is not in the sensitivity list [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:433]
 WARNING: [Synth 8-614] signal 'clk25ni' is read in the process but is not in the sensitivity list [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:433]
 WARNING: [Synth 8-614] signal 'clk25i' is read in the process but is not in the sensitivity list [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:433]
@@ -3584,68 +3586,15 @@ WARNING: [Synth 8-614] signal 'rx_ctl_int2' is read in the process but is not in
 	Parameter tech bound to: 0 - type: integer 
 	Parameter stages bound to: 2 - type: integer 
 WARNING: [Synth 8-614] signal 'RMemRgmiioData' is read in the process but is not in the sensitivity list [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:734]
-	Parameter tech bound to: 49 - type: integer 
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-	Parameter wrfst bound to: 0 - type: integer 
-	Parameter testen bound to: 0 - type: integer 
-	Parameter words bound to: 0 - type: integer 
-	Parameter custombits bound to: 1 - type: integer 
-	Parameter pipeline bound to: 0 - type: integer 
-	Parameter rdhold bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'syncram_2p__parameterized13' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram_2p.vhd:57]
-	Parameter tech bound to: 49 - type: integer 
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-	Parameter wrfst bound to: 0 - type: integer 
-	Parameter testen bound to: 0 - type: integer 
-	Parameter words bound to: 0 - type: integer 
-	Parameter custombits bound to: 1 - type: integer 
-	Parameter pipeline bound to: 0 - type: integer 
-	Parameter rdhold bound to: 0 - type: integer 
-	Parameter techwrfst bound to: 0 - type: integer 
-	Parameter techrwcol bound to: 0 - type: integer 
-	Parameter techrdhold bound to: 1 - type: integer 
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-	Parameter wrfst bound to: 0 - type: integer 
-	Parameter rdhold bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'memrwcol__parameterized13' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/memrwcol.vhd:64]
-	Parameter techwrfst bound to: 0 - type: integer 
-	Parameter techrwcol bound to: 0 - type: integer 
-	Parameter techrdhold bound to: 1 - type: integer 
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-	Parameter wrfst bound to: 0 - type: integer 
-	Parameter rdhold bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'memrwcol__parameterized13' (90#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/memrwcol.vhd:64]
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'kintex7_syncram_2p__parameterized7' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/memory_kintex7.vhd:127]
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'kintex7_syncram_2p__parameterized7' (90#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/memory_kintex7.vhd:127]
-INFO: [Synth 8-256] done synthesizing module 'syncram_2p__parameterized13' (90#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram_2p.vhd:57]
-	Parameter tech bound to: 49 - type: integer 
-	Parameter abits bound to: 10 - type: integer 
-	Parameter dbits bound to: 16 - type: integer 
-	Parameter sepclk bound to: 1 - type: integer 
-	Parameter wrfst bound to: 0 - type: integer 
-	Parameter testen bound to: 0 - type: integer 
-	Parameter words bound to: 0 - type: integer 
-	Parameter custombits bound to: 1 - type: integer 
-	Parameter pipeline bound to: 0 - type: integer 
-	Parameter rdhold bound to: 0 - type: integer 
 WARNING: [Synth 8-3848] Net gmiii[tx_clk_90] in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:63]
 WARNING: [Synth 8-3848] Net gmiii[tx_clk_100] in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:63]
 WARNING: [Synth 8-3848] Net gmiii[tx_clk_50] in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:63]
 WARNING: [Synth 8-3848] Net gmiii[tx_clk_25] in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:63]
+WARNING: [Synth 8-3848] Net RMemRgmiiiData in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:200]
+WARNING: [Synth 8-3848] Net RMemRgmiioData in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:195]
+WARNING: [Synth 8-3848] Net RMemRgmiioRead in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:205]
+WARNING: [Synth 8-3848] Net RMemRgmiiiRead in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:204]
+WARNING: [Synth 8-3848] Net sync_gbit in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:173]
 WARNING: [Synth 8-3848] Net clk25i_del in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:207]
 WARNING: [Synth 8-3848] Net clk2_5i_del in module/entity rgmii does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:208]
 INFO: [Synth 8-256] done synthesizing module 'rgmii' (91#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd:78]
@@ -3735,11 +3684,6 @@ INFO: [Synth 8-256] done synthesizing module 'inpadv' (95#1) [/home/zhichao/Down
 	Parameter strength bound to: 0 - type: integer 
 	Parameter tech bound to: 49 - type: integer 
 	Parameter level bound to: 0 - type: integer 
-	Parameter voltage bound to: 3 - type: integer 
-	Parameter filter bound to: 0 - type: integer 
-	Parameter strength bound to: 0 - type: integer 
-	Parameter tech bound to: 49 - type: integer 
-	Parameter level bound to: 0 - type: integer 
 	Parameter slew bound to: 0 - type: integer 
 	Parameter voltage bound to: 3 - type: integer 
 	Parameter strength bound to: 12 - type: integer 
@@ -3770,6 +3714,11 @@ INFO: [Synth 8-6157] synthesizing module 'OBUF__parameterized1' [/opt/Xilinx/Viv
 INFO: [Synth 8-6155] done synthesizing module 'OBUF__parameterized1' (95#1) [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:45998]
 INFO: [Synth 8-256] done synthesizing module 'unisim_outpad__parameterized1' (95#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/pads_unisim.vhd:220]
 INFO: [Synth 8-256] done synthesizing module 'outpad__parameterized2' (95#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd:39]
+	Parameter tech bound to: 49 - type: integer 
+	Parameter level bound to: 0 - type: integer 
+	Parameter slew bound to: 0 - type: integer 
+	Parameter voltage bound to: 3 - type: integer 
+	Parameter strength bound to: 12 - type: integer 
 	Parameter tech bound to: 49 - type: integer 
 	Parameter level bound to: 0 - type: integer 
 	Parameter slew bound to: 0 - type: integer 
@@ -3827,11 +3776,6 @@ WARNING: [Synth 8-3848] Net mem_aximi[r][resp] in module/entity noelvmp does not
 WARNING: [Synth 8-3848] Net mem_aximi[r][last] in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:174]
 WARNING: [Synth 8-3848] Net mem_aximi[r][valid] in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:174]
 WARNING: [Synth 8-3848] Net tck in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:166]
-WARNING: [Synth 8-3848] Net tms in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:166]
-WARNING: [Synth 8-3848] Net tdi in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:166]
-WARNING: [Synth 8-3848] Net rgmiii[gtx_clk] in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:714]
-WARNING: [Synth 8-3848] Net rgmiii[rmii_clk] in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:714]
-WARNING: [Synth 8-3848] Net rgmiii[tx_clk] in module/entity noelvmp does not have driver. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:714]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-256] done synthesizing module 'noelvmp' (97#1) [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:113]
 WARNING: [Synth 8-3331] design outpad has unconnected port cfgi[19]
@@ -3936,7 +3880,7 @@ WARNING: [Synth 8-3331] design ahbrom128 has unconnected port ahbsi[hwdata][97]
 WARNING: [Synth 8-3331] design ahbrom128 has unconnected port ahbsi[hwdata][96]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 3141.816 ; gain = 1497.672 ; free physical = 6782 ; free virtual = 42210
+Finished RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 3141.754 ; gain = 1497.641 ; free physical = 1479 ; free virtual = 37700
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3949,10 +3893,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 3141.816 ; gain = 1497.672 ; free physical = 6999 ; free virtual = 42427
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 3141.754 ; gain = 1497.641 ; free physical = 1554 ; free virtual = 37818
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 3141.816 ; gain = 1497.672 ; free physical = 6999 ; free virtual = 42427
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 3141.754 ; gain = 1497.641 ; free physical = 1554 ; free virtual = 37818
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -3964,6 +3908,8 @@ WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:746]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/iopad.vhd:66]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:773]
+WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd:51]
+WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:761]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd:51]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/noelvmp.vhd:767]
 WARNING: [Constraints 18-548] Could not create 'slew' constraint because invalid SLEW value '0' specified. 'slew' is ignored by Vivado but preserved for implementation tool. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd:151]
@@ -4087,17 +4033,17 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/noelvmp_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3417.316 ; gain = 0.000 ; free physical = 6211 ; free virtual = 41640
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3418.254 ; gain = 0.000 ; free physical = 721 ; free virtual = 36985
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
   RAMB16_S36_S36 => RAMB36E1: 11 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3417.316 ; gain = 0.000 ; free physical = 6211 ; free virtual = 41640
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3418.254 ; gain = 0.000 ; free physical = 695 ; free virtual = 36959
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'mig_ahb_gen.ddrc/MCB_CDC' at clock pin 'm_axi_aclk' is different from the actual clock period '12.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:32 ; elapsed = 00:01:29 . Memory (MB): peak = 3417.316 ; gain = 1773.172 ; free physical = 6902 ; free virtual = 42331
+Finished Constraint Validation : Time (s): cpu = 00:01:35 ; elapsed = 00:01:32 . Memory (MB): peak = 3418.254 ; gain = 1774.141 ; free physical = 1413 ; free virtual = 37677
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-802] inferred FSM for state register 'syncrregs.r_reg[p][0][state]' in module 'apbctrlx'
@@ -4586,11 +4532,11 @@ INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[mdio_state]' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'syncregs.r_reg[state]' using encoding 'sequential' in module 'ahb2axib'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:29 ; elapsed = 00:03:34 . Memory (MB): peak = 4234.301 ; gain = 2590.156 ; free physical = 4352 ; free virtual = 39804
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:35 ; elapsed = 00:03:41 . Memory (MB): peak = 4234.238 ; gain = 2590.125 ; free physical = 1948 ; free virtual = 35257
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'eth0.eth_block.rgmii0/syncreg_status[10].syncreg3' (syncreg) to 'eth0.eth_block.rgmii0/syncreg_status[11].syncreg3'
 INFO: [Synth 8-223] decloning instance 'eth0.eth_block.rgmii0/syncreg_status[10].syncreg3' (syncreg) to 'eth0.eth_block.rgmii0/syncreg_status[12].syncreg3'
-INFO: [Synth 8-223] decloning instance 'eth0.eth_block.rgmii0/syncreg_status[10].syncreg3' (syncreg) to 'eth0.eth_block.rgmii0/syncreg_status[13].syncreg3'
+INFO: [Synth 8-223] decloning instance 'eth0.eth_block.rgmii0/syncreg_status[10].syncreg3' (syncreg) to 'eth0.eth_block.rgmii0/syncreg_status[14].syncreg3'
 INFO: [Synth 8-223] decloning instance 'eth0.eth_block.rgmii0/syncreg_status[10].syncreg3' (syncreg) to 'eth0.eth_block.rgmii0/syncreg_status[15].syncreg3'
 
 Report RTL Partitions: 
@@ -4623,7 +4569,7 @@ Report RTL Partitions:
 |24    |noelvsys__GCB1  |           1|      5737|
 |25    |noelvsys__GCB2  |           1|     36444|
 |26    |noelvcore__GC0  |           1|     22729|
-|27    |noelvmp__GC0    |           1|     12620|
+|27    |noelvmp__GC0    |           1|     12265|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -4651,7 +4597,7 @@ Detailed RTL Component Info :
 	   3 Input     13 Bit       Adders := 3     
 	   2 Input     12 Bit       Adders := 4     
 	   2 Input     11 Bit       Adders := 10    
-	   2 Input     10 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 7     
 	   3 Input      8 Bit       Adders := 1     
@@ -4694,12 +4640,12 @@ Detailed RTL Component Info :
 	               21 Bit    Registers := 16    
 	               20 Bit    Registers := 34    
 	               18 Bit    Registers := 3     
-	               16 Bit    Registers := 49    
+	               16 Bit    Registers := 41    
 	               14 Bit    Registers := 1     
 	               13 Bit    Registers := 3     
 	               12 Bit    Registers := 4     
 	               11 Bit    Registers := 17    
-	               10 Bit    Registers := 13    
+	               10 Bit    Registers := 11    
 	                8 Bit    Registers := 49    
 	                7 Bit    Registers := 28    
 	                6 Bit    Registers := 35    
@@ -4707,11 +4653,11 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 53    
 	                3 Bit    Registers := 150   
 	                2 Bit    Registers := 183   
-	                1 Bit    Registers := 1121  
+	                1 Bit    Registers := 1119  
 +---Multipliers : 
 	                66x66  Multipliers := 1     
 +---RAMs : 
-	              16K Bit         RAMs := 18    
+	              16K Bit         RAMs := 16    
 	               8K Bit         RAMs := 2     
 	               4K Bit         RAMs := 3     
 	               2K Bit         RAMs := 28    
@@ -4781,8 +4727,8 @@ Detailed RTL Component Info :
 	  36 Input     34 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 6     
 	   3 Input     33 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 428   
-	   4 Input     32 Bit        Muxes := 31    
+	   2 Input     32 Bit        Muxes := 430   
+	   4 Input     32 Bit        Muxes := 30    
 	  86 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 10    
 	  36 Input     32 Bit        Muxes := 24    
@@ -4825,7 +4771,7 @@ Detailed RTL Component Info :
 	  10 Input     18 Bit        Muxes := 2     
 	  14 Input     18 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 9     
-	   2 Input     16 Bit        Muxes := 92    
+	   2 Input     16 Bit        Muxes := 84    
 	   5 Input     16 Bit        Muxes := 4     
 	  36 Input     16 Bit        Muxes := 5     
 	  57 Input     16 Bit        Muxes := 2     
@@ -4855,7 +4801,7 @@ Detailed RTL Component Info :
 	  15 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 20    
 	   4 Input      8 Bit        Muxes := 5     
-	   2 Input      8 Bit        Muxes := 183   
+	   2 Input      8 Bit        Muxes := 184   
 	   3 Input      8 Bit        Muxes := 4     
 	  36 Input      8 Bit        Muxes := 15    
 	  13 Input      8 Bit        Muxes := 1     
@@ -6980,50 +6926,24 @@ Module grdff
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module memrwcol__parameterized13__1 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 4     
-Module kintex7_syncram_2p__parameterized7__1 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module memrwcol__parameterized13 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 4     
-Module kintex7_syncram_2p__parameterized7 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
 Module rgmii 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 2     
 	   2 Input      6 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 4     
 +---Registers : 
 	               24 Bit    Registers := 1     
-	               16 Bit    Registers := 6     
-	               10 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
 	                8 Bit    Registers := 1     
 	                6 Bit    Registers := 7     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 23    
+	                1 Bit    Registers := 21    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
 	   2 Input     16 Bit        Muxes := 2     
 	  16 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 32    
@@ -7267,7 +7187,6 @@ INFO: [Synth 8-3886] merging instance 'u0i_21/mgen.div0/syncrregs.r_reg[quotient
 INFO: [Synth 8-3886] merging instance 'u0i_21/mgen.div0/syncrregs.r_reg[quotient_msk][11]' (FDRE) to 'u0i_21/mgen.div0/syncrregs.r_reg[quotient_msk][7]'
 INFO: [Synth 8-3886] merging instance 'u0i_21/mgen.div0/syncrregs.r_reg[quotient_msk][5]' (FDRE) to 'u0i_21/mgen.div0/syncrregs.r_reg[quotient_msk][3]'
 INFO: [Synth 8-3886] merging instance 'u0i_21/mgen.div0/syncrregs.r_reg[quotient_msk][7]' (FDRE) to 'u0i_21/mgen.div0/syncrregs.r_reg[quotient_msk][3]'
-WARNING: [Synth 8-3332] Sequential element (eth0.eth_block.etxc_pad/xcv.x0/ttl0.ip) is unused and will be removed from module noelvmp.
 INFO: [Synth 8-3886] merging instance 'u0i_18/itrace/syncrregs.r_reg[itracei][info][lanes][0][pc][40]' (FDR) to 'u0i_18/itrace/syncrregs.r_reg[itracei][info][lanes][0][pc][41]'
 INFO: [Synth 8-3886] merging instance 'u0i_18/itrace/syncrregs.r_reg[itracei][info][lanes][0][pc][41]' (FDR) to 'u0i_18/itrace/syncrregs.r_reg[itracei][info][lanes][0][pc][42]'
 INFO: [Synth 8-3886] merging instance 'u0i_18/itrace/syncrregs.r_reg[itracei][info][lanes][0][pc][42]' (FDR) to 'u0i_18/itrace/syncrregs.r_reg[itracei][info][lanes][0][pc][43]'
@@ -7311,10 +7230,8 @@ INFO: [Synth 8-3886] merging instance 'u0i_18/itrace/syncrregs.r_reg[itraceo][id
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "op2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-3936] Found unconnected internal register 'syncrregs.r_reg[cevt]' and it is trimmed from '6' to '3' bits. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5587] ROM size for "fpuop" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "v[s]" is below threshold of ROM address width. It will be mapped to LUTs
@@ -7442,7 +7359,7 @@ INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "len" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:07 ; elapsed = 00:05:14 . Memory (MB): peak = 4238.223 ; gain = 2594.078 ; free physical = 3832 ; free virtual = 39461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:15 ; elapsed = 00:05:23 . Memory (MB): peak = 4238.160 ; gain = 2594.047 ; free physical = 1353 ; free virtual = 34920
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7640,7 +7557,7 @@ Report RTL Partitions:
 |24    |noelvsys__GCB1  |           1|      2473|
 |25    |noelvsys__GCB2  |           1|     16894|
 |26    |noelvcore__GC0  |           1|     11781|
-|27    |noelvmp__GC0    |           1|      4862|
+|27    |noelvmp__GC0    |           1|      5250|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -7649,13 +7566,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'mig_ahb_gen.ddrc/MCB_inst
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clocker100MHz/clk_out1' to pin 'clocker100MHz/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:14 ; elapsed = 00:05:21 . Memory (MB): peak = 4238.223 ; gain = 2594.078 ; free physical = 3626 ; free virtual = 39362
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:21 ; elapsed = 00:05:30 . Memory (MB): peak = 4238.160 ; gain = 2594.047 ; free physical = 1112 ; free virtual = 34808
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:07:00 ; elapsed = 00:07:11 . Memory (MB): peak = 4238.223 ; gain = 2594.078 ; free physical = 3392 ; free virtual = 39146
+Finished Timing Optimization : Time (s): cpu = 00:07:44 ; elapsed = 00:07:57 . Memory (MB): peak = 4238.160 ; gain = 2594.047 ; free physical = 569 ; free virtual = 34824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7739,10 +7656,10 @@ Report RTL Partitions:
 |11    |cpucorenv__GCB4 |           1|      5466|
 |12    |grplic_ahb      |           1|     10149|
 |13    |noelvsys__GCB1  |           1|      2473|
-|14    |noelvsys__GCB2  |           1|      8948|
+|14    |noelvsys__GCB2  |           1|      8976|
 |15    |noelvmp_GT0     |           1|     49035|
 |16    |noelvmp_GT1     |           1|     13479|
-|17    |noelvmp_GT0__2  |           1|     15326|
+|17    |noelvmp_GT0__2  |           1|     15740|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -7778,7 +7695,7 @@ INFO: [Synth 8-6837] The timing for the instance u0i_0/core0/noelv0/cpuloop[0].c
 INFO: [Synth 8-6837] The timing for the instance u0i_0/core0/noelv0/cpuloop[0].core/u0/cmem1/idataloop[2].idatamemh/xk7.xk7_s/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:07:16 ; elapsed = 00:07:30 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2684 ; free virtual = 38438
+Finished Technology Mapping : Time (s): cpu = 00:08:10 ; elapsed = 00:08:25 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 510 ; free virtual = 33905
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7798,10 +7715,10 @@ Report RTL Partitions:
 |11    |cpucorenv__GCB4 |           1|      2640|
 |12    |grplic_ahb      |           1|      1863|
 |13    |noelvsys__GCB1  |           1|      1088|
-|14    |noelvsys__GCB2  |           1|      3804|
+|14    |noelvsys__GCB2  |           1|      3813|
 |15    |noelvmp_GT0     |           1|     20355|
 |16    |noelvmp_GT1     |           1|      4392|
-|17    |noelvmp_GT0__2  |           1|      6970|
+|17    |noelvmp_GT0__2  |           1|      7154|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -7837,6 +7754,10 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cpucorenv.vhd:938]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cpucorenv.vhd:938]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cpucorenv.vhd:938]
@@ -7844,24 +7765,8 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
@@ -7877,38 +7782,34 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/nanofpunv.vhd:2724]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/div64.vhd:388]
@@ -7916,13 +7817,29 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/div64.vhd:388]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/div64.vhd:388]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/div64.vhd:388]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd:11653]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd:7390]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:07:26 ; elapsed = 00:07:41 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2631 ; free virtual = 38477
+Finished IO Insertion : Time (s): cpu = 00:08:25 ; elapsed = 00:08:41 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 157 ; free virtual = 33566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -7935,7 +7852,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:07:27 ; elapsed = 00:07:42 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2631 ; free virtual = 38477
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:25 ; elapsed = 00:08:41 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 204 ; free virtual = 33594
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7947,25 +7864,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:36 ; elapsed = 00:07:51 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2628 ; free virtual = 38474
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:34 ; elapsed = 00:08:50 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 690 ; free virtual = 34190
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:07:36 ; elapsed = 00:07:51 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2628 ; free virtual = 38474
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:34 ; elapsed = 00:08:50 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 683 ; free virtual = 34184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:07:38 ; elapsed = 00:07:53 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2630 ; free virtual = 38476
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:36 ; elapsed = 00:08:52 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 608 ; free virtual = 34126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:07:38 ; elapsed = 00:07:53 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2630 ; free virtual = 38476
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:37 ; elapsed = 00:08:52 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 604 ; free virtual = 34124
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -7990,19 +7907,19 @@ Report Cell Usage:
 |4     |BSCANE2        |     2|
 |5     |BUFG           |     8|
 |6     |BUFGMUX        |     4|
-|7     |CARRY4         |  1362|
+|7     |CARRY4         |  1363|
 |8     |DSP48E1_1      |     1|
 |9     |DSP48E1_2      |    12|
 |10    |DSP48E1_3      |     4|
 |11    |DSP48E1_4      |     1|
 |12    |IDDR           |     5|
-|13    |LUT1           |   697|
-|14    |LUT2           |  3038|
-|15    |LUT3           |  5946|
-|16    |LUT4           |  6954|
-|17    |LUT5           | 12043|
-|18    |LUT6           | 28596|
-|19    |MUXF7          |   901|
+|13    |LUT1           |   690|
+|14    |LUT2           |  3035|
+|15    |LUT3           |  5950|
+|16    |LUT4           |  6968|
+|17    |LUT5           | 12055|
+|18    |LUT6           | 28656|
+|19    |MUXF7          |   899|
 |20    |MUXF8          |   216|
 |21    |ODDR           |     6|
 |22    |PLLE2_ADV      |     1|
@@ -8015,26 +7932,25 @@ Report Cell Usage:
 |29    |RAMB36E1       |    12|
 |30    |FDCE           |   179|
 |31    |FDPE           |     3|
-|32    |FDRE           | 19446|
-|33    |FDSE           |   301|
+|32    |FDRE           | 19527|
+|33    |FDSE           |   321|
 |34    |IBUF           |    16|
 |35    |IOBUF          |     1|
-|36    |OBUF           |    14|
-|37    |OBUFT          |     2|
+|36    |OBUF           |    17|
 +------+---------------+------+
 
 Report Instance Areas: 
 +------+-----------------------------------------------+---------------------------------------+------+
 |      |Instance                                       |Module                                 |Cells |
 +------+-----------------------------------------------+---------------------------------------+------+
-|1     |top                                            |                                       | 80441|
+|1     |top                                            |                                       | 80622|
 |2     |  clockers0                                    |clockers_mig                           |     5|
-|3     |  core0                                        |noelvcore                              | 77719|
+|3     |  core0                                        |noelvcore                              | 77787|
 |4     |    \ahbjtaggen0.ahbjtag0                      |ahbjtag                                |   312|
 |5     |      ahbmst0                                  |ahbmst__parameterized1                 |     6|
-|6     |      \gtckbuf.tckbuf                          |techbuf_236                            |     1|
-|7     |        \xil.xil0                              |clkbuf_xilinx_238                      |     1|
-|8     |      \gupdff.updff                            |grdff_237                              |     1|
+|6     |      \gtckbuf.tckbuf                          |techbuf_238                            |     1|
+|7     |        \xil.xil0                              |clkbuf_xilinx_240                      |     1|
+|8     |      \gupdff.updff                            |grdff_239                              |     1|
 |9     |      \newcom.jtagcom0                         |jtagcom2                               |   289|
 |10    |      tap0                                     |tap                                    |    15|
 |11    |        \kc7v.u0                               |kintex7_tap                            |    15|
@@ -8043,33 +7959,33 @@ Report Instance Areas:
 |14    |      ahbmst0                                  |ahbmst                                 |     5|
 |15    |      dcom0                                    |dcom                                   |   181|
 |16    |      dcom_uart0                               |dcom_uart                              |   314|
-|17    |    \eth0.e1                                   |grethm_mb                              |  3523|
-|18    |      \m100.u0                                 |greth_mb                               |  3523|
+|17    |    \eth0.e1                                   |grethm_mb                              |  3522|
+|18    |      \m100.u0                                 |greth_mb                               |  3522|
 |19    |        \edclramnft.r0                         |syncram_2p__parameterized9             |     8|
-|20    |          \xk7_2p.xk7_2p                       |kintex7_syncram_2p__parameterized5_235 |     8|
-|21    |        \edclramnft.r1                         |syncram_2p__parameterized9_233         |     3|
+|20    |          \xk7_2p.xk7_2p                       |kintex7_syncram_2p__parameterized5_237 |     8|
+|21    |        \edclramnft.r1                         |syncram_2p__parameterized9_235         |     3|
 |22    |          \xk7_2p.xk7_2p                       |kintex7_syncram_2p__parameterized5     |     3|
-|23    |        ethc0                                  |grethc                                 |  3421|
-|24    |          ahb0                                 |eth_ahb_mst                            |   267|
+|23    |        ethc0                                  |grethc                                 |  3420|
+|24    |          ahb0                                 |eth_ahb_mst                            |   266|
 |25    |          \edclmst.ahb1                        |eth_edcl_ahb_mst                       |    34|
 |26    |          \rx_rmii0.rx0                        |greth_rx                               |   589|
-|27    |            rx_rst                             |eth_rstgen_234                         |     8|
+|27    |            rx_rst                             |eth_rstgen_236                         |     8|
 |28    |          \tx_rmii0.tx0                        |greth_tx                               |   379|
 |29    |            tx_rst                             |eth_rstgen                             |     8|
 |30    |        \nft.rx_fifo0                          |syncram_2p__parameterized7             |    38|
 |31    |          \inf.x0                              |generic_syncram_2p__parameterized1     |    38|
 |32    |        \nft.tx_fifo0                          |syncram_2p__parameterized5             |     1|
 |33    |          \xk7_2p.xk7_2p                       |kintex7_syncram_2p__parameterized3     |     1|
-|34    |    \gpio0.grgpio_ledsw                        |grgpio                                 |   160|
+|34    |    \gpio0.grgpio_ledsw                        |grgpio                                 |   161|
 |35    |    grver0                                     |grversion                              |     1|
-|36    |    noelv0                                     |noelvsys                               | 73155|
+|36    |    noelv0                                     |noelvsys                               | 73223|
 |37    |      ac0                                      |ahbctrl                                |  1501|
 |38    |      ahbtrace0                                |ahbtrace_mmb                           |   710|
 |39    |        \mem128.ram0                           |syncram64__parameterized2              |    82|
-|40    |          \nopar.s64.xc2v.x0                   |unisim_syncram64__parameterized1_232   |    82|
-|41    |        \mem32[0].ram0                         |syncram64__parameterized2_229          |   138|
-|42    |          \nopar.s64.xc2v.x0                   |unisim_syncram64__parameterized1_231   |   138|
-|43    |        \mem32[1].ram0                         |syncram64__parameterized2_230          |    58|
+|40    |          \nopar.s64.xc2v.x0                   |unisim_syncram64__parameterized1_234   |    82|
+|41    |        \mem32[0].ram0                         |syncram64__parameterized2_231          |   138|
+|42    |          \nopar.s64.xc2v.x0                   |unisim_syncram64__parameterized1_233   |   138|
+|43    |        \mem32[1].ram0                         |syncram64__parameterized2_232          |    58|
 |44    |          \nopar.s64.xc2v.x0                   |unisim_syncram64__parameterized1       |    58|
 |45    |        \mem64.ram0                            |syncram__parameterized6                |    23|
 |46    |          \xk7.xk7_s                           |kintex7_syncram__parameterized5        |    23|
@@ -8082,69 +7998,69 @@ Report Instance Areas:
 |53    |          btb0                                 |btbdmnv                                |  1802|
 |54    |          cmem1                                |cachememnv                             |   640|
 |55    |            \ddnobw.ddataloop[0].ddatamemh     |syncram__parameterized2                |     3|
-|56    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_228    |     3|
-|57    |            \ddnobw.ddataloop[0].ddatameml     |syncram__parameterized2_178            |     4|
-|58    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_227    |     4|
-|59    |            \ddnobw.ddataloop[1].ddatamemh     |syncram__parameterized2_179            |    33|
-|60    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_226    |    33|
-|61    |            \ddnobw.ddataloop[1].ddatameml     |syncram__parameterized2_180            |    17|
-|62    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_225    |    17|
-|63    |            \ddnobw.ddataloop[2].ddatamemh     |syncram__parameterized2_181            |    39|
-|64    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_224    |    39|
-|65    |            \ddnobw.ddataloop[2].ddatameml     |syncram__parameterized2_182            |    19|
-|66    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_223    |    19|
-|67    |            \ddnobw.ddataloop[3].ddatamemh     |syncram__parameterized2_183            |    66|
-|68    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_222    |    66|
-|69    |            \ddnobw.ddataloop[3].ddatameml     |syncram__parameterized2_184            |    52|
-|70    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_221    |    52|
+|56    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_230    |     3|
+|57    |            \ddnobw.ddataloop[0].ddatameml     |syncram__parameterized2_180            |     4|
+|58    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_229    |     4|
+|59    |            \ddnobw.ddataloop[1].ddatamemh     |syncram__parameterized2_181            |    33|
+|60    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_228    |    33|
+|61    |            \ddnobw.ddataloop[1].ddatameml     |syncram__parameterized2_182            |    17|
+|62    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_227    |    17|
+|63    |            \ddnobw.ddataloop[2].ddatamemh     |syncram__parameterized2_183            |    39|
+|64    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_226    |    39|
+|65    |            \ddnobw.ddataloop[2].ddatameml     |syncram__parameterized2_184            |    19|
+|66    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_225    |    19|
+|67    |            \ddnobw.ddataloop[3].ddatamemh     |syncram__parameterized2_185            |    66|
+|68    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_224    |    66|
+|69    |            \ddnobw.ddataloop[3].ddatameml     |syncram__parameterized2_186            |    52|
+|70    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_223    |    52|
 |71    |            \dtagconf0.dtagloop[0].dtagcmem    |syncram_2p__parameterized3             |    69|
-|72    |              rwcol0                           |memrwcol__parameterized3_219           |    68|
-|73    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1_220 |     1|
+|72    |              rwcol0                           |memrwcol__parameterized3_221           |    68|
+|73    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1_222 |     1|
 |74    |            \dtagconf0.dtagloop[0].dtagsmem    |syncram__parameterized4                |     9|
-|75    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3_218    |     9|
-|76    |            \dtagconf0.dtagloop[1].dtagcmem    |syncram_2p__parameterized3_185         |    67|
-|77    |              rwcol0                           |memrwcol__parameterized3_216           |    66|
-|78    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1_217 |     1|
-|79    |            \dtagconf0.dtagloop[1].dtagsmem    |syncram__parameterized4_186            |     8|
-|80    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3_215    |     8|
-|81    |            \dtagconf0.dtagloop[2].dtagcmem    |syncram_2p__parameterized3_187         |    69|
-|82    |              rwcol0                           |memrwcol__parameterized3_213           |    68|
-|83    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1_214 |     1|
-|84    |            \dtagconf0.dtagloop[2].dtagsmem    |syncram__parameterized4_188            |    30|
-|85    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3_212    |    30|
-|86    |            \dtagconf0.dtagloop[3].dtagcmem    |syncram_2p__parameterized3_189         |    66|
+|75    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3_220    |     9|
+|76    |            \dtagconf0.dtagloop[1].dtagcmem    |syncram_2p__parameterized3_187         |    67|
+|77    |              rwcol0                           |memrwcol__parameterized3_218           |    66|
+|78    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1_219 |     1|
+|79    |            \dtagconf0.dtagloop[1].dtagsmem    |syncram__parameterized4_188            |     8|
+|80    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3_217    |     8|
+|81    |            \dtagconf0.dtagloop[2].dtagcmem    |syncram_2p__parameterized3_189         |    69|
+|82    |              rwcol0                           |memrwcol__parameterized3_215           |    68|
+|83    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1_216 |     1|
+|84    |            \dtagconf0.dtagloop[2].dtagsmem    |syncram__parameterized4_190            |    30|
+|85    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3_214    |    30|
+|86    |            \dtagconf0.dtagloop[3].dtagcmem    |syncram_2p__parameterized3_191         |    66|
 |87    |              rwcol0                           |memrwcol__parameterized3               |    65|
 |88    |              \xk7_2p.xk7_2p                   |kintex7_syncram_2p__parameterized1     |     1|
-|89    |            \dtagconf0.dtagloop[3].dtagsmem    |syncram__parameterized4_190            |    10|
+|89    |            \dtagconf0.dtagloop[3].dtagsmem    |syncram__parameterized4_192            |    10|
 |90    |              \xk7.xk7_s                       |kintex7_syncram__parameterized3        |    10|
-|91    |            \idataloop[0].idatamemh            |syncram__parameterized2_191            |     1|
-|92    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_211    |     1|
-|93    |            \idataloop[0].idatameml            |syncram__parameterized2_192            |     1|
-|94    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_210    |     1|
-|95    |            \idataloop[1].idatamemh            |syncram__parameterized2_193            |     1|
-|96    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_209    |     1|
-|97    |            \idataloop[1].idatameml            |syncram__parameterized2_194            |     1|
-|98    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_208    |     1|
-|99    |            \idataloop[2].idatamemh            |syncram__parameterized2_195            |     1|
-|100   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_207    |     1|
-|101   |            \idataloop[2].idatameml            |syncram__parameterized2_196            |     1|
-|102   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_206    |     1|
-|103   |            \idataloop[3].idatamemh            |syncram__parameterized2_197            |     1|
-|104   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_205    |     1|
-|105   |            \idataloop[3].idatameml            |syncram__parameterized2_198            |     2|
+|91    |            \idataloop[0].idatamemh            |syncram__parameterized2_193            |     1|
+|92    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_213    |     1|
+|93    |            \idataloop[0].idatameml            |syncram__parameterized2_194            |     1|
+|94    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_212    |     1|
+|95    |            \idataloop[1].idatamemh            |syncram__parameterized2_195            |     1|
+|96    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_211    |     1|
+|97    |            \idataloop[1].idatameml            |syncram__parameterized2_196            |     1|
+|98    |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_210    |     1|
+|99    |            \idataloop[2].idatamemh            |syncram__parameterized2_197            |     1|
+|100   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_209    |     1|
+|101   |            \idataloop[2].idatameml            |syncram__parameterized2_198            |     1|
+|102   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_208    |     1|
+|103   |            \idataloop[3].idatamemh            |syncram__parameterized2_199            |     1|
+|104   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1_207    |     1|
+|105   |            \idataloop[3].idatameml            |syncram__parameterized2_200            |     2|
 |106   |              \xk7.xk7_s                       |kintex7_syncram__parameterized1        |     2|
 |107   |            \itagloop[0].itagmem               |syncram                                |    30|
-|108   |              \xk7.xk7_s                       |kintex7_syncram_204                    |    30|
-|109   |            \itagloop[1].itagmem               |syncram_199                            |    10|
-|110   |              \xk7.xk7_s                       |kintex7_syncram_203                    |    10|
-|111   |            \itagloop[2].itagmem               |syncram_200                            |     9|
-|112   |              \xk7.xk7_s                       |kintex7_syncram_202                    |     9|
-|113   |            \itagloop[3].itagmem               |syncram_201                            |    21|
+|108   |              \xk7.xk7_s                       |kintex7_syncram_206                    |    30|
+|109   |            \itagloop[1].itagmem               |syncram_201                            |    10|
+|110   |              \xk7.xk7_s                       |kintex7_syncram_205                    |    10|
+|111   |            \itagloop[2].itagmem               |syncram_202                            |     9|
+|112   |              \xk7.xk7_s                       |kintex7_syncram_204                    |     9|
+|113   |            \itagloop[3].itagmem               |syncram_203                            |    21|
 |114   |              \xk7.xk7_s                       |kintex7_syncram                        |    21|
 |115   |          \fpu_gen.nano                        |nanofpunv                              |  7995|
 |116   |          \fpu_regs.ramrff.rf1                 |regfile64sramnv__parameterized1        |   135|
-|117   |            x0                                 |syncram_2p__parameterized1_176         |    65|
-|118   |              \inf.x0                          |generic_syncram_2p_177                 |    65|
+|117   |            x0                                 |syncram_2p__parameterized1_178         |    65|
+|118   |              \inf.x0                          |generic_syncram_2p_179                 |    65|
 |119   |          itrace                               |itracenv                               |  1009|
 |120   |          iu0                                  |iunv                                   | 30864|
 |121   |          \mgen.div0                           |div64                                  |  2252|
@@ -8154,37 +8070,37 @@ Report Instance Areas:
 |125   |          mmu0                                 |cctrlnv                                | 18672|
 |126   |          \ramrf.rf0                           |regfile64sramnv                        |   956|
 |127   |            \p2d.x2                            |syncram_2p__parameterized1             |    65|
-|128   |              \inf.x0                          |generic_syncram_2p_175                 |    65|
-|129   |            \p2d.x3                            |syncram_2p__parameterized1_162         |     1|
-|130   |              \inf.x0                          |generic_syncram_2p_174                 |     1|
-|131   |            \p4d.x6                            |syncram_2p__parameterized1_163         |    65|
-|132   |              \inf.x0                          |generic_syncram_2p_173                 |    65|
-|133   |            \p4d.x7                            |syncram_2p__parameterized1_164         |     1|
-|134   |              \inf.x0                          |generic_syncram_2p_172                 |     1|
-|135   |            x0                                 |syncram_2p__parameterized1_165         |   157|
-|136   |              \inf.x0                          |generic_syncram_2p_171                 |    65|
-|137   |            x1                                 |syncram_2p__parameterized1_166         |     1|
-|138   |              \inf.x0                          |generic_syncram_2p_170                 |     1|
-|139   |            x4                                 |syncram_2p__parameterized1_167         |    65|
-|140   |              \inf.x0                          |generic_syncram_2p_169                 |    65|
-|141   |            x5                                 |syncram_2p__parameterized1_168         |     1|
+|128   |              \inf.x0                          |generic_syncram_2p_177                 |    65|
+|129   |            \p2d.x3                            |syncram_2p__parameterized1_164         |     1|
+|130   |              \inf.x0                          |generic_syncram_2p_176                 |     1|
+|131   |            \p4d.x6                            |syncram_2p__parameterized1_165         |    65|
+|132   |              \inf.x0                          |generic_syncram_2p_175                 |    65|
+|133   |            \p4d.x7                            |syncram_2p__parameterized1_166         |     1|
+|134   |              \inf.x0                          |generic_syncram_2p_174                 |     1|
+|135   |            x0                                 |syncram_2p__parameterized1_167         |   157|
+|136   |              \inf.x0                          |generic_syncram_2p_173                 |    65|
+|137   |            x1                                 |syncram_2p__parameterized1_168         |     1|
+|138   |              \inf.x0                          |generic_syncram_2p_172                 |     1|
+|139   |            x4                                 |syncram_2p__parameterized1_169         |    65|
+|140   |              \inf.x0                          |generic_syncram_2p_171                 |    65|
+|141   |            x5                                 |syncram_2p__parameterized1_170         |     1|
 |142   |              \inf.x0                          |generic_syncram_2p                     |     1|
 |143   |          \tbmem_gen.tbmem0                    |tbufmemnv                              |   136|
 |144   |            \mem64[0].ram0                     |syncram64                              |     1|
-|145   |              \nopar.s64.xc2v.x0               |unisim_syncram64_161                   |     1|
-|146   |            \mem64[1].ram0                     |syncram64_148                          |     1|
-|147   |              \nopar.s64.xc2v.x0               |unisim_syncram64_160                   |     1|
-|148   |            \mem64[2].ram0                     |syncram64_149                          |     1|
-|149   |              \nopar.s64.xc2v.x0               |unisim_syncram64_159                   |     1|
-|150   |            \mem64[3].ram0                     |syncram64_150                          |    65|
-|151   |              \nopar.s64.xc2v.x0               |unisim_syncram64_158                   |    65|
-|152   |            \mem64[4].ram0                     |syncram64_151                          |     1|
-|153   |              \nopar.s64.xc2v.x0               |unisim_syncram64_157                   |     1|
-|154   |            \mem64[5].ram0                     |syncram64_152                          |     4|
-|155   |              \nopar.s64.xc2v.x0               |unisim_syncram64_156                   |     4|
-|156   |            \mem64[6].ram0                     |syncram64_153                          |     1|
-|157   |              \nopar.s64.xc2v.x0               |unisim_syncram64_155                   |     1|
-|158   |            \mem64[7].ram0                     |syncram64_154                          |    62|
+|145   |              \nopar.s64.xc2v.x0               |unisim_syncram64_163                   |     1|
+|146   |            \mem64[1].ram0                     |syncram64_150                          |     1|
+|147   |              \nopar.s64.xc2v.x0               |unisim_syncram64_162                   |     1|
+|148   |            \mem64[2].ram0                     |syncram64_151                          |     1|
+|149   |              \nopar.s64.xc2v.x0               |unisim_syncram64_161                   |     1|
+|150   |            \mem64[3].ram0                     |syncram64_152                          |    65|
+|151   |              \nopar.s64.xc2v.x0               |unisim_syncram64_160                   |    65|
+|152   |            \mem64[4].ram0                     |syncram64_153                          |     1|
+|153   |              \nopar.s64.xc2v.x0               |unisim_syncram64_159                   |     1|
+|154   |            \mem64[5].ram0                     |syncram64_154                          |     4|
+|155   |              \nopar.s64.xc2v.x0               |unisim_syncram64_158                   |     4|
+|156   |            \mem64[6].ram0                     |syncram64_155                          |     1|
+|157   |              \nopar.s64.xc2v.x0               |unisim_syncram64_157                   |     1|
+|158   |            \mem64[7].ram0                     |syncram64_156                          |    62|
 |159   |              \nopar.s64.xc2v.x0               |unisim_syncram64                       |    62|
 |160   |      dm0                                      |rvdm                                   |  1180|
 |161   |        x0                                     |rvdmx                                  |  1174|
@@ -8192,199 +8108,201 @@ Report Instance Areas:
 |163   |      gpt0                                     |gptimer                                |   392|
 |164   |      grplic0                                  |grplic_ahb                             |  1854|
 |165   |        \gateways[10].gateway                  |plic_gateway                           |     5|
-|166   |        \gateways[11].gateway                  |plic_gateway_134                       |     5|
-|167   |        \gateways[12].gateway                  |plic_gateway_135                       |     5|
-|168   |        \gateways[13].gateway                  |plic_gateway_136                       |     5|
-|169   |        \gateways[14].gateway                  |plic_gateway_137                       |     5|
-|170   |        \gateways[15].gateway                  |plic_gateway_138                       |     5|
-|171   |        \gateways[1].gateway                   |plic_gateway_139                       |     6|
-|172   |        \gateways[2].gateway                   |plic_gateway_140                       |     6|
-|173   |        \gateways[3].gateway                   |plic_gateway_141                       |     6|
-|174   |        \gateways[4].gateway                   |plic_gateway_142                       |     6|
-|175   |        \gateways[5].gateway                   |plic_gateway_143                       |     6|
-|176   |        \gateways[6].gateway                   |plic_gateway_144                       |     5|
-|177   |        \gateways[7].gateway                   |plic_gateway_145                       |     5|
-|178   |        \gateways[8].gateway                   |plic_gateway_146                       |     5|
-|179   |        \gateways[9].gateway                   |plic_gateway_147                       |     5|
-|180   |      \no_dual_apb_gen.ap0                     |apbctrl                                |   561|
-|181   |        apbx                                   |apbctrlx                               |   560|
+|166   |        \gateways[11].gateway                  |plic_gateway_136                       |     5|
+|167   |        \gateways[12].gateway                  |plic_gateway_137                       |     5|
+|168   |        \gateways[13].gateway                  |plic_gateway_138                       |     5|
+|169   |        \gateways[14].gateway                  |plic_gateway_139                       |     5|
+|170   |        \gateways[15].gateway                  |plic_gateway_140                       |     5|
+|171   |        \gateways[1].gateway                   |plic_gateway_141                       |     6|
+|172   |        \gateways[2].gateway                   |plic_gateway_142                       |     6|
+|173   |        \gateways[3].gateway                   |plic_gateway_143                       |     6|
+|174   |        \gateways[4].gateway                   |plic_gateway_144                       |     6|
+|175   |        \gateways[5].gateway                   |plic_gateway_145                       |     6|
+|176   |        \gateways[6].gateway                   |plic_gateway_146                       |     5|
+|177   |        \gateways[7].gateway                   |plic_gateway_147                       |     5|
+|178   |        \gateways[8].gateway                   |plic_gateway_148                       |     5|
+|179   |        \gateways[9].gateway                   |plic_gateway_149                       |     5|
+|180   |      \no_dual_apb_gen.ap0                     |apbctrl                                |   629|
+|181   |        apbx                                   |apbctrlx                               |   628|
 |182   |      uart0                                    |apbuart                                |   549|
-|183   |    rst0                                       |rstgen_133                             |    15|
+|183   |    rst0                                       |rstgen_135                             |    15|
 |184   |  dsurx_pad                                    |inpad__parameterized3                  |     3|
 |185   |    \xcv.x0                                    |unisim_inpad__parameterized3           |     3|
 |186   |  dsutx_pad                                    |outpad                                 |     1|
-|187   |    \xcv.x0                                    |unisim_outpad_132                      |     1|
+|187   |    \xcv.x0                                    |unisim_outpad_134                      |     1|
 |188   |  \eth0.eth_block.eint_pad                     |inpad                                  |     1|
-|189   |    \xcv.x0                                    |unisim_inpad_131                       |     1|
+|189   |    \xcv.x0                                    |unisim_inpad_133                       |     1|
 |190   |  \eth0.eth_block.emdc_pad                     |outpad__parameterized2                 |     1|
-|191   |    \xcv.x0                                    |unisim_outpad__parameterized1_130      |     1|
+|191   |    \xcv.x0                                    |unisim_outpad__parameterized1_132      |     1|
 |192   |  \eth0.eth_block.emdio_pad                    |iopad                                  |     1|
 |193   |    \xcv.x0                                    |unisim_iopad                           |     1|
 |194   |  \eth0.eth_block.erst_pad                     |outpad__parameterized2_0               |     1|
-|195   |    \xcv.x0                                    |unisim_outpad__parameterized1_129      |     1|
+|195   |    \xcv.x0                                    |unisim_outpad__parameterized1_131      |     1|
 |196   |  \eth0.eth_block.erxc_pad                     |inpad_1                                |     1|
-|197   |    \xcv.x0                                    |unisim_inpad_128                       |     1|
+|197   |    \xcv.x0                                    |unisim_inpad_130                       |     1|
 |198   |  \eth0.eth_block.erxd_pad                     |inpadv                                 |     4|
-|199   |    \v[0].x0                                   |inpad_120                              |     1|
-|200   |      \xcv.x0                                  |unisim_inpad_127                       |     1|
-|201   |    \v[1].x0                                   |inpad_121                              |     1|
-|202   |      \xcv.x0                                  |unisim_inpad_126                       |     1|
-|203   |    \v[2].x0                                   |inpad_122                              |     1|
-|204   |      \xcv.x0                                  |unisim_inpad_125                       |     1|
-|205   |    \v[3].x0                                   |inpad_123                              |     1|
-|206   |      \xcv.x0                                  |unisim_inpad_124                       |     1|
+|199   |    \v[0].x0                                   |inpad_122                              |     1|
+|200   |      \xcv.x0                                  |unisim_inpad_129                       |     1|
+|201   |    \v[1].x0                                   |inpad_123                              |     1|
+|202   |      \xcv.x0                                  |unisim_inpad_128                       |     1|
+|203   |    \v[2].x0                                   |inpad_124                              |     1|
+|204   |      \xcv.x0                                  |unisim_inpad_127                       |     1|
+|205   |    \v[3].x0                                   |inpad_125                              |     1|
+|206   |      \xcv.x0                                  |unisim_inpad_126                       |     1|
 |207   |  \eth0.eth_block.erxdv_pad                    |inpad_2                                |     1|
-|208   |    \xcv.x0                                    |unisim_inpad_119                       |     1|
-|209   |  \eth0.eth_block.etxd_pad                     |outpadv                                |     4|
-|210   |    \v[0].x0                                   |outpad__parameterized2_111             |     1|
-|211   |      \xcv.x0                                  |unisim_outpad__parameterized1_118      |     1|
-|212   |    \v[1].x0                                   |outpad__parameterized2_112             |     1|
-|213   |      \xcv.x0                                  |unisim_outpad__parameterized1_117      |     1|
-|214   |    \v[2].x0                                   |outpad__parameterized2_113             |     1|
-|215   |      \xcv.x0                                  |unisim_outpad__parameterized1_116      |     1|
-|216   |    \v[3].x0                                   |outpad__parameterized2_114             |     1|
-|217   |      \xcv.x0                                  |unisim_outpad__parameterized1_115      |     1|
-|218   |  \eth0.eth_block.etxen_pad                    |outpad__parameterized2_3               |     1|
-|219   |    \xcv.x0                                    |unisim_outpad__parameterized1          |     1|
-|220   |  \eth0.eth_block.rgmii0                       |rgmii                                  |   198|
-|221   |    clk_tx_rst                                 |rstgen__parameterized2                 |    20|
-|222   |      \syncinrst.syncreg0                      |syncreg_105                            |     2|
-|223   |        \sync0.syncreg.syncregs[1].dff         |grdff_109                              |     1|
-|224   |        \sync0.syncreg.syncregs[2].dff         |grdff_110                              |     1|
-|225   |      \syncinrst.syncreg1                      |syncreg_106                            |     3|
-|226   |        \sync0.syncreg.syncregs[1].dff         |grdff_107                              |     1|
-|227   |        \sync0.syncreg.syncregs[2].dff         |grdff_108                              |     1|
-|228   |    ddr_dv0                                    |ddr_ireg                               |     1|
-|229   |      \xil.xil0                                |unisim_iddr_reg_104                    |     1|
-|230   |    \no_clk_mux0.use90degtxclk01.rgmii_tx_clk  |ddr_oreg                               |     1|
-|231   |      \xil.xil0                                |unisim_oddr_reg_103                    |     1|
-|232   |    \rgmii_rxd[0].ddr_ireg0                    |ddr_ireg_24                            |     1|
-|233   |      \xil.xil0                                |unisim_iddr_reg_102                    |     1|
-|234   |    \rgmii_rxd[1].ddr_ireg0                    |ddr_ireg_25                            |     1|
-|235   |      \xil.xil0                                |unisim_iddr_reg_101                    |     1|
-|236   |    \rgmii_rxd[2].ddr_ireg0                    |ddr_ireg_26                            |     1|
-|237   |      \xil.xil0                                |unisim_iddr_reg_100                    |     1|
-|238   |    \rgmii_rxd[3].ddr_ireg0                    |ddr_ireg_27                            |     1|
-|239   |      \xil.xil0                                |unisim_iddr_reg                        |     1|
-|240   |    rgmii_tx_ctl                               |ddr_oreg_28                            |     1|
-|241   |      \xil.xil0                                |unisim_oddr_reg_99                     |     1|
-|242   |    \rgmii_txd[0].ddr_oreg0                    |ddr_oreg_29                            |     1|
-|243   |      \xil.xil0                                |unisim_oddr_reg_98                     |     1|
-|244   |    \rgmii_txd[1].ddr_oreg0                    |ddr_oreg_30                            |     1|
-|245   |      \xil.xil0                                |unisim_oddr_reg_97                     |     1|
-|246   |    \rgmii_txd[2].ddr_oreg0                    |ddr_oreg_31                            |     1|
-|247   |      \xil.xil0                                |unisim_oddr_reg_96                     |     1|
-|248   |    \rgmii_txd[3].ddr_oreg0                    |ddr_oreg_32                            |     1|
-|249   |      \xil.xil0                                |unisim_oddr_reg                        |     1|
-|250   |    syncreg_delay_c_sel                        |syncreg                                |    15|
-|251   |      \sync0.syncreg.syncregs[1].dff           |grdff_94                               |     1|
-|252   |      \sync0.syncreg.syncregs[2].dff           |grdff_95                               |     1|
-|253   |    syncreg_delay_sel                          |syncreg_33                             |    20|
-|254   |      \sync0.syncreg.syncregs[1].dff           |grdff_92                               |     1|
-|255   |      \sync0.syncreg.syncregs[2].dff           |grdff_93                               |     1|
-|256   |    \syncreg_q1_delay[0].syncreg0              |syncreg_34                             |     3|
-|257   |      \sync0.syncreg.syncregs[1].dff           |grdff_90                               |     1|
-|258   |      \sync0.syncreg.syncregs[2].dff           |grdff_91                               |     1|
-|259   |    \syncreg_q1_delay[1].syncreg0              |syncreg_35                             |     9|
-|260   |      \sync0.syncreg.syncregs[1].dff           |grdff_88                               |     1|
-|261   |      \sync0.syncreg.syncregs[2].dff           |grdff_89                               |     1|
-|262   |    syncreg_q1_sel                             |syncreg_36                             |     3|
-|263   |      \sync0.syncreg.syncregs[1].dff           |grdff_86                               |     1|
-|264   |      \sync0.syncreg.syncregs[2].dff           |grdff_87                               |     1|
-|265   |    \syncreg_q2_delay[0].syncreg1              |syncreg_37                             |     3|
-|266   |      \sync0.syncreg.syncregs[1].dff           |grdff_84                               |     1|
-|267   |      \sync0.syncreg.syncregs[2].dff           |grdff_85                               |     1|
-|268   |    \syncreg_q2_delay[1].syncreg1              |syncreg_38                             |    11|
-|269   |      \sync0.syncreg.syncregs[1].dff           |grdff_82                               |     1|
-|270   |      \sync0.syncreg.syncregs[2].dff           |grdff_83                               |     1|
-|271   |    \syncreg_status[0].syncreg3                |syncreg_39                             |     2|
-|272   |      \sync0.syncreg.syncregs[1].dff           |grdff_80                               |     1|
-|273   |      \sync0.syncreg.syncregs[2].dff           |grdff_81                               |     1|
-|274   |    \syncreg_status[10].syncreg3               |syncreg_40                             |     3|
-|275   |      \sync0.syncreg.syncregs[1].dff           |grdff_78                               |     1|
-|276   |      \sync0.syncreg.syncregs[2].dff           |grdff_79                               |     1|
-|277   |    \syncreg_status[14].syncreg3               |syncreg_41                             |     3|
-|278   |      \sync0.syncreg.syncregs[1].dff           |grdff_76                               |     1|
-|279   |      \sync0.syncreg.syncregs[2].dff           |grdff_77                               |     1|
-|280   |    \syncreg_status[1].syncreg3                |syncreg_42                             |     2|
-|281   |      \sync0.syncreg.syncregs[1].dff           |grdff_74                               |     1|
-|282   |      \sync0.syncreg.syncregs[2].dff           |grdff_75                               |     1|
-|283   |    \syncreg_status[2].syncreg3                |syncreg_43                             |     2|
-|284   |      \sync0.syncreg.syncregs[1].dff           |grdff_72                               |     1|
-|285   |      \sync0.syncreg.syncregs[2].dff           |grdff_73                               |     1|
-|286   |    \syncreg_status[3].syncreg3                |syncreg_44                             |     2|
-|287   |      \sync0.syncreg.syncregs[1].dff           |grdff_70                               |     1|
-|288   |      \sync0.syncreg.syncregs[2].dff           |grdff_71                               |     1|
-|289   |    \syncreg_status[4].syncreg3                |syncreg_45                             |     2|
-|290   |      \sync0.syncreg.syncregs[1].dff           |grdff_68                               |     1|
-|291   |      \sync0.syncreg.syncregs[2].dff           |grdff_69                               |     1|
-|292   |    \syncreg_status[5].syncreg3                |syncreg_46                             |     2|
-|293   |      \sync0.syncreg.syncregs[1].dff           |grdff_66                               |     1|
-|294   |      \sync0.syncreg.syncregs[2].dff           |grdff_67                               |     1|
-|295   |    \syncreg_status[6].syncreg3                |syncreg_47                             |     2|
-|296   |      \sync0.syncreg.syncregs[1].dff           |grdff_64                               |     1|
-|297   |      \sync0.syncreg.syncregs[2].dff           |grdff_65                               |     1|
-|298   |    \syncreg_status[7].syncreg3                |syncreg_48                             |     2|
-|299   |      \sync0.syncreg.syncregs[1].dff           |grdff_62                               |     1|
-|300   |      \sync0.syncreg.syncregs[2].dff           |grdff_63                               |     1|
-|301   |    \syncreg_status[8].syncreg3                |syncreg_49                             |     2|
-|302   |      \sync0.syncreg.syncregs[1].dff           |grdff_60                               |     1|
-|303   |      \sync0.syncreg.syncregs[2].dff           |grdff_61                               |     1|
-|304   |    \syncreg_status[9].syncreg3                |syncreg_50                             |     3|
-|305   |      \sync0.syncreg.syncregs[1].dff           |grdff                                  |     1|
-|306   |      \sync0.syncreg.syncregs[2].dff           |grdff_59                               |     1|
-|307   |    \useclkmux0.clkbuf0                        |techbuf                                |     1|
-|308   |      \xil.xil0                                |clkbuf_xilinx_58                       |     1|
-|309   |    \useclkmux0.clkbuf01                       |techbuf_51                             |     1|
-|310   |      \xil.xil0                                |clkbuf_xilinx                          |     1|
-|311   |    \useclkmux0.tecclkmux.clkmux1000           |clkmux                                 |     1|
-|312   |      \tec.xil.buf                             |clkmux_unisim_57                       |     1|
-|313   |    \useclkmux0.tecclkmux.clkmux1000d          |clkmux_52                              |     1|
-|314   |      \tec.xil.buf                             |clkmux_unisim_56                       |     1|
-|315   |    \useclkmux0.tecclkmux.clkmux10_100         |clkmux_53                              |     1|
-|316   |      \tec.xil.buf                             |clkmux_unisim_55                       |     1|
-|317   |    \useclkmux0.tecclkmux.clkmux10_100d        |clkmux_54                              |     1|
-|318   |      \tec.xil.buf                             |clkmux_unisim                          |     1|
-|319   |  \gpio0.gpb_pads[1].gpb_pad                   |inpad__parameterized1                  |     1|
-|320   |    \xcv.x0                                    |unisim_inpad__parameterized1_23        |     1|
-|321   |  \gpio0.gpb_pads[2].gpb_pad                   |inpad__parameterized1_4                |     1|
-|322   |    \xcv.x0                                    |unisim_inpad__parameterized1_22        |     1|
-|323   |  \gpio0.gpb_pads[3].gpb_pad                   |inpad__parameterized1_5                |     1|
-|324   |    \xcv.x0                                    |unisim_inpad__parameterized1_21        |     1|
-|325   |  \gpio0.gpled_pads[0].gpled_pad               |outpad_6                               |     1|
-|326   |    \xcv.x0                                    |unisim_outpad_20                       |     1|
-|327   |  \gpio0.gpled_pads[1].gpled_pad               |outpad_7                               |     1|
-|328   |    \xcv.x0                                    |unisim_outpad_19                       |     1|
-|329   |  \gpio0.gpled_pads[2].gpled_pad               |outpad_8                               |     1|
-|330   |    \xcv.x0                                    |unisim_outpad_18                       |     1|
-|331   |  \gpio0.gpled_pads[3].gpled_pad               |outpad_9                               |     1|
-|332   |    \xcv.x0                                    |unisim_outpad                          |     1|
-|333   |  \gpio0.gpsw_pads[0].gpsw_pad                 |inpad__parameterized1_10               |     1|
-|334   |    \xcv.x0                                    |unisim_inpad__parameterized1_17        |     1|
-|335   |  \gpio0.gpsw_pads[1].gpsw_pad                 |inpad__parameterized1_11               |     1|
-|336   |    \xcv.x0                                    |unisim_inpad__parameterized1_16        |     1|
-|337   |  \gpio0.gpsw_pads[2].gpsw_pad                 |inpad__parameterized1_12               |     1|
-|338   |    \xcv.x0                                    |unisim_inpad__parameterized1_15        |     1|
-|339   |  \mig_ahb_gen.ddrc                            |ahb2axi_mig3_arty_a7                   |  2295|
-|340   |    bridge                                     |ahb2axi4b                              |  1674|
-|341   |      ahb2axibx                                |ahb2axib                               |  1648|
-|342   |        wbuffer                                |syncram_2p__parameterized11            |   262|
-|343   |          \inf.x0                              |generic_syncram_2p__parameterized3     |   262|
-|344   |  \prom_gen.rom128.brom                        |ahbrom128                              |   171|
-|345   |  rst1                                         |rstgen                                 |    14|
-|346   |  rst_pad                                      |inpad_13                               |     2|
-|347   |    \xcv.x0                                    |unisim_inpad                           |     2|
-|348   |  sw4_pad                                      |inpad__parameterized1_14               |     1|
-|349   |    \xcv.x0                                    |unisim_inpad__parameterized1           |     1|
+|208   |    \xcv.x0                                    |unisim_inpad_121                       |     1|
+|209   |  \eth0.eth_block.etxc_pad                     |outpad__parameterized2_3               |     1|
+|210   |    \xcv.x0                                    |unisim_outpad__parameterized1_120      |     1|
+|211   |  \eth0.eth_block.etxd_pad                     |outpadv                                |     4|
+|212   |    \v[0].x0                                   |outpad__parameterized2_112             |     1|
+|213   |      \xcv.x0                                  |unisim_outpad__parameterized1_119      |     1|
+|214   |    \v[1].x0                                   |outpad__parameterized2_113             |     1|
+|215   |      \xcv.x0                                  |unisim_outpad__parameterized1_118      |     1|
+|216   |    \v[2].x0                                   |outpad__parameterized2_114             |     1|
+|217   |      \xcv.x0                                  |unisim_outpad__parameterized1_117      |     1|
+|218   |    \v[3].x0                                   |outpad__parameterized2_115             |     1|
+|219   |      \xcv.x0                                  |unisim_outpad__parameterized1_116      |     1|
+|220   |  \eth0.eth_block.etxen_pad                    |outpad__parameterized2_4               |     1|
+|221   |    \xcv.x0                                    |unisim_outpad__parameterized1          |     1|
+|222   |  \eth0.eth_block.rgmii0                       |rgmii                                  |   310|
+|223   |    clk_tx_rst                                 |rstgen__parameterized2                 |    20|
+|224   |      \syncinrst.syncreg0                      |syncreg_106                            |     2|
+|225   |        \sync0.syncreg.syncregs[1].dff         |grdff_110                              |     1|
+|226   |        \sync0.syncreg.syncregs[2].dff         |grdff_111                              |     1|
+|227   |      \syncinrst.syncreg1                      |syncreg_107                            |     3|
+|228   |        \sync0.syncreg.syncregs[1].dff         |grdff_108                              |     1|
+|229   |        \sync0.syncreg.syncregs[2].dff         |grdff_109                              |     1|
+|230   |    ddr_dv0                                    |ddr_ireg                               |     1|
+|231   |      \xil.xil0                                |unisim_iddr_reg_105                    |     1|
+|232   |    \no_clk_mux0.use90degtxclk01.rgmii_tx_clk  |ddr_oreg                               |     1|
+|233   |      \xil.xil0                                |unisim_oddr_reg_104                    |     1|
+|234   |    \rgmii_rxd[0].ddr_ireg0                    |ddr_ireg_25                            |     1|
+|235   |      \xil.xil0                                |unisim_iddr_reg_103                    |     1|
+|236   |    \rgmii_rxd[1].ddr_ireg0                    |ddr_ireg_26                            |     1|
+|237   |      \xil.xil0                                |unisim_iddr_reg_102                    |     1|
+|238   |    \rgmii_rxd[2].ddr_ireg0                    |ddr_ireg_27                            |     1|
+|239   |      \xil.xil0                                |unisim_iddr_reg_101                    |     1|
+|240   |    \rgmii_rxd[3].ddr_ireg0                    |ddr_ireg_28                            |     1|
+|241   |      \xil.xil0                                |unisim_iddr_reg                        |     1|
+|242   |    rgmii_tx_ctl                               |ddr_oreg_29                            |     1|
+|243   |      \xil.xil0                                |unisim_oddr_reg_100                    |     1|
+|244   |    \rgmii_txd[0].ddr_oreg0                    |ddr_oreg_30                            |     1|
+|245   |      \xil.xil0                                |unisim_oddr_reg_99                     |     1|
+|246   |    \rgmii_txd[1].ddr_oreg0                    |ddr_oreg_31                            |     1|
+|247   |      \xil.xil0                                |unisim_oddr_reg_98                     |     1|
+|248   |    \rgmii_txd[2].ddr_oreg0                    |ddr_oreg_32                            |     1|
+|249   |      \xil.xil0                                |unisim_oddr_reg_97                     |     1|
+|250   |    \rgmii_txd[3].ddr_oreg0                    |ddr_oreg_33                            |     1|
+|251   |      \xil.xil0                                |unisim_oddr_reg                        |     1|
+|252   |    syncreg_delay_c_sel                        |syncreg                                |    14|
+|253   |      \sync0.syncreg.syncregs[1].dff           |grdff_95                               |     1|
+|254   |      \sync0.syncreg.syncregs[2].dff           |grdff_96                               |     1|
+|255   |    syncreg_delay_sel                          |syncreg_34                             |    19|
+|256   |      \sync0.syncreg.syncregs[1].dff           |grdff_93                               |     1|
+|257   |      \sync0.syncreg.syncregs[2].dff           |grdff_94                               |     1|
+|258   |    \syncreg_q1_delay[0].syncreg0              |syncreg_35                             |     2|
+|259   |      \sync0.syncreg.syncregs[1].dff           |grdff_91                               |     1|
+|260   |      \sync0.syncreg.syncregs[2].dff           |grdff_92                               |     1|
+|261   |    \syncreg_q1_delay[1].syncreg0              |syncreg_36                             |     8|
+|262   |      \sync0.syncreg.syncregs[1].dff           |grdff_89                               |     1|
+|263   |      \sync0.syncreg.syncregs[2].dff           |grdff_90                               |     1|
+|264   |    syncreg_q1_sel                             |syncreg_37                             |     2|
+|265   |      \sync0.syncreg.syncregs[1].dff           |grdff_87                               |     1|
+|266   |      \sync0.syncreg.syncregs[2].dff           |grdff_88                               |     1|
+|267   |    \syncreg_q2_delay[0].syncreg1              |syncreg_38                             |     2|
+|268   |      \sync0.syncreg.syncregs[1].dff           |grdff_85                               |     1|
+|269   |      \sync0.syncreg.syncregs[2].dff           |grdff_86                               |     1|
+|270   |    \syncreg_q2_delay[1].syncreg1              |syncreg_39                             |    10|
+|271   |      \sync0.syncreg.syncregs[1].dff           |grdff_83                               |     1|
+|272   |      \sync0.syncreg.syncregs[2].dff           |grdff_84                               |     1|
+|273   |    \syncreg_status[0].syncreg3                |syncreg_40                             |     2|
+|274   |      \sync0.syncreg.syncregs[1].dff           |grdff_81                               |     1|
+|275   |      \sync0.syncreg.syncregs[2].dff           |grdff_82                               |     1|
+|276   |    \syncreg_status[10].syncreg3               |syncreg_41                             |     3|
+|277   |      \sync0.syncreg.syncregs[1].dff           |grdff_79                               |     1|
+|278   |      \sync0.syncreg.syncregs[2].dff           |grdff_80                               |     1|
+|279   |    \syncreg_status[13].syncreg3               |syncreg_42                             |     3|
+|280   |      \sync0.syncreg.syncregs[1].dff           |grdff_77                               |     1|
+|281   |      \sync0.syncreg.syncregs[2].dff           |grdff_78                               |     1|
+|282   |    \syncreg_status[1].syncreg3                |syncreg_43                             |     2|
+|283   |      \sync0.syncreg.syncregs[1].dff           |grdff_75                               |     1|
+|284   |      \sync0.syncreg.syncregs[2].dff           |grdff_76                               |     1|
+|285   |    \syncreg_status[2].syncreg3                |syncreg_44                             |     2|
+|286   |      \sync0.syncreg.syncregs[1].dff           |grdff_73                               |     1|
+|287   |      \sync0.syncreg.syncregs[2].dff           |grdff_74                               |     1|
+|288   |    \syncreg_status[3].syncreg3                |syncreg_45                             |     2|
+|289   |      \sync0.syncreg.syncregs[1].dff           |grdff_71                               |     1|
+|290   |      \sync0.syncreg.syncregs[2].dff           |grdff_72                               |     1|
+|291   |    \syncreg_status[4].syncreg3                |syncreg_46                             |     2|
+|292   |      \sync0.syncreg.syncregs[1].dff           |grdff_69                               |     1|
+|293   |      \sync0.syncreg.syncregs[2].dff           |grdff_70                               |     1|
+|294   |    \syncreg_status[5].syncreg3                |syncreg_47                             |     2|
+|295   |      \sync0.syncreg.syncregs[1].dff           |grdff_67                               |     1|
+|296   |      \sync0.syncreg.syncregs[2].dff           |grdff_68                               |     1|
+|297   |    \syncreg_status[6].syncreg3                |syncreg_48                             |     2|
+|298   |      \sync0.syncreg.syncregs[1].dff           |grdff_65                               |     1|
+|299   |      \sync0.syncreg.syncregs[2].dff           |grdff_66                               |     1|
+|300   |    \syncreg_status[7].syncreg3                |syncreg_49                             |     2|
+|301   |      \sync0.syncreg.syncregs[1].dff           |grdff_63                               |     1|
+|302   |      \sync0.syncreg.syncregs[2].dff           |grdff_64                               |     1|
+|303   |    \syncreg_status[8].syncreg3                |syncreg_50                             |     2|
+|304   |      \sync0.syncreg.syncregs[1].dff           |grdff_61                               |     1|
+|305   |      \sync0.syncreg.syncregs[2].dff           |grdff_62                               |     1|
+|306   |    \syncreg_status[9].syncreg3                |syncreg_51                             |     3|
+|307   |      \sync0.syncreg.syncregs[1].dff           |grdff                                  |     1|
+|308   |      \sync0.syncreg.syncregs[2].dff           |grdff_60                               |     1|
+|309   |    \useclkmux0.clkbuf0                        |techbuf                                |     1|
+|310   |      \xil.xil0                                |clkbuf_xilinx_59                       |     1|
+|311   |    \useclkmux0.clkbuf01                       |techbuf_52                             |     1|
+|312   |      \xil.xil0                                |clkbuf_xilinx                          |     1|
+|313   |    \useclkmux0.tecclkmux.clkmux1000           |clkmux                                 |     1|
+|314   |      \tec.xil.buf                             |clkmux_unisim_58                       |     1|
+|315   |    \useclkmux0.tecclkmux.clkmux1000d          |clkmux_53                              |     1|
+|316   |      \tec.xil.buf                             |clkmux_unisim_57                       |     1|
+|317   |    \useclkmux0.tecclkmux.clkmux10_100         |clkmux_54                              |     1|
+|318   |      \tec.xil.buf                             |clkmux_unisim_56                       |     1|
+|319   |    \useclkmux0.tecclkmux.clkmux10_100d        |clkmux_55                              |     1|
+|320   |      \tec.xil.buf                             |clkmux_unisim                          |     1|
+|321   |  \gpio0.gpb_pads[1].gpb_pad                   |inpad__parameterized1                  |     1|
+|322   |    \xcv.x0                                    |unisim_inpad__parameterized1_24        |     1|
+|323   |  \gpio0.gpb_pads[2].gpb_pad                   |inpad__parameterized1_5                |     1|
+|324   |    \xcv.x0                                    |unisim_inpad__parameterized1_23        |     1|
+|325   |  \gpio0.gpb_pads[3].gpb_pad                   |inpad__parameterized1_6                |     1|
+|326   |    \xcv.x0                                    |unisim_inpad__parameterized1_22        |     1|
+|327   |  \gpio0.gpled_pads[0].gpled_pad               |outpad_7                               |     1|
+|328   |    \xcv.x0                                    |unisim_outpad_21                       |     1|
+|329   |  \gpio0.gpled_pads[1].gpled_pad               |outpad_8                               |     1|
+|330   |    \xcv.x0                                    |unisim_outpad_20                       |     1|
+|331   |  \gpio0.gpled_pads[2].gpled_pad               |outpad_9                               |     1|
+|332   |    \xcv.x0                                    |unisim_outpad_19                       |     1|
+|333   |  \gpio0.gpled_pads[3].gpled_pad               |outpad_10                              |     1|
+|334   |    \xcv.x0                                    |unisim_outpad                          |     1|
+|335   |  \gpio0.gpsw_pads[0].gpsw_pad                 |inpad__parameterized1_11               |     1|
+|336   |    \xcv.x0                                    |unisim_inpad__parameterized1_18        |     1|
+|337   |  \gpio0.gpsw_pads[1].gpsw_pad                 |inpad__parameterized1_12               |     1|
+|338   |    \xcv.x0                                    |unisim_inpad__parameterized1_17        |     1|
+|339   |  \gpio0.gpsw_pads[2].gpsw_pad                 |inpad__parameterized1_13               |     1|
+|340   |    \xcv.x0                                    |unisim_inpad__parameterized1_16        |     1|
+|341   |  \mig_ahb_gen.ddrc                            |ahb2axi_mig3_arty_a7                   |  2295|
+|342   |    bridge                                     |ahb2axi4b                              |  1674|
+|343   |      ahb2axibx                                |ahb2axib                               |  1648|
+|344   |        wbuffer                                |syncram_2p__parameterized11            |   262|
+|345   |          \inf.x0                              |generic_syncram_2p__parameterized3     |   262|
+|346   |  \prom_gen.rom128.brom                        |ahbrom128                              |   171|
+|347   |  rst1                                         |rstgen                                 |    14|
+|348   |  rst_pad                                      |inpad_14                               |     2|
+|349   |    \xcv.x0                                    |unisim_inpad                           |     2|
+|350   |  sw4_pad                                      |inpad__parameterized1_15               |     1|
+|351   |    \xcv.x0                                    |unisim_inpad__parameterized1           |     1|
 +------+-----------------------------------------------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:07:38 ; elapsed = 00:07:53 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 2630 ; free virtual = 38476
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:37 ; elapsed = 00:08:52 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 603 ; free virtual = 34123
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 19287 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:07:15 ; elapsed = 00:07:39 . Memory (MB): peak = 4246.227 ; gain = 2326.582 ; free physical = 6444 ; free virtual = 42291
-Synthesis Optimization Complete : Time (s): cpu = 00:07:39 ; elapsed = 00:07:57 . Memory (MB): peak = 4246.227 ; gain = 2602.082 ; free physical = 6468 ; free virtual = 42290
+Synthesis finished with 0 errors, 0 critical warnings and 19286 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:12 ; elapsed = 00:08:36 . Memory (MB): peak = 4246.164 ; gain = 2325.551 ; free physical = 4272 ; free virtual = 37901
+Synthesis Optimization Complete : Time (s): cpu = 00:08:37 ; elapsed = 00:08:55 . Memory (MB): peak = 4246.164 ; gain = 2602.051 ; free physical = 4295 ; free virtual = 37900
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2575 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2574 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
@@ -8393,7 +8311,7 @@ Resolution: The tool has removed redundant IBUF. To resolve this warning, check 
 WARNING: [Opt 31-35] Removing redundant IBUF, eth0.eth_block.erxdv_pad/xcv.x0/ttl0.ip, from the path connected to top-level port: eth_rxctl 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4290.328 ; gain = 0.000 ; free physical = 6429 ; free virtual = 42251
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4290.266 ; gain = 0.000 ; free physical = 4036 ; free virtual = 37711
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 22 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
@@ -8402,13 +8320,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S36_S36 => RAMB36E1: 11 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-1118 Infos, 674 Warnings, 9 Critical Warnings and 0 Errors encountered.
+1110 Infos, 677 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:07:48 ; elapsed = 00:08:06 . Memory (MB): peak = 4290.328 ; gain = 2905.016 ; free physical = 6653 ; free virtual = 42475
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4290.328 ; gain = 0.000 ; free physical = 6653 ; free virtual = 42475
+synth_design: Time (s): cpu = 00:08:46 ; elapsed = 00:09:04 . Memory (MB): peak = 4290.266 ; gain = 2905.953 ; free physical = 4200 ; free virtual = 37884
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4290.266 ; gain = 0.000 ; free physical = 4190 ; free virtual = 37875
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/noelvmp.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4314.340 ; gain = 24.012 ; free physical = 6652 ; free virtual = 42484
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4314.277 ; gain = 24.012 ; free physical = 4074 ; free virtual = 37841
 INFO: [runtcl-4] Executing : report_utilization -file noelvmp_utilization_synth.rpt -pb noelvmp_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 20 23:38:30 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 24 01:53:55 2023...

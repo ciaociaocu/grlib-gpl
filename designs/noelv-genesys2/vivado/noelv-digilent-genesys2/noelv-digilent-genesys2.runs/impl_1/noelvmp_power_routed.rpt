@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Fri Jan 20 23:44:03 2023
+| Date             : Tue Jan 24 02:00:04 2023
 | Host             : coding running 64-bit Ubuntu 20.04.5 LTS
 | Command          : report_power -file noelvmp_power_routed.rpt -pb noelvmp_power_summary_routed.pb -rpx noelvmp_power_routed.rpx
 | Design           : noelvmp
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.401        |
+| Total On-Chip Power (W)  | 1.404        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.228        |
+| Dynamic (W)              | 1.231        |
 | Device Static (W)        | 0.173        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 82.5         |
@@ -53,25 +53,25 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.068 |       33 |       --- |             --- |
-| Slice Logic              |     0.093 |    92940 |       --- |             --- |
-|   LUT as Logic           |     0.089 |    55329 |    203800 |           27.15 |
-|   Register               |     0.002 |    25217 |    407600 |            6.19 |
-|   CARRY4                 |     0.002 |     1479 |     50950 |            2.90 |
+| Slice Logic              |     0.093 |    93294 |       --- |             --- |
+|   LUT as Logic           |     0.089 |    55422 |    203800 |           27.19 |
+|   Register               |     0.002 |    25386 |    407600 |            6.23 |
+|   CARRY4                 |     0.002 |     1480 |     50950 |            2.90 |
 |   LUT as Distributed RAM |     0.001 |      832 |     64000 |            1.30 |
-|   F7/F8 Muxes            |    <0.001 |     1147 |    203800 |            0.56 |
+|   F7/F8 Muxes            |    <0.001 |     1145 |    203800 |            0.56 |
 |   BUFG                   |    <0.001 |        4 |        32 |           12.50 |
 |   LUT as Shift Register  |    <0.001 |      148 |     64000 |            0.23 |
-|   Others                 |     0.000 |      527 |       --- |             --- |
-| Signals                  |     0.123 |    79997 |       --- |             --- |
+|   Others                 |     0.000 |      592 |       --- |             --- |
+| Signals                  |     0.122 |    80300 |       --- |             --- |
 | Block RAM                |     0.012 |       39 |       445 |            8.76 |
 | MMCM                     |     0.088 |        1 |        10 |           10.00 |
 | PLL                      |     0.323 |        3 |        10 |           30.00 |
 | DSPs                     |     0.005 |       18 |       840 |            2.14 |
-| I/O                      |     0.323 |       84 |       500 |           16.80 |
+| I/O                      |     0.327 |       85 |       500 |           17.00 |
 | PHASER                   |     0.188 |       20 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.173 |          |           |                 |
-| Total                    |     1.401 |          |           |                 |
+| Total                    |     1.404 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -82,11 +82,11 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.445 |       0.369 |      0.076 |
-| Vccaux    |       1.800 |     0.333 |       0.305 |      0.029 |
+| Vccaux    |       1.800 |     0.334 |       0.305 |      0.029 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
-| Vcco15    |       1.500 |     0.133 |       0.132 |      0.001 |
+| Vcco15    |       1.500 |     0.134 |       0.133 |      0.001 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       2.000 |     0.054 |       0.054 |      0.000 |
@@ -146,6 +146,7 @@ Table of Contents
 | clkfbout_clk_100MHz                                                                                                                                       | clocker100MHz/inst/clkfbout_clk_100MHz                                                                                                                                                                 |             3.3 |
 | clkm_clockers                                                                                                                                             | clockers0/clkm_clockers                                                                                                                                                                                |            25.0 |
 | eth_rx_clk                                                                                                                                                | eth_rxck                                                                                                                                                                                               |             8.0 |
+| eth_tx_clk                                                                                                                                                | eth0.eth_block.etxc_pad/xcv.x0/eth_txck                                                                                                                                                                |             8.0 |
 | freq_refclk                                                                                                                                               | mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/freq_refclk                                                                                                                                  |             1.5 |
 | iserdes_clkdiv                                                                                                                                            | mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |            12.0 |
 | iserdes_clkdiv_1                                                                                                                                          | mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv       |            12.0 |
@@ -180,30 +181,33 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| noelvmp                   |     1.228 |
+| noelvmp                   |     1.231 |
 |   clocker100MHz           |     0.112 |
 |     inst                  |     0.112 |
 |   clockers0               |     0.103 |
-|   core0                   |     0.231 |
+|   core0                   |     0.230 |
 |     ahbjtaggen0.ahbjtag0  |     0.003 |
 |       newcom.jtagcom0     |     0.001 |
 |       tap0                |     0.002 |
 |     eth0.e1               |     0.017 |
 |       m100.u0             |     0.017 |
-|     noelv0                |     0.210 |
+|     noelv0                |     0.208 |
 |       ac0                 |     0.005 |
 |       ahbtrace0           |     0.001 |
-|       cpuloop[0].core     |     0.198 |
+|       cpuloop[0].core     |     0.196 |
 |       dm0                 |     0.002 |
 |       gpt0                |     0.001 |
+|   eth0.eth_block.etxc_pad |     0.004 |
+|     xcv.x0                |     0.004 |
 |   eth0.eth_block.etxd_pad |     0.001 |
-|   mig_ahb_gen.ddrc        |     0.777 |
+|   eth0.eth_block.rgmii0   |     0.002 |
+|   mig_ahb_gen.ddrc        |     0.776 |
 |     MCB_CDC               |     0.008 |
 |       inst                |     0.008 |
-|     MCB_inst              |     0.764 |
+|     MCB_inst              |     0.763 |
 |       u_mig_mig           |     0.761 |
 |     bridge                |     0.005 |
-|       ahb2axibx           |     0.005 |
+|       ahb2axibx           |     0.004 |
 +---------------------------+-----------+
 
 

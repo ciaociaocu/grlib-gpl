@@ -104,13 +104,13 @@ architecture behav of testbench is
   signal gnd                : std_ulogic;
 
   signal eref_clk   : std_ulogic;
-  signal etx_clk    : std_ulogic;
-  signal erx_clk    : std_ulogic;
-  signal erxdt      : std_logic_vector(3 downto 0);
-  signal erx_dv     : std_ulogic;
-  signal erx_er     : std_ulogic;
-  signal erx_col    : std_ulogic;
-  signal erx_crs    : std_ulogic;
+  signal etx_clk    : std_ulogic := '0';
+  signal erx_clk    : std_ulogic := '0';
+  signal erxdt      : std_logic_vector(3 downto 0) := "0000";
+  signal erx_dv     : std_ulogic := '1';
+  signal erx_er     : std_ulogic := '0';
+  signal erx_col    : std_ulogic := '0';
+  signal erx_crs    : std_ulogic := '0';
   signal etxdt      : std_logic_vector(3 downto 0);
   signal etx_en     : std_ulogic;
   signal etx_er     : std_ulogic;
@@ -132,6 +132,11 @@ begin
   -- dsui.enable
   sw(0)         <= '1';
 
+  -- eth simulation
+  etx_clk <= not etx_clk after ct * 4 ns;
+  erx_clk <= not erx_clk after ct * 4 ns;
+  
+  
   d3 : entity work.noelvmp
     generic map (fabtech, memtech, padtech, clktech, disas)
     port map (

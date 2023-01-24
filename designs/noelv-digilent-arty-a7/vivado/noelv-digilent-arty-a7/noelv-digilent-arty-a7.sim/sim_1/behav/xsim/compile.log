@@ -1,0 +1,1095 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/mig_interface_model.v" into library gaisler
+INFO: [VRFC 10-311] analyzing module mig_interface_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_infrastructure
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_fi_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_row_col
+WARNING: [VRFC 10-2654] begin/end is required for generate-for in this mode of verilog [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:252]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_col_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_round_robin_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_addr_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_w_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_w_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_r_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg_bank
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_a_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_memc_ui_top_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mem_intfc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_edge_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_4lanes
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_of_pre_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_skip_calib_tap
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_if_post_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_cc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_meta
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_tap_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_prbs_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_lim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_group_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_oclkdelay_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl_off_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrcal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_po_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_calib_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_prbs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/mig_mig_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_mig
+INFO: [VRFC 10-2458] undeclared symbol dbg_sel_po_incdec, assumed default net type wire [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/mig_mig_sim.v:1223]
+INFO: [VRFC 10-2458] undeclared symbol dbg_po_f_inc, assumed default net type wire [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/mig_mig_sim.v:1227]
+INFO: [VRFC 10-2458] undeclared symbol dbg_po_f_stg23_sel, assumed default net type wire [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/mig_mig_sim.v:1228]
+INFO: [VRFC 10-2458] undeclared symbol dbg_po_f_dec, assumed default net type wire [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/mig_mig_sim.v:1229]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/rtl/mig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig_cdc/sim/mig_cdc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_cdc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.sim/sim_1/behav/xsim/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/stdlib/version.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/stdlib/config_types.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/grlib_config.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/stdlib/stdlib.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/stdlib/stdio.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/stdlib/testlib.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/util/util.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'report_version'
+INFO: [VRFC 10-3107] analyzing entity 'report_design'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/sparc/sparc.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/sparc/sparc_disas.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/sparc/cpu_disas.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'cpu_disas'
+INFO: [VRFC 10-3107] analyzing entity 'fpu_disas'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/riscv/riscv.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/riscv/riscv_disas.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/riscv/cpu_disas.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'cpu_disas'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'cpu_disas' [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/riscv/cpu_disas.vhd:38]
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/modgen/multlib.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/modgen/leaves.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'FLIPFLOP'
+INFO: [VRFC 10-3107] analyzing entity 'PP_LOW'
+INFO: [VRFC 10-3107] analyzing entity 'PP_MIDDLE'
+INFO: [VRFC 10-3107] analyzing entity 'PP_HIGH'
+INFO: [VRFC 10-3107] analyzing entity 'R_GATE'
+INFO: [VRFC 10-3107] analyzing entity 'DECODER'
+INFO: [VRFC 10-3107] analyzing entity 'FULL_ADDER'
+INFO: [VRFC 10-3107] analyzing entity 'HALF_ADDER'
+INFO: [VRFC 10-3107] analyzing entity 'INVBLOCK'
+INFO: [VRFC 10-3107] analyzing entity 'XXOR1'
+INFO: [VRFC 10-3107] analyzing entity 'BLOCK0'
+INFO: [VRFC 10-3107] analyzing entity 'BLOCK1'
+INFO: [VRFC 10-3107] analyzing entity 'BLOCK2'
+INFO: [VRFC 10-3107] analyzing entity 'BLOCK1A'
+INFO: [VRFC 10-3107] analyzing entity 'BLOCK2A'
+INFO: [VRFC 10-3107] analyzing entity 'PRESTAGE_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_0_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_1_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_2_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_3_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_4_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_5_64'
+INFO: [VRFC 10-3107] analyzing entity 'XORSTAGE_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLCTREE_64'
+INFO: [VRFC 10-3107] analyzing entity 'DBLCADDER_64_64'
+INFO: [VRFC 10-3107] analyzing entity 'XXOR2'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_0_32'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_1_32'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_2_32'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_3_32'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_4_32'
+INFO: [VRFC 10-3107] analyzing entity 'XORSTAGE_32'
+INFO: [VRFC 10-3107] analyzing entity 'PRESTAGE_32'
+INFO: [VRFC 10-3107] analyzing entity 'DBLCTREE_32'
+INFO: [VRFC 10-3107] analyzing entity 'DBLCADDER_32_32'
+INFO: [VRFC 10-3107] analyzing entity 'PRESTAGE_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_0_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_1_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_2_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_3_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_4_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_5_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLC_6_128'
+INFO: [VRFC 10-3107] analyzing entity 'XORSTAGE_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLCTREE_128'
+INFO: [VRFC 10-3107] analyzing entity 'DBLCADDER_128_128'
+INFO: [VRFC 10-3107] analyzing entity 'BOOTHCODER_18_18'
+INFO: [VRFC 10-3107] analyzing entity 'WALLACE_18_18'
+INFO: [VRFC 10-3107] analyzing entity 'MULTIPLIER_18_18'
+INFO: [VRFC 10-3107] analyzing entity 'BOOTHCODER_34_10'
+INFO: [VRFC 10-3107] analyzing entity 'WALLACE_34_10'
+INFO: [VRFC 10-3107] analyzing entity 'MULTIPLIER_34_10'
+INFO: [VRFC 10-3107] analyzing entity 'MUL_33_9'
+INFO: [VRFC 10-3107] analyzing entity 'BOOTHCODER_34_18'
+INFO: [VRFC 10-3107] analyzing entity 'WALLACE_34_18'
+INFO: [VRFC 10-3107] analyzing entity 'MULTIPLIER_34_18'
+INFO: [VRFC 10-3107] analyzing entity 'MUL_33_17'
+INFO: [VRFC 10-3107] analyzing entity 'BOOTHCODER_34_34'
+INFO: [VRFC 10-3107] analyzing entity 'WALLACE_34_34'
+INFO: [VRFC 10-3107] analyzing entity 'MULTIPLIER_34_34'
+INFO: [VRFC 10-3107] analyzing entity 'MUL_33_33'
+INFO: [VRFC 10-3107] analyzing entity 'ADD32'
+INFO: [VRFC 10-3107] analyzing entity 'MUL_17_17'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/amba.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/devices.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/defmst.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'ahbdefmst'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/apbctrl.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'apbctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/apbctrlx.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'apbctrlx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/apbctrlsp.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'apbctrlsp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/apbctrldp.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'apbctrldp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/apbctrl3p.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'apbctrl3p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/apbctrl4p.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'apbctrl4p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/ahbctrl.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'ahbctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/dma2ahb_pkg.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/dma2ahb.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA2AHB'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/ahbmst.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'ahbmst'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/ahblitm2ahbm.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'ahblitm2ahbm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/dma2ahb_tp.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/amba/amba_tp.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/dftlib/dftlib.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/dftlib/trstmux.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'trstmux'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/dftlib/synciotest.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'synciotest'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/generic_bm_pkg.vhd" into library grlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/ahb_be.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'ahb_be'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/axi4_be.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'axi4_be'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/bmahbmst.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'bmahbmst'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/bm_fre.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'bm_fr_end'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/bm_me_rc.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'bm_me_rc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/bm_me_wc.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'bm_me_wc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/fifo_control_rc.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_control_rc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/fifo_control_wc.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_control_wc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/generic_bm_ahb.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_bm_ahb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/grlib/generic_bm/generic_bm_axi.vhd" into library grlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_bm_axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/gencomp/gencomp.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/gencomp/netcomp.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/alltech/allclkgen.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/alltech/allddr.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/alltech/allmem.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/alltech/allmul.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/alltech/allpads.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/alltech/alltap.vhd" into library techmap
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/memory_inferred.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'generic_syncram'
+INFO: [VRFC 10-3107] analyzing entity 'generic_syncram_reg'
+INFO: [VRFC 10-3107] analyzing entity 'generic_syncram_2p'
+INFO: [VRFC 10-3107] analyzing entity 'generic_syncram_2p_reg'
+INFO: [VRFC 10-3107] analyzing entity 'generic_regfile_3p'
+INFO: [VRFC 10-3107] analyzing entity 'generic_regfile_4p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/ddr_inferred.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'gen_iddr_reg'
+INFO: [VRFC 10-3107] analyzing entity 'gen_oddr_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/mul_inferred.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'gen_mul_61x61'
+INFO: [VRFC 10-3107] analyzing entity 'gen_mult_pipe'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/ddr_phy_inferred.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'generic_ddr_phy_wo_pads'
+INFO: [VRFC 10-3107] analyzing entity 'generic_ddr2_phy_wo_pads'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/ddrphy_datapath.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'ddrphy_datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/fifo_inferred.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'generic_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/sim_pll.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'sim_pll'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/inferred/lpddr2_phy_inferred.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkswitch'
+INFO: [VRFC 10-3107] analyzing entity 'generic_lpddr2phy_wo_pads'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/memory_kintex7.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'kintex7_syncram_dp'
+INFO: [VRFC 10-3107] analyzing entity 'kintex7_syncram_2p'
+INFO: [VRFC 10-3107] analyzing entity 'kintex7_syncram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/memory_ultrascale.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'ultrascale_syncram'
+INFO: [VRFC 10-3107] analyzing entity 'ultrascale_syncram_dp'
+INFO: [VRFC 10-3107] analyzing entity 'ultrascale_syncram_2p'
+INFO: [VRFC 10-3107] analyzing entity 'ultrascale_syncram64'
+INFO: [VRFC 10-3107] analyzing entity 'ultrascale_syncram128'
+INFO: [VRFC 10-3107] analyzing entity 'ultrascale_syncram128bw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/memory_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram_dp'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram_2p'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram64'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram128'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram128bw'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_syncram_be'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/buffer_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkbuf_xilinx'
+INFO: [VRFC 10-3107] analyzing entity 'clkmux_xilinx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/pads_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'unisim_inpad'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_iopad'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_outpad'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_toutpad'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_skew_outpad'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_clkpad'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_inpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_clkpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'virtex4_inpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'virtex4_clkpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_iopad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_outpad_ds'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/clkgen_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkgen_virtex5'
+INFO: [VRFC 10-3107] analyzing entity 'clkgen_virtex7'
+INFO: [VRFC 10-3107] analyzing entity 'clkgen_kintexu'
+INFO: [VRFC 10-3107] analyzing entity 'clkgen_virtexup'
+INFO: [VRFC 10-3107] analyzing entity 'clkand_unisim'
+INFO: [VRFC 10-3107] analyzing entity 'clkmux_unisim'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/tap_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'virtex_tap'
+INFO: [VRFC 10-3107] analyzing entity 'virtex2_tap'
+INFO: [VRFC 10-3107] analyzing entity 'spartan3_tap'
+INFO: [VRFC 10-3107] analyzing entity 'virtex4_tap'
+INFO: [VRFC 10-3107] analyzing entity 'virtex5_tap'
+INFO: [VRFC 10-3107] analyzing entity 'virtex6_tap'
+INFO: [VRFC 10-3107] analyzing entity 'spartan6_tap'
+INFO: [VRFC 10-3107] analyzing entity 'virtex7_tap'
+INFO: [VRFC 10-3107] analyzing entity 'kintex7_tap'
+INFO: [VRFC 10-3107] analyzing entity 'kintexu_tap'
+INFO: [VRFC 10-3107] analyzing entity 'virtexup_tap'
+INFO: [VRFC 10-3107] analyzing entity 'artix7_tap'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/ddr_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'unisim_iddr_reg'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_iddre1_reg'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_iddre2_reg'
+INFO: [VRFC 10-3107] analyzing entity 'unisim_oddr_reg'
+INFO: [VRFC 10-3107] analyzing entity 'oddrv2'
+INFO: [VRFC 10-3107] analyzing entity 'oddrc3e'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/ddr_phy_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'virtex4_ddr_phy'
+INFO: [VRFC 10-3107] analyzing entity 'virtex2_ddr_phy'
+INFO: [VRFC 10-3107] analyzing entity 'spartan3e_ddr_phy'
+INFO: [VRFC 10-3107] analyzing entity 'virtex5_ddr2_phy_wo_pads'
+INFO: [VRFC 10-3107] analyzing entity 'spartan3a_ddr2_phy'
+INFO: [VRFC 10-3107] analyzing entity 'spartan6_ddr2_phy_wo_pads'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/sysmon_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'sysmon_virtex5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/mul_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'virtex4_mul_61x61'
+INFO: [VRFC 10-3107] analyzing entity 'virtex6_mul_61x61'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/unisim/spictrl_unisim.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'spictrl_unisim'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/techbuf.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'techbuf'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/clkgen.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkgen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/clkmux.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkmux'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/clkinv.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkinv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/clkand.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkand'
+INFO: [VRFC 10-3107] analyzing entity 'clkrand'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/grgates.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'grmux2'
+INFO: [VRFC 10-3107] analyzing entity 'grmux2v'
+INFO: [VRFC 10-3107] analyzing entity 'grdff'
+INFO: [VRFC 10-3107] analyzing entity 'gror2'
+INFO: [VRFC 10-3107] analyzing entity 'grand12'
+INFO: [VRFC 10-3107] analyzing entity 'grnand2'
+INFO: [VRFC 10-3107] analyzing entity 'grand2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/ddr_ireg.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'ddr_ireg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/ddr_oreg.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'ddr_oreg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/clkpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkpad'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/clkpad_ds.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'clkpad_ds'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/inpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'inpad'
+INFO: [VRFC 10-3107] analyzing entity 'inpadv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/inpad_ds.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'inpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'inpad_dsv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/iodpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'iodpad'
+INFO: [VRFC 10-3107] analyzing entity 'iodpadv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/iopad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'iopad'
+INFO: [VRFC 10-3107] analyzing entity 'iopadv'
+INFO: [VRFC 10-3107] analyzing entity 'iopadvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/iopad_ds.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'iopad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'iopad_dsv'
+INFO: [VRFC 10-3107] analyzing entity 'iopad_dsvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/lvds_combo.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'lvds_combo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/odpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'odpad'
+INFO: [VRFC 10-3107] analyzing entity 'odpadv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'outpad'
+INFO: [VRFC 10-3107] analyzing entity 'outpadv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad_ds.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'outpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'outpad_dsv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/toutpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'toutpad'
+INFO: [VRFC 10-3107] analyzing entity 'toutpadv'
+INFO: [VRFC 10-3107] analyzing entity 'toutpadvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/toutpad_ds.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'toutpad_ds'
+INFO: [VRFC 10-3107] analyzing entity 'toutpad_dsv'
+INFO: [VRFC 10-3107] analyzing entity 'toutpad_dsvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/skew_outpad.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'skew_outpad'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/ddrphy.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'ddrphy'
+INFO: [VRFC 10-3107] analyzing entity 'ddrphy_wo_pads'
+INFO: [VRFC 10-3107] analyzing entity 'ddrpads'
+INFO: [VRFC 10-3107] analyzing entity 'ddr2pads'
+INFO: [VRFC 10-3107] analyzing entity 'ddr2phy'
+INFO: [VRFC 10-3107] analyzing entity 'ddr2phy_wo_pads'
+INFO: [VRFC 10-3107] analyzing entity 'lpddr2phy_wo_pads'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram64.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram_2p.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram_2p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram_dp.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram_dp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncfifo_2p.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncfifo_2p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/regfile_3p.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'regfile_3p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/tap.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'tap'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/nandtree.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'nandtree'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/grlfpw_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'grlfpw_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/grfpw_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'grfpw_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/leon3_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'leon3_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/leon4_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'leon4_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/mul_61x61.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'mul_61x61'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/cpu_disas_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'cpu_disas_net'
+INFO: [VRFC 10-3107] analyzing entity 'fpu_disas_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/ringosc.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'ringosc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/grpci2_phy_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'grpci2_phy_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/system_monitor.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'system_monitor'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/inpad_ddr.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'inpad_ddr'
+INFO: [VRFC 10-3107] analyzing entity 'inpad_ddrv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/outpad_ddr.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'outpad_ddr'
+INFO: [VRFC 10-3107] analyzing entity 'outpad_ddrv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/iopad_ddr.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'iopad_ddr'
+INFO: [VRFC 10-3107] analyzing entity 'iopad_ddrv'
+INFO: [VRFC 10-3107] analyzing entity 'iopad_ddrvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram128bw.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram128bw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram256bw.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram256bw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram128.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram128'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram156bw.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram156bw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/techmult.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'techmult'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/spictrl_net.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'spictrl_net'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/scanreg.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'scanregi'
+INFO: [VRFC 10-3107] analyzing entity 'scanrego'
+INFO: [VRFC 10-3107] analyzing entity 'scanregto'
+INFO: [VRFC 10-3107] analyzing entity 'scanregio'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncrambw.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncrambw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncram_2pbw.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncram_2pbw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/sdram_phy.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'sdram_phy'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/syncreg.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'syncreg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/serdes.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'serdes'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/iopad_tm.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'iopad_tm'
+INFO: [VRFC 10-3107] analyzing entity 'iopad_tmvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/toutpad_tm.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'toutpad_tm'
+INFO: [VRFC 10-3107] analyzing entity 'toutpad_tmvv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/memrwcol.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'memrwcol'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/techmap/maps/cdcbus.vhd" into library techmap
+INFO: [VRFC 10-3107] analyzing entity 'cdcbus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/comp/ethcomp.vhd" into library eth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/greth_pkg.vhd" into library eth
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/eth_rstgen.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'eth_rstgen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/eth_edcl_ahb_mst.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'eth_edcl_ahb_mst'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/eth_ahb_mst.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'eth_ahb_mst'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/greth_tx.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'greth_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/greth_rx.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'greth_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/core/grethc.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'grethc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/eth/wrapper/greth_gen.vhd" into library eth
+INFO: [VRFC 10-3107] analyzing entity 'greth_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/arith/arith.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/arith/mul32.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mul32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/arith/div32.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'div32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/memctrl/memctrl.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/memctrl/sdctrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sdctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/memctrl/sdctrl64.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sdctrl64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/memctrl/sdmctrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sdmctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/memctrl/srctrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'srctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmuconfig.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmuiface.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/libmmu.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmutlbcam.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmutlbcam'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmulrue.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmulrue'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmulru.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmulru'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmutlb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmutlb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmutw.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmutw'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/srmmu/mmu.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmu'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3/leon3.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3/grfpushwx.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grfpushwx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/tbufmem.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'tbufmem'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/tbufmem_2p.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'tbufmem_2p'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/dsu3x.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dsu3x'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/dsu3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dsu3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/dsu3_mb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dsu3_mb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/libfpu.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/libiu.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/libcache.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/libleon3.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/regfile_3p_l3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'regfile_3p_l3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/mmu_acache.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmu_acache'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/mmu_icache.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmu_icache'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/mmu_dcache.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmu_dcache'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/cachemem.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cachemem'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/mmu_cache.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mmu_cache'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/grfpwx.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grfpwx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/grlfpwx.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grlfpwx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/iu3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'iu3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/proc3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'proc3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/grfpwxsh.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grfpwxsh'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/leon3x.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'leon3x'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/leon3cg.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'leon3cg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/leon3s.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'leon3s'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/leon3sh.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'leon3sh'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/l3stat.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'l3stat'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon3v3/cmvalidbits.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cmvalidbits'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon4/leon4.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/irqmp/irqmp.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'irqmp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/irqmp/irqamp.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'irqamp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/irqmp/irqmp_bmode.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'irqmp_bmode'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/l2cache/pkg/l2cache.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/canfd/canfd.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/axi.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahbm2axi.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbm2axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahbm2axi3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbm2axi3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahbm2axi4.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbm2axi4'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/axinullslv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'axinullslv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axib.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2axib'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axi3b.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2axi3b'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axi4b.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2axi4b'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/axi/ahb2axi_l.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2axi_l'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/misc.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/rstgen.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rstgen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/gptimer.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'gptimer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbdpram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbdpram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbtrace_mmb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbtrace_mmb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbtrace_mb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbtrace_mb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbtrace.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbtrace'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/grgpio.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grgpio'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbstat.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbstat'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/logan.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'logan'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/apbps2.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'apbps2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/charrom_package.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/charrom.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'charrom'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/apbvga.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'apbvga'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/svgactrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'svgactrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/grsysmon.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grsysmon'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/gracectrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'gracectrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/grgpreg.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grgpreg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahb_mst_iface.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb_mst_iface'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/grgprbank.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grgprbank'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/grversion.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grversion'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/apb3cdc.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'apb3cdc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbsmux.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbsmux'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/ahbmmux.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbmmux'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/misc/grtachom.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grtachom'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/net/net.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/uart/uart.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/uart/libdcom.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/uart/apbuart.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'apbuart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/uart/dcom.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dcom'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/uart/dcom_uart.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dcom_uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/uart/ahbuart.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbuart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/sim.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/sram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/sram16.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sram16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/phy.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'phy'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ser_phy.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ser_phy'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ahbrep.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbrep'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/delay_wire.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'delay_wire'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/pwm_check.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'pwm_check'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ramback.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ramback'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/slavecheck_slv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'slavecheck_slv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ddrram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddrram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ddr2ram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr2ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ddr3ram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr3ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/sdrtestmod.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sdrtestmod'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/ahbram_sim.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbram_sim'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/aximem.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'aximem'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/axirep.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'axirep'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/axixmem.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'axixmem'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/sramtestmod.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'sramtestmod'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/uartprint.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'uartprint'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/dfi_phy_sim.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dfi_phy_sim'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/sim/dfi_phy_sim_fr.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dfi_phy_sim_fr'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/jtag.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/libjtagcom.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/jtagcom.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'jtagcom'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/bscanregs.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'bscanregs'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/bscanregsbd.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'bscanregsbd'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/jtagcom2.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'jtagcom2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/ahbjtag.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbjtag'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/ahbjtag_bsd.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbjtag_bsd'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/jtagcomrv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'jtagcomrv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/ahbjtagrv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahbjtagrv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/jtagtst.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/jtag/jtag_rv.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/ethernet_mac.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/greth.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'greth'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/greth_mb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'greth_mb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/greth_gbit.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'greth_gbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/greths.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'greths'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/greth_gbit_mb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'greth_gbit_mb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/greths_mb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'greths_mb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/grethm.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grethm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/grethm_mb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grethm_mb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rgmii'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii_kc705.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rgmii_kc705'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/rgmii_series6.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rgmii_series6'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/comma_detect.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'comma_detect'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/elastic_buffer.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'elastic_buffer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/gmii_to_mii.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'gmii_to_mii'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/greth/adapters/word_aligner.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'word_aligner'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddrpkg.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddrintpkg.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddrphy_wrap.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddrphy_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'ddrphy_wrap_cbd'
+INFO: [VRFC 10-3107] analyzing entity 'ddrphy_wrap_cbd_wo_pads'
+INFO: [VRFC 10-3107] analyzing entity 'ddr2phy_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'ddr2phy_wrap_cbd'
+INFO: [VRFC 10-3107] analyzing entity 'ddr2phy_wrap_cbd_wo_pads'
+INFO: [VRFC 10-3107] analyzing entity 'lpddr2phy_wrap_cbd_wo_pads'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr2spax_ahb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr2spax_ahb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr2spax_ddr.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr2spax_ddr'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr2buf.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr2buf'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr2spax.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr2spax'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr2spa.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr2spa'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr1spax.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr1spax'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddr1spax_ddr.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddr1spax_ddr'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ddrspa.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ddrspa'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2mig_7series_pkg.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2mig_7series.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2mig_7series'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2mig_7series_ddr2_dq16_ad13_ba3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2mig_7series_ddr2_dq16_ad13_ba3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2mig_7series_ddr3_dq16_ad15_ba3.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2mig_7series_ddr3_dq16_ad15_ba3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2mig_7series_cpci_xc7k.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2mig_7series_cpci_xc7k'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2axi_mig_7series.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2axi_mig_7series'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/axi_mig_7series.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'axi_mig_7series'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2avl_async.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2avl_async'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/ddr/ahb2avl_async_be.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'ahb2avl_async_be'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/nand/nandpkg.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2_pkg.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2_apb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grdmac2_apb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/mem2buf.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mem2buf'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/buf2mem.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'buf2mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2_ctrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grdmac2_ctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grdmac2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2_ahb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grdmac2_ahb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2_acc.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grdmac2_acc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/grdmac2/grdmac2_axi.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grdmac2_axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/subsys/subsys.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/subsys/leon_dsu_stat_base.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'leon_dsu_stat_base'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/plic/plic.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/plic/grplic.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grplic'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/plic/plic_encoder.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'plic_encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/plic/plic_gateway.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'plic_gateway'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/plic/plic_target.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'plic_target'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/plic/grplic_ahb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'grplic_ahb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5/leon5.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/leon5int.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/itbufmem5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'itbufmem5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/bht_pap.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'bht_pap'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/btb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'btb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/inst_text.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'inst_text'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/iu5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'iu5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/cctrl5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cctrl5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/cachemem5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cachemem5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/regfile5_ram.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'regfile5_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/regfile5_dff.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'regfile5_dff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/nanofpu.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'nanofpu'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/cpucore5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cpucore5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/tbufmem5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'tbufmem5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/dbgmod5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dbgmod5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/irqmp5.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'irqmp5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/l5stat.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'l5stat'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/leon5v0/leon5sys.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'leon5sys'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/l2c_lite/l2c_lite.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/l2c_lite/l2c_lite_mem.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'l2c_lite_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/l2c_lite/l2c_lite_ctrl.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'l2c_lite_ctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/l2c_lite/l2c_lite_ahb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'l2c_lite_ahb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/l2c_lite/l2c_lite_axi.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'l2c_lite_axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/pkg/noelv_cfg_64.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/pkg/noelv.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/pkg/noelv_cpu_cfg.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/clint/clint.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'clint'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/clint/clint_ahb.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'clint_ahb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/utilnv.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/noelvint.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/nvsupport.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/mmuconfig.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/bhtnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'bhtnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/btbnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'btbnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/btbdmnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'btbdmnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/rasnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rasnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/tbufmemnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'tbufmemnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/fputilnv.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cachememnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cachememnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/mul64.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mul64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/div64.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'div64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/regfile64sramnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'regfile64sramnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/regfile64dffnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'regfile64dffnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/progbuf.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'progbuf'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/alunv.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/rvvi.vhd" into library gaisler
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/iunv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'iunv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/itracenv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'itracenv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cpucorenv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cpucorenv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/rvdmx.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rvdmx'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/rvdm.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'rvdm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/cctrlnv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'cctrlnv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/mulfp.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'mulfp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/core/nanofpunv.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'nanofpunv'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/subsys/noelvcpu.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'noelvcpu'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/subsys/dummy_pnp.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'dummy_pnp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/noelv/subsys/noelvsys.vhd" into library gaisler
+INFO: [VRFC 10-3107] analyzing entity 'noelvsys'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/work/debug/debug.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/work/debug/grtestmod.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'grtestmod'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/work/debug/cpu_disas.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'cpu_disas'
+INFO: [VRFC 10-3107] analyzing entity 'gaisler_cpu_disas'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/axi_mig3_7series.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'axi_mig3_7series'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'ahb2axi_mig3_arty_a7'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/clockers_mig.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'clockers_mig'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/config.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/cfg/config_local.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-generic/rtl/core/rev.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-generic/rtl/core/cfgmap.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-generic/rtl/core/noelvcore.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'noelvcore'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/ahbrom.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'ahbrom'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/ahbrom64.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'ahbrom64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/ahbrom128.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'ahbrom128'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/rtl/noelvmp.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'noelvmp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/tb/testbench.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
