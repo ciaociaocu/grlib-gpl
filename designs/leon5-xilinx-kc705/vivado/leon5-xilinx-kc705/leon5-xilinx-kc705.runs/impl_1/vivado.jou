@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb  1 15:11:44 2023
+# Process ID: 22096
+# Current directory: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1
+# Command line: vivado -log leon5mp.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source leon5mp.tcl -notrace
+# Log file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp.vdi
+# Journal file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source leon5mp.tcl -notrace

@@ -1,0 +1,81 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 15101
+License: Customer
+
+Current time: 	Wed Feb 08 10:55:42 CET 2023
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.15.0-58-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 808 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zhichao
+User home directory: /home/zhichao
+User working directory: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kcu105
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/zhichao/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/zhichao/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/zhichao/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kcu105/vivado.log
+Vivado journal file location: 	/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kcu105/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-15101-coding
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.1
+XILINX_SDK: /opt/Xilinx/SDK/2019.1
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 932 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// by (cl):  Sourcing Tcl script './vivado/leon5mp_vivado.tcl' : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: source ./vivado/leon5mp_vivado.tcl 
+dismissDialog("Sourcing Tcl script './vivado/leon5mp_vivado.tcl'"); // by (cl)
+// Tcl Message: couldn't read file "./vivado/leon5mp_vivado.tcl": no such file or directory 
+// HMemoryUtils.trashcanNow. Engine heap size: 905 MB. GUI used memory: 46 MB. Current time: 2/8/23, 10:55:44 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 908 MB. GUI used memory: 45 MB. Current time: 2/8/23, 12:50:48 PM CET

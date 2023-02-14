@@ -76,7 +76,7 @@ signal button          : std_logic_vector(3 downto 0) := "0000";
 signal genio           : std_logic_vector(59 downto 0);
 signal romsn           : std_logic;
 signal oen             : std_ulogic;
-signal writen          : std_ulogic;
+signal writen          : std_ulogic:= '1';
 signal adv             : std_logic;
 
 signal GND             : std_ulogic := '0';

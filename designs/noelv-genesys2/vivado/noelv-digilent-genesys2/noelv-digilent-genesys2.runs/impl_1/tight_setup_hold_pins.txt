@@ -1,0 +1,31 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|            clkm_clockers |                clk_pll_i |                    mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__10/D|
+|            clkm_clockers |                clk_pll_i |mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/USE_UPSIZER.upsizer_d2/si_register_slice_inst/reset_reg/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__4/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__7/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__2/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__1/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__9/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__6/D|
+|            clkm_clockers |                clk_pll_i |                        mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__5/D|
+|            clkm_clockers |                clk_pll_i |mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/USE_UPSIZER.upsizer_d2/mi_register_slice_inst/reset_reg/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__0/D|
+|            clkm_clockers |                clk_pll_i |                            mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__3/D|
+|            clkm_clockers |                clk_pll_i |                     mig_ahb_gen.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/u_axi_mc/areset_d1_reg_rep__8/D|
+|            clkm_clockers |                 eth_rxck |                                     core0/eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[status][3]/D|
+|                 eth_rxck |            clkm_clockers |                                        core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[1]|
+|                 eth_rxck |            clkm_clockers |                                        core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[8]|
+|                 eth_rxck |            clkm_clockers |                                        core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[9]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r1/xk7_2p.xk7_2p/RAM_reg/DIADI[14]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[13]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[14]|
+|                 eth_rxck |            clkm_clockers |                                        core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[4]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r1/xk7_2p.xk7_2p/RAM_reg/DIADI[12]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[12]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r0/xk7_2p.xk7_2p/RAM_reg/DIADI[10]|
+|                 eth_rxck |            clkm_clockers |                                       core0/eth0.e1/m100.u0/edclramnft.r1/xk7_2p.xk7_2p/RAM_reg/DIADI[10]|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -346,7 +346,7 @@ add_input_file -format VHDL -work gaisler ./../../lib/gaisler/noelv/subsys/noelv
 add_input_file -format VHDL -work gaisler ./../../lib/gaisler/noelv/subsys/dummy_pnp.vhd
 add_input_file -format VHDL -work gaisler ./../../lib/gaisler/noelv/subsys/noelvsys.vhd
 add_input_file -format VHDL -work work ./rtl/axi_mig3_7series.vhd
-add_input_file -format VHDL -work work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+add_input_file -format VHDL -work work ./rtl/ahb2axi_mig3_genesys2.vhd
 add_input_file -format VHDL -work work ./rtl/clockers_mig.vhd
 add_input_file -format VHDL -work work ./config.vhd
 add_input_file -format VHDL -work work ./cfg/config_local.vhd
@@ -361,6 +361,6 @@ setup_design -design noelvmp
 setup_design -retiming
 setup_design -vhdl
 setup_design -transformations=false
-setup_design -frequency="60"
+setup_design -frequency="200"
 
 save_impl

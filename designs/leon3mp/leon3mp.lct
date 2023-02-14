@@ -1,0 +1,8 @@
+[Device]
+Family = ;
+PartNumber = xc4vlx100-10ff1513;
+Package = ;
+PartType = xc4vlx100;
+Speed = -10;
+Operating_condition = COM;
+Status = Production;

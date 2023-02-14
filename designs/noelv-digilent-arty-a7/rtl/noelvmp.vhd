@@ -191,8 +191,20 @@ architecture rtl of noelvmp is
   signal dmreset        : std_logic;
   signal cpu0errn       : std_logic;
   
+  component ila_0 
+  port(
+	
+	clk: in std_logic; 
+	probe0: in std_logic);
+end component;
+
+
 begin
 
+     ila_test: ila_0
+    port map(
+    clk     => clkm_gen, 
+	probe0  => migrstn);
   ----------------------------------------------------------------------
   ---  Reset and Clock generation  -------------------------------------
   ----------------------------------------------------------------------
@@ -216,7 +228,7 @@ begin
     mig_clkref  => clkref,
     mig_clk     => clkinmig,
     eth_ref     => eth_ref_clki,
-    clkm        => clkm_gen,
+    clkm        => clkm_gen,    ----25 ns / 40MHz
     locked      => pll_locked
   );
   

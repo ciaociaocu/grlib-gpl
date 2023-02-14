@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jan 24 01:54:43 2023
+# Process ID: 301427
+# Current directory: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7
+# Command line: vivado -mode gui -source ./vivado/noelvmp_vivado.tcl
+# Log file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado.log
+# Journal file: /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ./vivado/noelvmp_vivado.tcl
+set_property target_simulator XSim [current_project]
+launch_simulation
+source testbench.tcl
+add_force {/testbench/erxdt} -radix hex {f 0ns}
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testbench/d3/core0/eth0/e1/m100/u0/ethc0/tx_rmii0/tx0/r.main_state}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/testbench/d3/core0/eth0/e1/m100/u0/ethc0/tx_rmii0/tx0}} 
+relaunch_sim
+relaunch_sim
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim

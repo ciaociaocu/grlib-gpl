@@ -1890,7 +1890,7 @@
       <association xil_pn:name="BehavioralSimulation"/>
       <association xil_pn:name="Implementation"/>
     </file>
-    <file xil_pn:name="./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="./rtl/ahb2axi_mig3_genesys2.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation"/>
       <association xil_pn:name="Implementation"/>
     </file>

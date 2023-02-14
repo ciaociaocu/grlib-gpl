@@ -81,7 +81,7 @@ set MGCPART {xc7k325tffg900}
 set ISETECH {Kintex7}
 set QSF {}
 set VHDLOPTSYNFILES {}
-set VHDLSYNFILES { ./rtl/axi_mig3_7series.vhd ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd ./rtl/clockers_mig.vhd ./config.vhd ./cfg/config_local.vhd ./../noelv-generic/rtl/core/rev.vhd ./../noelv-generic/rtl/core/cfgmap.vhd ./../noelv-generic/rtl/core/noelvcore.vhd ./rtl/ahbrom.vhd ./rtl/ahbrom64.vhd ./rtl/ahbrom128.vhd ./rtl/noelvmp.vhd}
+set VHDLSYNFILES { ./rtl/axi_mig3_7series.vhd ./rtl/ahb2axi_mig3_genesys2.vhd ./rtl/clockers_mig.vhd ./config.vhd ./cfg/config_local.vhd ./../noelv-generic/rtl/core/rev.vhd ./../noelv-generic/rtl/core/cfgmap.vhd ./../noelv-generic/rtl/core/noelvcore.vhd ./rtl/ahbrom.vhd ./rtl/ahbrom64.vhd ./rtl/ahbrom128.vhd ./rtl/noelvmp.vhd}
 set VHDLIPFILES {}
 set UCF {}
 set GRLIB_SIMULATOR {ModelSim}
@@ -89,7 +89,7 @@ set SIMTOP {testbench}
 set SIMINST {noelvmp}
 set VHDLSIMFILES {./tb/testbench.vhd}
 set PRECOPT {}
-set SYNFREQ {60}
+set SYNFREQ {200}
 set ISE11TECH {Kintex7}
 set NETLISTTECH {Kintex7}
 set XSTOPT {-uc leon3mp.xcf}
@@ -130,7 +130,7 @@ set PLANAHEAD_SYNTH_STRATEGY {TimingWithIOBPacking}
 set PLANAHEAD_IMPL_STRATEGY {ParHighEffort}
 set GRLIB_XIL_Vivado_sim_verilog_define {}
 set XDC_EARLY {}
-set XDC { ./../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc ./../../boards/digilent-genesys2/voltage_config.xdc ./../../boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc}
+set XDC { ./../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc}
 set XDC_LATE {}
 set TCL {}
 set VIVADO_UCF {}

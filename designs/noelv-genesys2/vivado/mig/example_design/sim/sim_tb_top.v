@@ -92,12 +92,12 @@ module sim_tb_top;
                                      // # of memory Column Address bits.
    parameter CS_WIDTH              = 1;
                                      // # of unique CS outputs to memory.
-   parameter DM_WIDTH              = 2;
+   parameter DM_WIDTH              = 4;
                                      // # of DM (data mask)
-   parameter DQ_WIDTH              = 16;
+   parameter DQ_WIDTH              = 32;
                                      // # of DQ (data)
-   parameter DQS_WIDTH             = 2;
-   parameter DQS_CNT_WIDTH         = 1;
+   parameter DQS_WIDTH             = 4;
+   parameter DQS_CNT_WIDTH         = 2;
                                      // = ceil(log2(DQS_WIDTH))
    parameter DRAM_WIDTH            = 8;
                                      // # of DQ per DQS
@@ -177,7 +177,7 @@ module sim_tb_top;
    parameter C_S_AXI_ID_WIDTH              = 4;
                                              // Width of all master and slave ID signals.
                                              // # = >= 1.
-   parameter C_S_AXI_ADDR_WIDTH            = 29;
+   parameter C_S_AXI_ADDR_WIDTH            = 30;
                                              // Width of S_AXI_AWADDR, S_AXI_ARADDR, M_AXI_AWADDR and
                                              // M_AXI_ARADDR for all SI/MI slots.
                                              // # = 32.

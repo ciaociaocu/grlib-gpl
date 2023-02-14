@@ -53,7 +53,7 @@ all:
 	vcom -quiet -explicit -O0 -93 -work work  ./../../lib/work/debug/debug.vhd ./../../lib/work/debug/grtestmod.vhd ./../../lib/work/debug/cpu_disas.vhd
 	@if test -r ./../../lib/tech/secureip/ise/mcb_001.vp && test -r modelsim/secureip; then vlog -quiet -work secureip ./../../lib/tech/secureip/ise/mcb_*.vp; fi
 	vcom -quiet -explicit -O0  -93 -work work ./rtl/axi_mig3_7series.vhd
-	vcom -quiet -explicit -O0  -93 -work work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+	vcom -quiet -explicit -O0  -93 -work work ./rtl/ahb2axi_mig3_genesys2.vhd
 	vcom -quiet -explicit -O0  -93 -work work ./rtl/clockers_mig.vhd
 	vcom -quiet -explicit -O0  -93 -work work ./config.vhd
 	vcom -quiet -explicit -O0  -93 -work work ./cfg/config_local.vhd

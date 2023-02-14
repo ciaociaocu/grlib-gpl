@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="006a624a7ef041099746ced81e972ebd"/>
+    <Option Name="Id" Val="12bd51628d1c42f39b7ddc4202fcbf44"/>
     <Option Name="Part" Val="xc7k325tffg900-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -2711,7 +2711,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd">
+      <File Path="$PPRDIR/../../rtl/ahb2axi_mig3_genesys2.vhd">
         <FileInfo>
           <Attr Name="Library" Val="work"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -2794,10 +2794,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/mig/mig_a.prj">
+      <File Path="$PSRCDIR/sources_1/ip/mig/mig_b.prj">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../mig_a.prj"/>
-          <Attr Name="ImportTime" Val="1673430703"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../mig_b.prj"/>
+          <Attr Name="ImportTime" Val="1676385616"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="ScopedToCell" Val="mig"/>
         </FileInfo>
@@ -2810,18 +2810,6 @@
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
       <File Path="$PPRDIR/../../../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../../../boards/digilent-genesys2/voltage_config.xdc">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../../../boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -2853,7 +2841,7 @@
       <File Path="$PSRCDIR/sources_1/ip/mig/mig.xci">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../mig.xci"/>
-          <Attr Name="ImportTime" Val="1673430704"/>
+          <Attr Name="ImportTime" Val="1676385617"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -2861,21 +2849,6 @@
       </File>
       <Config>
         <Option Name="TopModule" Val="mig"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="clk_100MHz" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_100MHz">
-      <File Path="$PSRCDIR/sources_1/ip/clk_100MHz/clk_100MHz.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../clk_100MHz.xci"/>
-          <Attr Name="ImportTime" Val="1674035642"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="clk_100MHz"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -2891,6 +2864,21 @@
       </File>
       <Config>
         <Option Name="TopModule" Val="mig_cdc"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="clk_100MHz" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_100MHz">
+      <File Path="$PSRCDIR/sources_1/ip/clk_100MHz/clk_100MHz.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../clk_100MHz.xci"/>
+          <Attr Name="ImportTime" Val="1675461156"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="clk_100MHz"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -2942,7 +2930,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="clk_100MHz_synth_1" Type="Ft3:Synth" SrcSet="clk_100MHz" Part="xc7k325tffg900-2" ConstrsSet="clk_100MHz" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_100MHz_synth_1" IncludeInArchive="true">
+    <Run Id="mig_cdc_synth_1" Type="Ft3:Synth" SrcSet="mig_cdc" Part="xc7k325tffg900-2" ConstrsSet="mig_cdc" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mig_cdc_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -2953,7 +2941,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="mig_cdc_synth_1" Type="Ft3:Synth" SrcSet="mig_cdc" Part="xc7k325tffg900-2" ConstrsSet="mig_cdc" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mig_cdc_synth_1" IncludeInArchive="true">
+    <Run Id="clk_100MHz_synth_1" Type="Ft3:Synth" SrcSet="clk_100MHz" Part="xc7k325tffg900-2" ConstrsSet="clk_100MHz" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_100MHz_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -3012,7 +3000,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="clk_100MHz_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="clk_100MHz" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="clk_100MHz_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="mig_cdc_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="mig_cdc" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mig_cdc_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>
@@ -3030,7 +3018,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="mig_cdc_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="mig_cdc" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mig_cdc_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="clk_100MHz_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="clk_100MHz" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="clk_100MHz_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>

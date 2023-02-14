@@ -1,0 +1,14 @@
+vlib modelsim
+vlib modelsim/grlib 
+vlib modelsim/unisim 
+vlib modelsim/techmap 
+vlib modelsim/eth 
+vlib modelsim/opencores 
+vlib modelsim/gaisler 
+vlib modelsim/esa 
+vlib modelsim/fmf 
+vlib modelsim/spansion 
+vlib modelsim/gsi 
+vlib modelsim/micron 
+vlib modelsim/cypress 
+vlib modelsim/work 

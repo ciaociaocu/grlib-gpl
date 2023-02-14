@@ -75,20 +75,20 @@ end ;
 
 architecture rtl of rgmii_kc705 is
 
-     component IDDR
-      generic ( DDR_CLK_EDGE : string := "SAME_EDGE";
-          INIT_Q1 : bit := '0';
-          INIT_Q2 : bit := '0';
-          SRTYPE : string := "ASYNC");
-      port
-        ( Q1 : out std_ulogic;
-          Q2 : out std_ulogic;
-          C : in std_ulogic;
-          CE : in std_ulogic;
-          D : in std_ulogic;
-          R : in std_ulogic;
-          S : in std_ulogic);
-    end component;
+--     component IDDR
+--      generic ( DDR_CLK_EDGE : string := "SAME_EDGE";
+--          INIT_Q1 : bit := '0';
+--          INIT_Q2 : bit := '0';
+--          SRTYPE : string := "ASYNC");
+--      port
+--        ( Q1 : out std_ulogic;
+--          Q2 : out std_ulogic;
+--          C : in std_ulogic;
+--          CE : in std_ulogic;
+--          D : in std_ulogic;
+--          R : in std_ulogic;
+--          S : in std_ulogic);
+--    end component;
 
   constant REVISION : integer := 1;
 
@@ -112,7 +112,7 @@ architecture rtl of rgmii_kc705 is
   signal tx_end : std_ulogic;
   signal txd : std_logic_vector(7 downto 0);
   signal rxd, rxd_pre, rxd_int : std_logic_vector(7 downto 0);
-  signal rx_clk : std_ulogic;
+  signal rx_clk, nrx_clk : std_ulogic;
   signal rx_dv, rx_dv_pre, rx_dv_int , rx_ctl, rx_ctl_pre, rx_ctl_int, rx_error : std_logic;
   signal tx_clk, tx_clk_125, clk10_100 : std_ulogic;
   signal tx_clko, tx_clk_125o, clk10_100o : std_ulogic;
@@ -312,11 +312,11 @@ begin  -- rtl
 
   -- Rx Clocks
   rx_clk <= rgmiii.rx_clk;
-
+  nrx_clk <= not rgmiii.rx_clk;
   -- DDR inputs
   rgmii_rxd : for i in 0 to 3 generate
-       ddr_ireg0 : IDDR generic map( DDR_CLK_EDGE => "SAME_EDGE_PIPELINED")
-         Port map( Q1 => rxd_pre(i+0), Q2 => rxd_pre(i+4), C => rx_clk, CE => vcc,
+       ddr_ireg0 : ddr_ireg generic map (tech, arch => 1)
+         Port map( Q1 => rxd_pre(i+0), Q2 => rxd_pre(i+4), C1 => rx_clk, C2 => nrx_clk, CE => vcc,
                    D => rgmiii.rxd(i), R => gnd, S => gnd);
   end generate;
   
@@ -332,8 +332,8 @@ begin  -- rtl
   rxd(3 downto 0) <= rxd_int(3 downto 0) when (r.q1_sel(0) = '0') else rxd_int(7 downto 4);
   rxd(7 downto 4) <= rxd_int(7 downto 4) when (r.q1_sel(0) = '0') else rxd_int(3 downto 0);
 
-  ddr_dv0 : IDDR generic map( DDR_CLK_EDGE => "SAME_EDGE_PIPELINED")
-       Port map( Q1 => rx_ctl_pre, Q2 => rx_dv_pre, C => rx_clk, CE => vcc,
+  ddr_dv0 : ddr_ireg generic map (tech, arch => 1)
+       Port map( Q1 => rx_ctl_pre, Q2 => rx_dv_pre, C1 => rx_clk, C2 => nrx_clk, CE => vcc,
                  D => rgmiii.rx_dv, R => gnd, S => gnd);
   
   process (rx_clk,rstn)

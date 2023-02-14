@@ -383,7 +383,7 @@ simv:
 	vhdlan -nc  -work work ./../../lib/work/debug/grtestmod.vhd
 	vhdlan -nc  -work work ./../../lib/work/debug/cpu_disas.vhd
 	vhdlan -nc  -work work ./rtl/axi_mig3_7series.vhd
-	vhdlan -nc  -work work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+	vhdlan -nc  -work work ./rtl/ahb2axi_mig3_genesys2.vhd
 	vhdlan -nc  -work work ./rtl/clockers_mig.vhd
 	vhdlan -nc  -work work ./config.vhd
 	vhdlan -nc  -work work ./cfg/config_local.vhd

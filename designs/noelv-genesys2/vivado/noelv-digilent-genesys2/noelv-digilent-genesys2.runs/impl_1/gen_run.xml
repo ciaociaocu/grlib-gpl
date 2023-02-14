@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1674521076">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1676389952">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="noelvmp.drc"/>
   <File Type="BG-BGN" Name="noelvmp.bgn"/>
@@ -2721,7 +2721,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd">
+    <File Path="$PPRDIR/../../rtl/ahb2axi_mig3_genesys2.vhd">
       <FileInfo>
         <Attr Name="Library" Val="work"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -2804,10 +2804,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/mig/mig_a.prj">
+    <File Path="$PSRCDIR/sources_1/ip/mig/mig_b.prj">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../mig_a.prj"/>
-        <Attr Name="ImportTime" Val="1673430703"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../mig_b.prj"/>
+        <Attr Name="ImportTime" Val="1676385616"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="ScopedToCell" Val="mig"/>
       </FileInfo>
@@ -2820,18 +2820,6 @@
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PPRDIR/../../../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../../../boards/digilent-genesys2/voltage_config.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../../../boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -2872,7 +2860,7 @@
     </Step>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mig_cdc"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_100MHz"/>
+  <BlockFileSet Type="BlockSrcs" Name="mig_cdc"/>
   <BlockFileSet Type="BlockSrcs" Name="mig"/>
 </GenRun>

@@ -60,14 +60,11 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 4
   create_project -in_memory -part xc7k325tffg900-2
   set_property design_mode GateLvl [current_fileset]
@@ -79,11 +76,9 @@ set rc [catch {
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.runs/synth_1/noelvmp.dcp
   read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig/mig.xci
-  read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz.xci
   read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig_cdc/mig_cdc.xci
+  read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz.xci
   read_xdc /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/Genesys-2-xc7k325t.xdc
-  read_xdc /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/voltage_config.xdc
-  read_xdc /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc
   link_design -top noelvmp -part xc7k325tffg900-2
   close_msg_db -file init_design.pb
 } RESULT]

@@ -475,7 +475,7 @@ add_files -fileset sim_1 -norecurse ./../../lib/work/debug/cpu_disas.vhd
 set_property library work [get_files ./../../lib/work/debug/cpu_disas.vhd]
 set_property file_type VHDL [get_files ./../../lib/work/debug/cpu_disas.vhd]
 read_vhdl -library work ./rtl/axi_mig3_7series.vhd
-read_vhdl -library work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+read_vhdl -library work ./rtl/ahb2axi_mig3_genesys2.vhd
 read_vhdl -library work ./rtl/clockers_mig.vhd
 read_vhdl -library work ./config.vhd
 read_vhdl -library work ./cfg/config_local.vhd

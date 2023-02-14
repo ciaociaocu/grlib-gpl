@@ -1,0 +1,8 @@
+# vsim -c leon3mp 
+# Start time: 16:34:51 on Jan 31,2023
+# ** Error: (vsim-3170) Could not find 'leon3mp'.
+#         Searched libraries:
+#             /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon3mp/modelsim/work
+# Error loading design
+# End time: 16:34:51 on Jan 31,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

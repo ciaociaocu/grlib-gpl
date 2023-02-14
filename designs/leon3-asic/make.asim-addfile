@@ -1,0 +1,10 @@
+
+addfile -vhdl config.vhd
+addfile -vhdl spw_lvttl_pads.vhd
+addfile -vhdl bschain.vhd
+addfile -vhdl core_clock_mux.vhd
+addfile -vhdl leon3core.vhd
+addfile -vhdl core.vhd
+addfile -vhdl pads.vhd
+addfile -vhdl leon3mp.vhd
+addfile -vhdl testbench.vhd

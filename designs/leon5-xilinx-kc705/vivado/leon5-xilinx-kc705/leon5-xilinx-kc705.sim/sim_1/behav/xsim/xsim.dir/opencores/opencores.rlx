@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/opencores/i2c/i2c_master_bit_ctrl.vhd,1671089758,vhdl,,,,i2c_master_bit_ctrl,,,,,,,,
+/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/opencores/i2c/i2c_master_byte_ctrl.vhd,1671089758,vhdl,,,,i2c_master_byte_ctrl,,,,,,,,
+/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/opencores/i2c/i2coc.vhd,1671089758,vhdl,/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/gaisler/i2c/i2cmst.vhd,,,i2coc,,,,,,,,

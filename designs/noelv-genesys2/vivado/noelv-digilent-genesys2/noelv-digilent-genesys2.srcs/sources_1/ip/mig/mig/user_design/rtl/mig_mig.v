@@ -91,20 +91,20 @@ module mig_mig #
    parameter CKE_WIDTH             = 1,
                                      // # of CKE outputs to memory.
    parameter DATA_BUF_ADDR_WIDTH   = 5,
-   parameter DQ_CNT_WIDTH          = 4,
+   parameter DQ_CNT_WIDTH          = 5,
                                      // = ceil(log2(DQ_WIDTH))
    parameter DQ_PER_DM             = 8,
-   parameter DM_WIDTH              = 2,
+   parameter DM_WIDTH              = 4,
                                      // # of DM (data mask)
-   parameter DQ_WIDTH              = 16,
+   parameter DQ_WIDTH              = 32,
                                      // # of DQ (data)
-   parameter DQS_WIDTH             = 2,
-   parameter DQS_CNT_WIDTH         = 1,
+   parameter DQS_WIDTH             = 4,
+   parameter DQS_CNT_WIDTH         = 2,
                                      // = ceil(log2(DQS_WIDTH))
    parameter DRAM_WIDTH            = 8,
                                      // # of DQ per DQS
    parameter ECC                   = "OFF",
-   parameter DATA_WIDTH            = 16,
+   parameter DATA_WIDTH            = 32,
    parameter ECC_TEST              = "OFF",
    parameter PAYLOAD_WIDTH         = (ECC_TEST == "OFF") ? DATA_WIDTH : DQ_WIDTH,
    parameter MEM_ADDR_ORDER        = "BANK_ROW_COLUMN",
@@ -197,11 +197,11 @@ module mig_mig #
                                      // in number of clock cycles
                                      // DDR3 SDRAM: CAS Write Latency (Mode Register 2).
                                      // DDR2 SDRAM: Can be ignored
-   parameter OUTPUT_DRV            = "LOW",
+   parameter OUTPUT_DRV            = "HIGH",
                                      // Output Driver Impedance Control (Mode Register 1).
                                      // # = "HIGH" - RZQ/7,
                                      //   = "LOW" - RZQ/6.
-   parameter RTT_NOM               = "40",
+   parameter RTT_NOM               = "60",
                                      // RTT_NOM (ODT) (Mode Register 1).
                                      //   = "120" - RZQ/2,
                                      //   = "60"  - RZQ/4,
@@ -301,7 +301,7 @@ module mig_mig #
    // Do not change any of these parameters directly by editing the RTL.
    // Any changes required should be done through GUI and the design regenerated.
    //***************************************************************************
-   parameter BYTE_LANES_B0         = 4'b1100,
+   parameter BYTE_LANES_B0         = 4'b1111,
                                      // Byte lanes used in an IO column.
    parameter BYTE_LANES_B1         = 4'b1111,
                                      // Byte lanes used in an IO column.
@@ -311,7 +311,7 @@ module mig_mig #
                                      // Byte lanes used in an IO column.
    parameter BYTE_LANES_B4         = 4'b0000,
                                      // Byte lanes used in an IO column.
-   parameter DATA_CTL_B0           = 4'b1100,
+   parameter DATA_CTL_B0           = 4'b1111,
                                      // Indicates Byte lane is data byte lane
                                      // or control Byte lane. '1' in a bit
                                      // position indicates a data byte lane and
@@ -336,7 +336,7 @@ module mig_mig #
                                      // or control Byte lane. '1' in a bit
                                      // position indicates a data byte lane and
                                      // a '0' indicates a control byte lane
-   parameter PHY_0_BITLANES        = 48'h3FE_3FE_000_000,
+   parameter PHY_0_BITLANES        = 48'h3FE_3FE_3FE_2FF,
    parameter PHY_1_BITLANES        = 48'h3FE_FFC_C10_003,
    parameter PHY_2_BITLANES        = 48'h000_000_000_000,
 
@@ -355,11 +355,11 @@ module mig_mig #
    parameter RAS_MAP    = 12'h123,
    parameter WE_MAP     = 12'h101,
    parameter DQS_BYTE_MAP
-     = 144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_02_03,
+     = 144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_01_02_03,
    parameter DATA0_MAP  = 96'h031_032_033_034_035_036_037_038,
    parameter DATA1_MAP  = 96'h021_022_023_024_025_026_027_028,
-   parameter DATA2_MAP  = 96'h000_000_000_000_000_000_000_000,
-   parameter DATA3_MAP  = 96'h000_000_000_000_000_000_000_000,
+   parameter DATA2_MAP  = 96'h011_012_013_014_015_016_017_018,
+   parameter DATA3_MAP  = 96'h000_001_002_003_004_005_006_007,
    parameter DATA4_MAP  = 96'h000_000_000_000_000_000_000_000,
    parameter DATA5_MAP  = 96'h000_000_000_000_000_000_000_000,
    parameter DATA6_MAP  = 96'h000_000_000_000_000_000_000_000,
@@ -374,7 +374,7 @@ module mig_mig #
    parameter DATA15_MAP = 96'h000_000_000_000_000_000_000_000,
    parameter DATA16_MAP = 96'h000_000_000_000_000_000_000_000,
    parameter DATA17_MAP = 96'h000_000_000_000_000_000_000_000,
-   parameter MASK0_MAP  = 108'h000_000_000_000_000_000_000_029_039,
+   parameter MASK0_MAP  = 108'h000_000_000_000_000_009_019_029_039,
    parameter MASK1_MAP  = 108'h000_000_000_000_000_000_000_000_000,
 
    parameter SLOT_0_CONFIG         = 8'b0000_0001,
@@ -479,9 +479,9 @@ module mig_mig #
    parameter C_S_AXI_ID_WIDTH              = 4,
                                              // Width of all master and slave ID signals.
                                              // # = >= 1.
-   parameter C_S_AXI_MEM_SIZE              = "536870912",
+   parameter C_S_AXI_MEM_SIZE              = "1073741824",
                                      // Address Space required for this component
-   parameter C_S_AXI_ADDR_WIDTH            = 29,
+   parameter C_S_AXI_ADDR_WIDTH            = 30,
                                              // Width of S_AXI_AWADDR, S_AXI_ARADDR, M_AXI_AWADDR and
                                              // M_AXI_ARADDR for all SI/MI slots.
                                              // # = 32.

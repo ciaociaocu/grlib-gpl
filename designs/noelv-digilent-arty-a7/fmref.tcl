@@ -343,3 +343,15 @@ read_vhdl -r -libname work ./rtl/ahbrom.vhd
 read_vhdl -r -libname work ./rtl/ahbrom64.vhd
 read_vhdl -r -libname work ./rtl/ahbrom128.vhd
 read_vhdl -r -libname work ./rtl/noelvmp.vhd
+read_vhdl -r -libname work ./rtl/axi_mig3_7series.vhd
+read_vhdl -r -libname work ./../../boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd
+read_vhdl -r -libname work ./rtl/clockers_mig.vhd
+read_vhdl -r -libname work ./config.vhd
+read_vhdl -r -libname work ./cfg/config_local.vhd
+read_vhdl -r -libname work ./../noelv-generic/rtl/core/rev.vhd
+read_vhdl -r -libname work ./../noelv-generic/rtl/core/cfgmap.vhd
+read_vhdl -r -libname work ./../noelv-generic/rtl/core/noelvcore.vhd
+read_vhdl -r -libname work ./rtl/ahbrom.vhd
+read_vhdl -r -libname work ./rtl/ahbrom64.vhd
+read_vhdl -r -libname work ./rtl/ahbrom128.vhd
+read_vhdl -r -libname work ./rtl/noelvmp.vhd

@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="allclkgen" />
+            <top_module name="allddr" />
+            <top_module name="allmem" />
+            <top_module name="allmul" />
+            <top_module name="allpads" />
+            <top_module name="alltap" />
+            <top_module name="amba" />
+            <top_module name="arith" />
+            <top_module name="axi" />
+            <top_module name="config" />
+            <top_module name="config" />
+            <top_module name="config_types" />
+            <top_module name="debug" />
+            <top_module name="devices" />
+            <top_module name="dftlib" />
+            <top_module name="ethcomp" />
+            <top_module name="ethernet_mac" />
+            <top_module name="gencomp" />
+            <top_module name="glbl" />
+            <top_module name="grethpkg" />
+            <top_module name="i2c" />
+            <top_module name="i2coc" />
+            <top_module name="jtag" />
+            <top_module name="l2cache" />
+            <top_module name="leon3" />
+            <top_module name="leon5" />
+            <top_module name="leon5int" />
+            <top_module name="libdcom" />
+            <top_module name="libjtagcom" />
+            <top_module name="memctrl" />
+            <top_module name="memoryctrl" />
+            <top_module name="misc" />
+            <top_module name="multlib" />
+            <top_module name="net" />
+            <top_module name="sim" />
+            <top_module name="sparc" />
+            <top_module name="sparc_disas" />
+            <top_module name="spi" />
+            <top_module name="stdio" />
+            <top_module name="stdlib" />
+            <top_module name="subsys" />
+            <top_module name="testbench" />
+            <top_module name="testlib" />
+            <top_module name="uart" />
+            <top_module name="version" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="166666667fs"></ZoomStartTime>
+      <ZoomEndTime time="1166666667fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="170" />
+   <wvobject type="logic" fp_name="/testbench/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/Rst">
+      <obj_property name="ElementShortName">Rst</obj_property>
+      <obj_property name="ObjectShortName">Rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/address">
+      <obj_property name="ElementShortName">address[25:0]</obj_property>
+      <obj_property name="ObjectShortName">address[25:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/data">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/button">
+      <obj_property name="ElementShortName">button[3:0]</obj_property>
+      <obj_property name="ObjectShortName">button[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/genio">
+      <obj_property name="ElementShortName">genio[59:0]</obj_property>
+      <obj_property name="ObjectShortName">genio[59:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/romsn">
+      <obj_property name="ElementShortName">romsn</obj_property>
+      <obj_property name="ObjectShortName">romsn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/oen">
+      <obj_property name="ElementShortName">oen</obj_property>
+      <obj_property name="ObjectShortName">oen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/writen">
+      <obj_property name="ElementShortName">writen</obj_property>
+      <obj_property name="ObjectShortName">writen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/adv">
+      <obj_property name="ElementShortName">adv</obj_property>
+      <obj_property name="ObjectShortName">adv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/GND">
+      <obj_property name="ElementShortName">GND</obj_property>
+      <obj_property name="ObjectShortName">GND</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/VCC">
+      <obj_property name="ElementShortName">VCC</obj_property>
+      <obj_property name="ObjectShortName">VCC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/NC">
+      <obj_property name="ElementShortName">NC</obj_property>
+      <obj_property name="ObjectShortName">NC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/txd1">
+      <obj_property name="ElementShortName">txd1</obj_property>
+      <obj_property name="ObjectShortName">txd1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/rxd1">
+      <obj_property name="ElementShortName">rxd1</obj_property>
+      <obj_property name="ObjectShortName">rxd1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dsurx">
+      <obj_property name="ElementShortName">dsurx</obj_property>
+      <obj_property name="ObjectShortName">dsurx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/txd2">
+      <obj_property name="ElementShortName">txd2</obj_property>
+      <obj_property name="ObjectShortName">txd2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/rxd2">
+      <obj_property name="ElementShortName">rxd2</obj_property>
+      <obj_property name="ObjectShortName">rxd2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dsutx">
+      <obj_property name="ElementShortName">dsutx</obj_property>
+      <obj_property name="ObjectShortName">dsutx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ctsn1">
+      <obj_property name="ElementShortName">ctsn1</obj_property>
+      <obj_property name="ObjectShortName">ctsn1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/rtsn1">
+      <obj_property name="ElementShortName">rtsn1</obj_property>
+      <obj_property name="ObjectShortName">rtsn1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dsuctsn">
+      <obj_property name="ElementShortName">dsuctsn</obj_property>
+      <obj_property name="ObjectShortName">dsuctsn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ctsn2">
+      <obj_property name="ElementShortName">ctsn2</obj_property>
+      <obj_property name="ObjectShortName">ctsn2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/rtsn2">
+      <obj_property name="ElementShortName">rtsn2</obj_property>
+      <obj_property name="ObjectShortName">rtsn2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dsurtsn">
+      <obj_property name="ElementShortName">dsurtsn</obj_property>
+      <obj_property name="ObjectShortName">dsurtsn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_gtxclk">
+      <obj_property name="ElementShortName">phy_gtxclk</obj_property>
+      <obj_property name="ObjectShortName">phy_gtxclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_txer">
+      <obj_property name="ElementShortName">phy_txer</obj_property>
+      <obj_property name="ObjectShortName">phy_txer</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy_txd">
+      <obj_property name="ElementShortName">phy_txd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_txd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_txctl_txen">
+      <obj_property name="ElementShortName">phy_txctl_txen</obj_property>
+      <obj_property name="ObjectShortName">phy_txctl_txen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_txclk">
+      <obj_property name="ElementShortName">phy_txclk</obj_property>
+      <obj_property name="ObjectShortName">phy_txclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_rxer">
+      <obj_property name="ElementShortName">phy_rxer</obj_property>
+      <obj_property name="ObjectShortName">phy_rxer</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy_rxd">
+      <obj_property name="ElementShortName">phy_rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_rxctl_rxdv">
+      <obj_property name="ElementShortName">phy_rxctl_rxdv</obj_property>
+      <obj_property name="ObjectShortName">phy_rxctl_rxdv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_rxclk">
+      <obj_property name="ElementShortName">phy_rxclk</obj_property>
+      <obj_property name="ObjectShortName">phy_rxclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_reset">
+      <obj_property name="ElementShortName">phy_reset</obj_property>
+      <obj_property name="ObjectShortName">phy_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_mdio">
+      <obj_property name="ElementShortName">phy_mdio</obj_property>
+      <obj_property name="ObjectShortName">phy_mdio</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_mdc">
+      <obj_property name="ElementShortName">phy_mdc</obj_property>
+      <obj_property name="ObjectShortName">phy_mdc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_crs">
+      <obj_property name="ElementShortName">phy_crs</obj_property>
+      <obj_property name="ObjectShortName">phy_crs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_col">
+      <obj_property name="ElementShortName">phy_col</obj_property>
+      <obj_property name="ObjectShortName">phy_col</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy_int">
+      <obj_property name="ElementShortName">phy_int</obj_property>
+      <obj_property name="ObjectShortName">phy_int</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy_rxdl">
+      <obj_property name="ElementShortName">phy_rxdl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_rxdl[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy_txdl">
+      <obj_property name="ElementShortName">phy_txdl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_txdl[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clk27">
+      <obj_property name="ElementShortName">clk27</obj_property>
+      <obj_property name="ObjectShortName">clk27</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clk200p">
+      <obj_property name="ElementShortName">clk200p</obj_property>
+      <obj_property name="ObjectShortName">clk200p</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clk200n">
+      <obj_property name="ElementShortName">clk200n</obj_property>
+      <obj_property name="ObjectShortName">clk200n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clk33">
+      <obj_property name="ElementShortName">clk33</obj_property>
+      <obj_property name="ObjectShortName">clk33</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clkethp">
+      <obj_property name="ElementShortName">clkethp</obj_property>
+      <obj_property name="ObjectShortName">clkethp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clkethn">
+      <obj_property name="ElementShortName">clkethn</obj_property>
+      <obj_property name="ObjectShortName">clkethn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/txp1">
+      <obj_property name="ElementShortName">txp1</obj_property>
+      <obj_property name="ObjectShortName">txp1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/txn">
+      <obj_property name="ElementShortName">txn</obj_property>
+      <obj_property name="ObjectShortName">txn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/rxp">
+      <obj_property name="ElementShortName">rxp</obj_property>
+      <obj_property name="ObjectShortName">rxp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/rxn">
+      <obj_property name="ElementShortName">rxn</obj_property>
+      <obj_property name="ObjectShortName">rxn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/iic_scl">
+      <obj_property name="ElementShortName">iic_scl</obj_property>
+      <obj_property name="ObjectShortName">iic_scl</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/iic_sda">
+      <obj_property name="ElementShortName">iic_sda</obj_property>
+      <obj_property name="ObjectShortName">iic_sda</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ddc_scl">
+      <obj_property name="ElementShortName">ddc_scl</obj_property>
+      <obj_property name="ObjectShortName">ddc_scl</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ddc_sda">
+      <obj_property name="ElementShortName">ddc_sda</obj_property>
+      <obj_property name="ObjectShortName">ddc_sda</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dvi_iic_scl">
+      <obj_property name="ElementShortName">dvi_iic_scl</obj_property>
+      <obj_property name="ObjectShortName">dvi_iic_scl</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dvi_iic_sda">
+      <obj_property name="ElementShortName">dvi_iic_sda</obj_property>
+      <obj_property name="ObjectShortName">dvi_iic_sda</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/tft_lcd_data">
+      <obj_property name="ElementShortName">tft_lcd_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tft_lcd_clk_p">
+      <obj_property name="ElementShortName">tft_lcd_clk_p</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_clk_p</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tft_lcd_clk_n">
+      <obj_property name="ElementShortName">tft_lcd_clk_n</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_clk_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tft_lcd_hsync">
+      <obj_property name="ElementShortName">tft_lcd_hsync</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tft_lcd_vsync">
+      <obj_property name="ElementShortName">tft_lcd_vsync</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_vsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tft_lcd_de">
+      <obj_property name="ElementShortName">tft_lcd_de</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_de</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tft_lcd_reset_b">
+      <obj_property name="ElementShortName">tft_lcd_reset_b</obj_property>
+      <obj_property name="ObjectShortName">tft_lcd_reset_b</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_dq">
+      <obj_property name="ElementShortName">ddr3_dq[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dq[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_dqs_p">
+      <obj_property name="ElementShortName">ddr3_dqs_p[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dqs_p[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_dqs_n">
+      <obj_property name="ElementShortName">ddr3_dqs_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dqs_n[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_addr">
+      <obj_property name="ElementShortName">ddr3_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_ba">
+      <obj_property name="ElementShortName">ddr3_ba[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ba[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ddr3_ras_n">
+      <obj_property name="ElementShortName">ddr3_ras_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ras_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ddr3_cas_n">
+      <obj_property name="ElementShortName">ddr3_cas_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_cas_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ddr3_we_n">
+      <obj_property name="ElementShortName">ddr3_we_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_we_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ddr3_reset_n">
+      <obj_property name="ElementShortName">ddr3_reset_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_ck_p">
+      <obj_property name="ElementShortName">ddr3_ck_p[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ck_p[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_ck_n">
+      <obj_property name="ElementShortName">ddr3_ck_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ck_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_cke">
+      <obj_property name="ElementShortName">ddr3_cke[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_cke[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_cs_n">
+      <obj_property name="ElementShortName">ddr3_cs_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_cs_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_dm">
+      <obj_property name="ElementShortName">ddr3_dm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dm[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ddr3_odt">
+      <obj_property name="ElementShortName">ddr3_odt[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_odt[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/spi_sel_n">
+      <obj_property name="ElementShortName">spi_sel_n</obj_property>
+      <obj_property name="ObjectShortName">spi_sel_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/spi_clk">
+      <obj_property name="ElementShortName">spi_clk</obj_property>
+      <obj_property name="ObjectShortName">spi_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/spi_mosi">
+      <obj_property name="ElementShortName">spi_mosi</obj_property>
+      <obj_property name="ObjectShortName">spi_mosi</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/dsurst">
+      <obj_property name="ElementShortName">dsurst</obj_property>
+      <obj_property name="ObjectShortName">dsurst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/errorn">
+      <obj_property name="ElementShortName">errorn</obj_property>
+      <obj_property name="ObjectShortName">errorn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/switch">
+      <obj_property name="ElementShortName">switch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/led">
+      <obj_property name="ElementShortName">led[6:0]</obj_property>
+      <obj_property name="ObjectShortName">led[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/tdqs_n">
+      <obj_property name="ElementShortName">tdqs_n</obj_property>
+      <obj_property name="ObjectShortName">tdqs_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/gmii_tx_clk">
+      <obj_property name="ElementShortName">gmii_tx_clk</obj_property>
+      <obj_property name="ObjectShortName">gmii_tx_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/gmii_rx_clk">
+      <obj_property name="ElementShortName">gmii_rx_clk</obj_property>
+      <obj_property name="ObjectShortName">gmii_rx_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/gmii_txd">
+      <obj_property name="ElementShortName">gmii_txd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">gmii_txd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/gmii_tx_en">
+      <obj_property name="ElementShortName">gmii_tx_en</obj_property>
+      <obj_property name="ObjectShortName">gmii_tx_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/gmii_tx_er">
+      <obj_property name="ElementShortName">gmii_tx_er</obj_property>
+      <obj_property name="ObjectShortName">gmii_tx_er</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/gmii_rxd">
+      <obj_property name="ElementShortName">gmii_rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">gmii_rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/gmii_rx_dv">
+      <obj_property name="ElementShortName">gmii_rx_dv</obj_property>
+      <obj_property name="ObjectShortName">gmii_rx_dv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/gmii_rx_er">
+      <obj_property name="ElementShortName">gmii_rx_er</obj_property>
+      <obj_property name="ObjectShortName">gmii_rx_er</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/fabtech">
+      <obj_property name="ElementShortName">fabtech</obj_property>
+      <obj_property name="ObjectShortName">fabtech</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/memtech">
+      <obj_property name="ElementShortName">memtech</obj_property>
+      <obj_property name="ObjectShortName">memtech</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/padtech">
+      <obj_property name="ElementShortName">padtech</obj_property>
+      <obj_property name="ObjectShortName">padtech</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/clktech">
+      <obj_property name="ElementShortName">clktech</obj_property>
+      <obj_property name="ObjectShortName">clktech</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/disas">
+      <obj_property name="ElementShortName">disas</obj_property>
+      <obj_property name="ObjectShortName">disas</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/USE_MIG_INTERFACE_MODEL">
+      <obj_property name="ElementShortName">USE_MIG_INTERFACE_MODEL</obj_property>
+      <obj_property name="ObjectShortName">USE_MIG_INTERFACE_MODEL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/SIM_BYPASS_INIT_CAL">
+      <obj_property name="ElementShortName">SIM_BYPASS_INIT_CAL[1:4]</obj_property>
+      <obj_property name="ObjectShortName">SIM_BYPASS_INIT_CAL[1:4]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/SIMULATION">
+      <obj_property name="ElementShortName">SIMULATION[1:4]</obj_property>
+      <obj_property name="ObjectShortName">SIMULATION[1:4]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/promfile">
+      <obj_property name="ElementShortName">promfile[1:9]</obj_property>
+      <obj_property name="ObjectShortName">promfile[1:9]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/ramfile">
+      <obj_property name="ElementShortName">ramfile[1:8]</obj_property>
+      <obj_property name="ObjectShortName">ramfile[1:8]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/lresp">
+      <obj_property name="ElementShortName">lresp</obj_property>
+      <obj_property name="ObjectShortName">lresp</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/\prom0(0)\/sr0/a">
+      <obj_property name="ElementShortName">a[21:0]</obj_property>
+      <obj_property name="ObjectShortName">a[21:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/\prom0(0)\/sr0/d">
+      <obj_property name="ElementShortName">d[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/\prom0(0)\/sr0/ce1">
+      <obj_property name="ElementShortName">ce1</obj_property>
+      <obj_property name="ObjectShortName">ce1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/\prom0(0)\/sr0/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/\prom0(0)\/sr0/oe">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/\prom0(0)\/sr0/DINT">
+      <obj_property name="ElementShortName">DINT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DINT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/\prom0(0)\/sr0/DI">
+      <obj_property name="ElementShortName">DI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DI[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/\prom0(0)\/sr0/DO">
+      <obj_property name="ElementShortName">DO[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DO[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/\prom0(0)\/sr0/wrpre">
+      <obj_property name="ElementShortName">wrpre</obj_property>
+      <obj_property name="ObjectShortName">wrpre</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/\prom0(0)\/sr0/index">
+      <obj_property name="ElementShortName">index</obj_property>
+      <obj_property name="ObjectShortName">index</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/\prom0(0)\/sr0/abits">
+      <obj_property name="ElementShortName">abits</obj_property>
+      <obj_property name="ObjectShortName">abits</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/\prom0(0)\/sr0/tacc">
+      <obj_property name="ElementShortName">tacc</obj_property>
+      <obj_property name="ObjectShortName">tacc</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/\prom0(0)\/sr0/fname">
+      <obj_property name="ElementShortName">fname[1:9]</obj_property>
+      <obj_property name="ObjectShortName">fname[1:9]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/\prom0(0)\/sr0/clear">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/\prom0(0)\/sr0/ahigh">
+      <obj_property name="ElementShortName">ahigh</obj_property>
+      <obj_property name="ObjectShortName">ahigh</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/mdio">
+      <obj_property name="ElementShortName">mdio</obj_property>
+      <obj_property name="ObjectShortName">mdio</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/tx_clk">
+      <obj_property name="ElementShortName">tx_clk</obj_property>
+      <obj_property name="ObjectShortName">tx_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/rx_clk">
+      <obj_property name="ElementShortName">rx_clk</obj_property>
+      <obj_property name="ObjectShortName">rx_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy0/p0/rxd">
+      <obj_property name="ElementShortName">rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/rx_dv">
+      <obj_property name="ElementShortName">rx_dv</obj_property>
+      <obj_property name="ObjectShortName">rx_dv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/rx_er">
+      <obj_property name="ElementShortName">rx_er</obj_property>
+      <obj_property name="ObjectShortName">rx_er</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/rx_col">
+      <obj_property name="ElementShortName">rx_col</obj_property>
+      <obj_property name="ObjectShortName">rx_col</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/rx_crs">
+      <obj_property name="ElementShortName">rx_crs</obj_property>
+      <obj_property name="ObjectShortName">rx_crs</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy0/p0/txd">
+      <obj_property name="ElementShortName">txd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">txd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/tx_en">
+      <obj_property name="ElementShortName">tx_en</obj_property>
+      <obj_property name="ObjectShortName">tx_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/tx_er">
+      <obj_property name="ElementShortName">tx_er</obj_property>
+      <obj_property name="ObjectShortName">tx_er</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/mdc">
+      <obj_property name="ElementShortName">mdc</obj_property>
+      <obj_property name="ObjectShortName">mdc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/gtx_clk">
+      <obj_property name="ElementShortName">gtx_clk</obj_property>
+      <obj_property name="ObjectShortName">gtx_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/extrxclk">
+      <obj_property name="ElementShortName">extrxclk</obj_property>
+      <obj_property name="ObjectShortName">extrxclk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy0/p0/r">
+      <obj_property name="ElementShortName">r</obj_property>
+      <obj_property name="ObjectShortName">r</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy0/p0/rin">
+      <obj_property name="ElementShortName">rin</obj_property>
+      <obj_property name="ObjectShortName">rin</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/int_clk">
+      <obj_property name="ElementShortName">int_clk</obj_property>
+      <obj_property name="ObjectShortName">int_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/clkslow">
+      <obj_property name="ElementShortName">clkslow</obj_property>
+      <obj_property name="ObjectShortName">clkslow</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/rcnt">
+      <obj_property name="ElementShortName">rcnt</obj_property>
+      <obj_property name="ObjectShortName">rcnt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/anegact">
+      <obj_property name="ElementShortName">anegact</obj_property>
+      <obj_property name="ObjectShortName">anegact</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy0/p0/txdataq">
+      <obj_property name="ElementShortName">txdataq[0:39]</obj_property>
+      <obj_property name="ObjectShortName">txdataq[0:39]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/txqpos">
+      <obj_property name="ElementShortName">txqpos</obj_property>
+      <obj_property name="ObjectShortName">txqpos</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/rxqpos">
+      <obj_property name="ElementShortName">rxqpos</obj_property>
+      <obj_property name="ObjectShortName">rxqpos</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/ifmode">
+      <obj_property name="ElementShortName">ifmode</obj_property>
+      <obj_property name="ObjectShortName">ifmode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/phy0/p0/lb_rxd">
+      <obj_property name="ElementShortName">lb_rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lb_rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/lb_rxdv">
+      <obj_property name="ElementShortName">lb_rxdv</obj_property>
+      <obj_property name="ObjectShortName">lb_rxdv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/lb_rxer">
+      <obj_property name="ElementShortName">lb_rxer</obj_property>
+      <obj_property name="ObjectShortName">lb_rxer</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/phy0/p0/erxclkdel">
+      <obj_property name="ElementShortName">erxclkdel</obj_property>
+      <obj_property name="ObjectShortName">erxclkdel</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/address">
+      <obj_property name="ElementShortName">address</obj_property>
+      <obj_property name="ObjectShortName">address</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/extended_regs">
+      <obj_property name="ElementShortName">extended_regs</obj_property>
+      <obj_property name="ObjectShortName">extended_regs</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/aneg">
+      <obj_property name="ElementShortName">aneg</obj_property>
+      <obj_property name="ObjectShortName">aneg</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base100_t4">
+      <obj_property name="ElementShortName">base100_t4</obj_property>
+      <obj_property name="ObjectShortName">base100_t4</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base100_x_fd">
+      <obj_property name="ElementShortName">base100_x_fd</obj_property>
+      <obj_property name="ObjectShortName">base100_x_fd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base100_x_hd">
+      <obj_property name="ElementShortName">base100_x_hd</obj_property>
+      <obj_property name="ObjectShortName">base100_x_hd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/fd_10">
+      <obj_property name="ElementShortName">fd_10</obj_property>
+      <obj_property name="ObjectShortName">fd_10</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/hd_10">
+      <obj_property name="ElementShortName">hd_10</obj_property>
+      <obj_property name="ObjectShortName">hd_10</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base100_t2_fd">
+      <obj_property name="ElementShortName">base100_t2_fd</obj_property>
+      <obj_property name="ObjectShortName">base100_t2_fd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base100_t2_hd">
+      <obj_property name="ElementShortName">base100_t2_hd</obj_property>
+      <obj_property name="ObjectShortName">base100_t2_hd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base1000_x_fd">
+      <obj_property name="ElementShortName">base1000_x_fd</obj_property>
+      <obj_property name="ObjectShortName">base1000_x_fd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base1000_x_hd">
+      <obj_property name="ElementShortName">base1000_x_hd</obj_property>
+      <obj_property name="ObjectShortName">base1000_x_hd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base1000_t_fd">
+      <obj_property name="ElementShortName">base1000_t_fd</obj_property>
+      <obj_property name="ObjectShortName">base1000_t_fd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/base1000_t_hd">
+      <obj_property name="ElementShortName">base1000_t_hd</obj_property>
+      <obj_property name="ObjectShortName">base1000_t_hd</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/rmii">
+      <obj_property name="ElementShortName">rmii</obj_property>
+      <obj_property name="ObjectShortName">rmii</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/rgmii">
+      <obj_property name="ElementShortName">rgmii</obj_property>
+      <obj_property name="ObjectShortName">rgmii</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/extrxclken">
+      <obj_property name="ElementShortName">extrxclken</obj_property>
+      <obj_property name="ObjectShortName">extrxclken</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/gmii100">
+      <obj_property name="ElementShortName">gmii100</obj_property>
+      <obj_property name="ObjectShortName">gmii100</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/testbench/phy0/p0/qlength">
+      <obj_property name="ElementShortName">qlength</obj_property>
+      <obj_property name="ObjectShortName">qlength</obj_property>
+   </wvobject>
+</wave_config>

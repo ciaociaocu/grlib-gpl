@@ -172,7 +172,7 @@ proc eof_xlnx_vivado {} {
 					}
 				}
 			} else {
-				set files [glob -nocomplain -type f "$GRLIB/boards/$BOARD/mig.*"]
+				set files [glob -nocomplain -type f "$GRLIB/boards/$BOARD/axi_128/*"]
 				if {[file exists "$GRLIB/boards/$BOARD/axi_pipe.xci"]} {
 					lappend files [glob -nocomplain -type f "$GRLIB/boards/$BOARD/axi_pipe*"]
 					}
@@ -187,7 +187,10 @@ proc eof_xlnx_vivado {} {
 				file copy $f "vivado/"
 			}
 			append vc "\nset_property target_language verilog \[current_project\]"
-			append vc "\nimport_ip -files vivado/mig.xci -name mig"
+
+			if {[file exists "vivado/mig.xci"]} {
+				append vc "\nimport_ip -files vivado/mig.xci -name mig"
+			}
 
 			if {[file exists "vivado/clk_100MHz.xci"]} {
 				append vc "\nimport_ip -files vivado/clk_100MHz.xci -name clk_100MHz"

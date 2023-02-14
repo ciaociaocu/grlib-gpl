@@ -1,0 +1,252 @@
+# compile vhdl design source files
+vhdl grlib  \
+"../../../../../../../../lib/grlib/stdlib/config_types.vhd" \
+"../../../../../../grlib_config_leon5.vhd" \
+"../../../../../../../../lib/grlib/stdlib/version.vhd" \
+"../../../../../../../../lib/grlib/stdlib/stdlib.vhd" \
+"../../../../../../../../lib/grlib/amba/amba.vhd" \
+"../../../../../../../../lib/grlib/amba/devices.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/gencomp/gencomp.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/axi/axi.vhd" \
+"../../../../../../../../lib/gaisler/axi/ahb2axi4b.vhd" \
+"../../../../../../../../lib/gaisler/misc/misc.vhd" \
+"../../../../../../../../lib/gaisler/ddr/ahb2axi_mig_7series.vhd" \
+"../../../../../../../../lib/gaisler/axi/ahb2axib.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/stdlib/stdio.vhd" \
+"../../../../../../../../lib/grlib/stdlib/testlib.vhd" \
+"../../../../../../../../lib/grlib/amba/ahbctrl.vhd" \
+"../../../../../../../../lib/grlib/dftlib/dftlib.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/jtag/libjtagcom.vhd" \
+"../../../../../../../../lib/gaisler/jtag/jtag.vhd" \
+"../../../../../../../../lib/gaisler/jtag/ahbjtag.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/amba/ahbmst.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/misc/ahbram.vhd" \
+"../../../../../../../../lib/gaisler/sim/ahbram_sim.vhd" \
+"../../../../../../../../lib/gaisler/sim/sim.vhd" \
+"../../../../../../../../lib/gaisler/sim/ahbrep.vhd" \
+
+vhdl work  \
+"../../../../../../ahbrom.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/misc/ahbstat.vhd" \
+"../../../../../../../../lib/gaisler/uart/uart.vhd" \
+"../../../../../../../../lib/gaisler/uart/libdcom.vhd" \
+"../../../../../../../../lib/gaisler/uart/ahbuart.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/alltech/allclkgen.vhd" \
+"../../../../../../../../lib/techmap/alltech/allddr.vhd" \
+"../../../../../../../../lib/techmap/alltech/allmem.vhd" \
+"../../../../../../../../lib/techmap/alltech/allmul.vhd" \
+"../../../../../../../../lib/techmap/alltech/allpads.vhd" \
+"../../../../../../../../lib/techmap/alltech/alltap.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/amba/apbctrl.vhd" \
+"../../../../../../../../lib/grlib/amba/apbctrlx.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/uart/apbuart.vhd" \
+"../../../../../../../../lib/gaisler/arith/arith.vhd" \
+"../../../../../../../../lib/gaisler/ddr/axi_mig_7series.vhd" \
+"../../../../../../../../lib/gaisler/leon5/leon5.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/leon5int.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/bht_pap.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/btb.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/unisim/buffer_unisim.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon3/leon3.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/cachemem5.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/sparc/sparc.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon5v0/cctrl5.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/maps/cdcbus.vhd" \
+"../../../../../../../../lib/techmap/maps/clkand.vhd" \
+"../../../../../../../../lib/techmap/maps/clkgen.vhd" \
+"../../../../../../../../lib/techmap/unisim/clkgen_unisim.vhd" \
+"../../../../../../../../lib/techmap/maps/clkmux.vhd" \
+"../../../../../../../../lib/techmap/maps/clkpad_ds.vhd" \
+
+vhdl work  \
+"../../../../../../config.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/sparc/sparc_disas.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon5v0/cpucore5.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/dbgmod5.vhd" \
+"../../../../../../../../lib/gaisler/uart/dcom.vhd" \
+"../../../../../../../../lib/gaisler/uart/dcom_uart.vhd" \
+"../../../../../../../../lib/gaisler/sim/ddr3ram.vhd" \
+
+vhdl work  \
+"../../../../../../ddr_dummy.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/inferred/ddr_inferred.vhd" \
+"../../../../../../../../lib/techmap/maps/ddr_ireg.vhd" \
+"../../../../../../../../lib/techmap/maps/ddr_oreg.vhd" \
+"../../../../../../../../lib/techmap/unisim/ddr_unisim.vhd" \
+
+vhdl work  \
+"../../../../../../../../lib/work/debug/debug.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/arith/div32.vhd" \
+
+vhdl eth  \
+"../../../../../../../../lib/eth/core/greth_pkg.vhd" \
+"../../../../../../../../lib/eth/core/eth_ahb_mst.vhd" \
+"../../../../../../../../lib/eth/core/eth_edcl_ahb_mst.vhd" \
+"../../../../../../../../lib/eth/core/eth_rstgen.vhd" \
+"../../../../../../../../lib/eth/comp/ethcomp.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/net/net.vhd" \
+"../../../../../../../../lib/gaisler/greth/ethernet_mac.vhd" \
+"../../../../../../../../lib/gaisler/misc/gptimer.vhd" \
+"../../../../../../../../lib/gaisler/greth/greth_gbit_mb.vhd" \
+"../../../../../../../../lib/gaisler/greth/greth_mb.vhd" \
+
+vhdl eth  \
+"../../../../../../../../lib/eth/core/greth_rx.vhd" \
+"../../../../../../../../lib/eth/core/greth_tx.vhd" \
+"../../../../../../../../lib/eth/core/grethc.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/greth/grethm_mb.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/maps/grgates.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/i2c/i2c.vhd" \
+
+vhdl opencores  \
+"../../../../../../../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd" \
+"../../../../../../../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd" \
+"../../../../../../../../lib/opencores/i2c/i2coc.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/i2c/i2cmst.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/maps/inpad.vhd" \
+"../../../../../../../../lib/techmap/maps/iopad.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon5v0/irqmp5.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/itbufmem5.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/iu5.vhd" \
+"../../../../../../../../lib/gaisler/jtag/jtagcom.vhd" \
+"../../../../../../../../lib/gaisler/jtag/jtagcom2.vhd" \
+"../../../../../../../../lib/gaisler/l2cache/pkg/l2cache.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/l5stat.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/modgen/leaves.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/memctrl/memctrl.vhd" \
+"../../../../../../../../lib/gaisler/spi/spi.vhd" \
+"../../../../../../../../lib/gaisler/subsys/subsys.vhd" \
+
+vhdl esa  \
+"../../../../../../../../lib/esa/memoryctrl/memoryctrl.vhd" \
+
+vhdl work  \
+"../../../../../../leon5mp.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon5v0/leon5sys.vhd" \
+
+vhdl esa  \
+"../../../../../../../../lib/esa/memoryctrl/mctrl.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/inferred/memory_inferred.vhd" \
+"../../../../../../../../lib/techmap/unisim/memory_kintex7.vhd" \
+"../../../../../../../../lib/techmap/unisim/memory_ultrascale.vhd" \
+"../../../../../../../../lib/techmap/unisim/memory_unisim.vhd" \
+"../../../../../../../../lib/techmap/maps/memrwcol.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/modgen/multlib.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/arith/mul32.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/inferred/mul_inferred.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon5v0/nanofpu.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/maps/odpad.vhd" \
+"../../../../../../../../lib/techmap/maps/outpad.vhd" \
+"../../../../../../../../lib/techmap/unisim/pads_unisim.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/sim/phy.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/regfile5_dff.vhd" \
+"../../../../../../../../lib/gaisler/leon5v0/regfile5_ram.vhd" \
+"../../../../../../../../lib/gaisler/greth/adapters/rgmii_kc705.vhd" \
+"../../../../../../../../lib/gaisler/misc/rstgen.vhd" \
+"../../../../../../../../lib/gaisler/memctrl/sdmctrl.vhd" \
+"../../../../../../../../lib/gaisler/spi/spimctrl.vhd" \
+"../../../../../../../../lib/gaisler/sim/sram.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/maps/syncram.vhd" \
+"../../../../../../../../lib/techmap/maps/syncram64.vhd" \
+"../../../../../../../../lib/techmap/maps/syncram_2p.vhd" \
+"../../../../../../../../lib/techmap/maps/syncram_dp.vhd" \
+"../../../../../../../../lib/techmap/maps/syncrambw.vhd" \
+"../../../../../../../../lib/techmap/maps/syncreg.vhd" \
+"../../../../../../../../lib/techmap/maps/tap.vhd" \
+"../../../../../../../../lib/techmap/unisim/tap_unisim.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/leon5v0/tbufmem5.vhd" \
+
+vhdl techmap  \
+"../../../../../../../../lib/techmap/maps/techbuf.vhd" \
+"../../../../../../../../lib/techmap/maps/techmult.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/dftlib/trstmux.vhd" \
+
+vhdl gaisler  \
+"../../../../../../../../lib/gaisler/sim/uartprint.vhd" \
+
+vhdl grlib  \
+"../../../../../../../../lib/grlib/util/util.vhd" \
+
+vhdl work  \
+"../../../../../../testbench.vhd" \
+
+# Do not sort compile order
+nosort

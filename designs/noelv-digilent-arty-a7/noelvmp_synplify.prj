@@ -1,0 +1,43 @@
+source compile.synp
+add_file -vhdl -lib work ./rtl/axi_mig3_7series.vhd
+add_file -vhdl -lib work ./../../boards/digilent-arty-a7/ahb2axi_mig3_arty_a7.vhd
+add_file -vhdl -lib work ./rtl/clockers_mig.vhd
+add_file -vhdl -lib work ./config.vhd
+add_file -vhdl -lib work ./cfg/config_local.vhd
+add_file -vhdl -lib work ./../noelv-generic/rtl/core/rev.vhd
+add_file -vhdl -lib work ./../noelv-generic/rtl/core/cfgmap.vhd
+add_file -vhdl -lib work ./../noelv-generic/rtl/core/noelvcore.vhd
+add_file -vhdl -lib work ./rtl/ahbrom.vhd
+add_file -vhdl -lib work ./rtl/ahbrom64.vhd
+add_file -vhdl -lib work ./rtl/ahbrom128.vhd
+add_file -vhdl -lib work ./rtl/noelvmp.vhd
+add_file -fpga_constraint  ./../../boards/digilent-arty-a7/default.fdc
+
+#implementation: "synplify"
+impl -add synplify
+
+#device options
+set_option -technology Artix7
+set_option -part XC7A100TI
+set_option -speed_grade -1L
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -symbolic_fsm_compiler 0
+set_option -resource_sharing 0
+
+set_option -write_vhdl 1
+#set_option -disable_io_insertion 0
+
+#map options
+set_option -frequency 100
+
+set_option -top_module noelvmp
+
+#set result format/file last
+project -result_file "synplify/noelvmp.edf"
+
+#implementation attributes
+set_option -package csg324
+set_option -pipe 1; set_option -retiming 1; set_option -write_apr_constraint 0
+impl -active "synplify"

@@ -699,8 +699,8 @@ puts "./../../lib/gaisler/noelv/subsys/noelvsys.vhd"
 lib_vhdl new work
 xfile add "./rtl/axi_mig3_7series.vhd" -lib_vhdl work
 puts "./rtl/axi_mig3_7series.vhd"
-xfile add "./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd" -lib_vhdl work
-puts "./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd"
+xfile add "./rtl/ahb2axi_mig3_genesys2.vhd" -lib_vhdl work
+puts "./rtl/ahb2axi_mig3_genesys2.vhd"
 xfile add "./rtl/clockers_mig.vhd" -lib_vhdl work
 puts "./rtl/clockers_mig.vhd"
 xfile add "./config.vhd" -lib_vhdl work

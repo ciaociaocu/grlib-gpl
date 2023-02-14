@@ -1,0 +1,31 @@
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap xpm modelsim_lib/msim/xpm 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap grlib modelsim_lib/msim/grlib 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap techmap modelsim_lib/msim/techmap 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap eth modelsim_lib/msim/eth 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap gaisler modelsim_lib/msim/gaisler 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap work modelsim_lib/msim/work 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap axi_infrastructure_v1_1_0 modelsim_lib/msim/axi_infrastructure_v1_1_0 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap fifo_generator_v13_2_4 modelsim_lib/msim/fifo_generator_v13_2_4 
+Modifying modelsim.ini
+Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+vmap axi_clock_converter_v2_1_18 modelsim_lib/msim/axi_clock_converter_v2_1_18 
+Modifying modelsim.ini
+Failed to open executable /opt/intelFPGA/19.1/modelsim_ase/bin/../linux/../linux_x86_64pe/vlog in execute mode needed for the option -64.

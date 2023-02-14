@@ -1152,7 +1152,7 @@
         <Source name="./rtl/axi_mig3_7series.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd" type="VHDL" type_short="VHDL">
+        <Source name="./rtl/ahb2axi_mig3_genesys2.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
         <Source name="./rtl/clockers_mig.vhd" type="VHDL" type_short="VHDL">

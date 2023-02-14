@@ -332,7 +332,7 @@ read_vhdl -r -libname gaisler ./../../lib/gaisler/noelv/subsys/noelvcpu.vhd
 read_vhdl -r -libname gaisler ./../../lib/gaisler/noelv/subsys/dummy_pnp.vhd
 read_vhdl -r -libname gaisler ./../../lib/gaisler/noelv/subsys/noelvsys.vhd
 read_vhdl -r -libname work ./rtl/axi_mig3_7series.vhd
-read_vhdl -r -libname work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+read_vhdl -r -libname work ./rtl/ahb2axi_mig3_genesys2.vhd
 read_vhdl -r -libname work ./rtl/clockers_mig.vhd
 read_vhdl -r -libname work ./config.vhd
 read_vhdl -r -libname work ./cfg/config_local.vhd

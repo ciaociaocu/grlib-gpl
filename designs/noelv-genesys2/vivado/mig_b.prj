@@ -21,9 +21,9 @@
 
   <Version>4.2</Version>
 
-  <SystemClock>Differential</SystemClock>
+  <SystemClock>No Buffer</SystemClock>
 
-  <ReferenceClock>Use System Clock</ReferenceClock>
+  <ReferenceClock>No Buffer</ReferenceClock>
 
   <SysResetPolarity>ACTIVE LOW</SysResetPolarity>
 
@@ -33,16 +33,16 @@
 
   <dci_hr_inouts_inputs>50 Ohms</dci_hr_inouts_inputs>
 
-  <dci_cascade>0</dci_cascade>
+  <dci_cascade>1</dci_cascade>
 
   <Controller number="0">
     <MemoryDevice>DDR3_SDRAM/Components/MT41J256m16XX-107</MemoryDevice>
-    <TimePeriod>2500</TimePeriod>
+    <TimePeriod>3000</TimePeriod>
     <VccAuxIO>2.0V</VccAuxIO>
     <PHYRatio>4:1</PHYRatio>
-    <InputClkFreq>200</InputClkFreq>
+    <InputClkFreq>166.666</InputClkFreq>
     <UIExtraClocks>0</UIExtraClocks>
-    <MMCM_VCO>800</MMCM_VCO>
+    <MMCM_VCO>666</MMCM_VCO>
     <MMCMClkOut0> 1.000</MMCMClkOut0>
     <MMCMClkOut1>1</MMCMClkOut1>
     <MMCMClkOut2>1</MMCMClkOut2>
@@ -134,9 +134,6 @@
       <Pin IN_TERM="" IOSTANDARD="" PADName="AG5" SLEW="" VCCAUX_IO="NORMAL" name="ddr3_reset_n"/>
       <Pin IN_TERM="" IOSTANDARD="" PADName="AG13" SLEW="" VCCAUX_IO="NORMAL" name="ddr3_we_n"/>
     </PinSelection>
-    <System_Clock>
-      <Pin Bank="33" PADName="AD12/AD11(CC_P/N)" name="sys_clk_p/n"/>
-    </System_Clock>
     <System_Control>
       <Pin Bank="Select Bank" PADName="No connect" name="sys_rst"/>
       <Pin Bank="Select Bank" PADName="No connect" name="init_calib_complete"/>
@@ -155,7 +152,7 @@
     <emrOutputDriveStrength name="Output Driver Impedance Control">RZQ/7</emrOutputDriveStrength>
     <emrMirrorSelection name="Address Mirroring">Disable</emrMirrorSelection>
     <emrCSSelection name="Controller Chip Select Pin">Enable</emrCSSelection>
-    <emrRTT name="RTT (nominal) - On Die Termination (ODT)">RZQ/6</emrRTT>
+    <emrRTT name="RTT (nominal) - On Die Termination (ODT)">RZQ/4</emrRTT>
     <emrPosted name="Additive Latency (AL)">0</emrPosted>
     <emrOCD name="Write Leveling Enable">Disabled</emrOCD>
     <emrDQS name="TDQS enable">Enabled</emrDQS>
@@ -169,8 +166,8 @@
     <AXIParameters>
       <C0_C_RD_WR_ARB_ALGORITHM>RD_PRI_REG</C0_C_RD_WR_ARB_ALGORITHM>
       <C0_S_AXI_ADDR_WIDTH>30</C0_S_AXI_ADDR_WIDTH>
-      <C0_S_AXI_DATA_WIDTH>256</C0_S_AXI_DATA_WIDTH>
-      <C0_S_AXI_ID_WIDTH>3</C0_S_AXI_ID_WIDTH>
+      <C0_S_AXI_DATA_WIDTH>128</C0_S_AXI_DATA_WIDTH>
+      <C0_S_AXI_ID_WIDTH>4</C0_S_AXI_ID_WIDTH>
       <C0_S_AXI_SUPPORTS_NARROW_BURST>0</C0_S_AXI_SUPPORTS_NARROW_BURST>
     </AXIParameters>
   </Controller>

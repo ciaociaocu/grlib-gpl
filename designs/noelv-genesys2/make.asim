@@ -382,7 +382,7 @@
 	acom -quiet   -93 -work work ./../../lib/work/debug/grtestmod.vhd
 	acom -quiet   -93 -work work ./../../lib/work/debug/cpu_disas.vhd
 	acom -quiet   -93 -work work ./rtl/axi_mig3_7series.vhd
-	acom -quiet   -93 -work work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+	acom -quiet   -93 -work work ./rtl/ahb2axi_mig3_genesys2.vhd
 	acom -quiet   -93 -work work ./rtl/clockers_mig.vhd
 	acom -quiet   -93 -work work ./config.vhd
 	acom -quiet   -93 -work work ./cfg/config_local.vhd

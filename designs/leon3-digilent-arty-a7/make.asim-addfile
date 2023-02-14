@@ -1,0 +1,8 @@
+
+addfile -vhdl ../../boards/digilent-arty-a7/ahb2mig_arty_a7.vhdl
+addfile -vhdl ../../boards/digilent-arty-a7/clockers_mig.vhdl
+addfile -vhdl ../../boards/digilent-arty-a7/clockers_clkgen.vhdl
+addfile -vhdl config.vhd
+addfile -vhdl ahbrom.vhd
+addfile -vhdl leon3mp.vhd
+addfile -vhdl testbench.vhd

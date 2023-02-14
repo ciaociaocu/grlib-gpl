@@ -389,7 +389,7 @@ ncsim:
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./../../lib/work/debug/grtestmod.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./../../lib/work/debug/cpu_disas.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./rtl/axi_mig3_7series.vhd
-	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./rtl/ahb2axi_mig3_genesys2.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./rtl/clockers_mig.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./config.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work ./cfg/config_local.vhd

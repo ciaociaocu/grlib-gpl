@@ -1,0 +1,913 @@
+
+*** Running vivado
+    with args -log leon5mp.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source leon5mp.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source leon5mp.tcl -notrace
+Command: link_design -top leon5mp -part xc7k325tffg900-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Netlist 29-17] Analyzing 4202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.srcs/sources_1/ip/mig/mig/user_design/constraints/mig.xdc] for cell 'mig_gen.gen_mig.ddrc/MCB_inst'
+Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.srcs/sources_1/ip/mig/mig/user_design/constraints/mig.xdc] for cell 'mig_gen.gen_mig.ddrc/MCB_inst'
+Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'clk200' completely overrides clock 'clk200p'.
+New: create_clock -period 5.000 -name clk200 [get_ports clk200p], [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:2]
+Previous: create_clock -period 5.000 [get_ports clk200p], [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.srcs/sources_1/ip/mig/mig/user_design/constraints/mig.xdc:30]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:16]
+INFO: [Timing 38-2] Deriving generated clocks [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:16]
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:16]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:16]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2627.438 ; gain = 591.062 ; free physical = 4706 ; free virtual = 46177
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:16]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:17]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:17]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:17]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:18]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:18]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:18]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:19]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:19]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:19]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:20]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:20]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:20]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:21]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:21]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:21]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:22]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:22]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:23]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:26]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'spi_sel_n'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:26]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports spi_sel_n]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:28]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:28]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports spi_miso]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:28]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:29]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:29]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports spi_mosi]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:32]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:32]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:32]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:33]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:33]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:33]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:34]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:34]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:34]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:35]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:35]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:35]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:39]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:39]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:39]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:40]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:40]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:40]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:41]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:41]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:41]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:42]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:42]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:42]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:45]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:45]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:46]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:46]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:46]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:47]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:47]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:47]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:48]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:48]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:48]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:55]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:56]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:56]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:57]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:57]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:58]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:58]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:58]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:59]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:59]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:59]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:60]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:60]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:60]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:61]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:61]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:61]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CLKFBOUT'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:62]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:62]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks -include_generated_clocks CLKFBOUT]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:62]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'phy_c*'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [all_registers -clock [get_clocks clk125_nobuf_0]]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:108]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [all_registers -clock [get_clocks clk125_nobuf_90]]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:109]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [all_registers -clock [get_clocks clk125_nobuf_0]]'. [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc:114]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/xilinx-kc705-xc7k325t/xilinx-kc705-xc7k325t.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2677.438 ; gain = 0.000 ; free physical = 4799 ; free virtual = 46272
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 474 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 20 instances
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 28 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 353 instances
+
+40 Infos, 35 Warnings, 36 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2677.438 ; gain = 1283.840 ; free physical = 4799 ; free virtual = 46272
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Implementation license expires in 7 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 2749.473 ; gain = 64.031 ; free physical = 4777 ; free virtual = 46250
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 7ef50b9e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2749.473 ; gain = 0.000 ; free physical = 4681 ; free virtual = 46152
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 50 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 14b9956b3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4660 ; free virtual = 46131
+INFO: [Opt 31-389] Phase Retarget created 75 cells and removed 339 cells
+INFO: [Opt 31-1021] In phase Retarget, 332 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: e9382eae
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4660 ; free virtual = 46131
+INFO: [Opt 31-389] Phase Constant propagation created 14 cells and removed 54 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 59 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: f2b5e60d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4625 ; free virtual = 46096
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 251 cells
+INFO: [Opt 31-1021] In phase Sweep, 7 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 157867cf2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4643 ; free virtual = 46114
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 157867cf2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4643 ; free virtual = 46114
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f2b5e60d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4645 ; free virtual = 46116
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              75  |             339  |                                            332  |
+|  Constant propagation         |              14  |              54  |                                             59  |
+|  Sweep                        |               2  |             251  |                                              7  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4645 ; free virtual = 46116
+Ending Logic Optimization Task | Checksum: 8c631684
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2827.426 ; gain = 0.000 ; free physical = 4644 ; free virtual = 46116
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.324 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 63 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 0 Total Ports: 126
+Ending PowerOpt Patch Enables Task | Checksum: 8c9cbd5d
+
+Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4489 ; free virtual = 45965
+Ending Power Optimization Task | Checksum: 8c9cbd5d
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:20 . Memory (MB): peak = 3565.480 ; gain = 738.055 ; free physical = 4555 ; free virtual = 46031
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 8c9cbd5d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4555 ; free virtual = 46031
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4555 ; free virtual = 46031
+Ending Netlist Obfuscation Task | Checksum: 16cdb3d43
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4555 ; free virtual = 46031
+INFO: [Common 17-83] Releasing license: Implementation
+70 Infos, 35 Warnings, 36 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:05 ; elapsed = 00:00:31 . Memory (MB): peak = 3565.480 ; gain = 888.043 ; free physical = 4555 ; free virtual = 46031
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4555 ; free virtual = 46031
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4521 ; free virtual = 46026
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3565.480 ; gain = 0.000 ; free physical = 4545 ; free virtual = 46036
+INFO: [runtcl-4] Executing : report_drc -file leon5mp_drc_opted.rpt -pb leon5mp_drc_opted.pb -rpx leon5mp_drc_opted.rpx
+Command: report_drc -file leon5mp_drc_opted.rpt -pb leon5mp_drc_opted.pb -rpx leon5mp_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Implementation license expires in 7 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4520 ; free virtual = 46012
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 8934e676
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4520 ; free virtual = 46012
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4525 ; free virtual = 46017
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1277895c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4418 ; free virtual = 45914
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1026515ca
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4246 ; free virtual = 45744
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1026515ca
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4246 ; free virtual = 45744
+Phase 1 Placer Initialization | Checksum: 1026515ca
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4246 ; free virtual = 45744
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 16b354c10
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4156 ; free virtual = 45654
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net l5sys/cpuloop[0].nocgcpu.core/cc0/crami[ddataen][2] could not be optimized because driver l5sys/cpuloop[0].nocgcpu.core/cc0/RAM_reg_i_1__23 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4071 ; free virtual = 45590
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           6  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 10bbfb7f4
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:51 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4071 ; free virtual = 45590
+Phase 2.2 Global Placement Core | Checksum: 23119a6c3
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:52 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4061 ; free virtual = 45578
+Phase 2 Global Placement | Checksum: 23119a6c3
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:52 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4111 ; free virtual = 45628
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 284baf0ef
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:00:55 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4132 ; free virtual = 45644
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 185526e62
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:02 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4121 ; free virtual = 45634
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 14cb768f6
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:02 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4124 ; free virtual = 45636
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 133c4fd13
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:02 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4124 ; free virtual = 45636
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 13934f7f9
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:07 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4131 ; free virtual = 45644
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 23402b5c7
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:29 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4044 ; free virtual = 45558
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 250a65a4d
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:32 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4051 ; free virtual = 45565
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 15243e126
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:32 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4051 ; free virtual = 45565
+Phase 3 Detail Placement | Checksum: 15243e126
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:32 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4051 ; free virtual = 45565
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 154a8145b
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net l5sys/dbgmod/p_0_in_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net l5sys/cpuloop[0].nocgcpu.core/cc0/srstregs.r_reg[holdn]_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net rst0/rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 3, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 154a8145b
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:39 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4109 ; free virtual = 45623
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.500. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 128fd6441
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:47 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4103 ; free virtual = 45618
+Phase 4.1 Post Commit Optimization | Checksum: 128fd6441
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:01:47 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4103 ; free virtual = 45618
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 128fd6441
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:01:48 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4109 ; free virtual = 45624
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 128fd6441
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:48 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4110 ; free virtual = 45624
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4110 ; free virtual = 45624
+Phase 4.4 Final Placement Cleanup | Checksum: 18e31c37b
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:48 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4111 ; free virtual = 45625
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18e31c37b
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:49 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4111 ; free virtual = 45625
+Ending Placer Task | Checksum: 142ccd0f6
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:49 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4122 ; free virtual = 45636
+INFO: [Common 17-83] Releasing license: Implementation
+110 Infos, 35 Warnings, 36 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:45 ; elapsed = 00:01:51 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4243 ; free virtual = 45757
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4243 ; free virtual = 45757
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4042 ; free virtual = 45727
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4209 ; free virtual = 45751
+INFO: [runtcl-4] Executing : report_io -file leon5mp_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4188 ; free virtual = 45731
+INFO: [runtcl-4] Executing : report_utilization -file leon5mp_utilization_placed.rpt -pb leon5mp_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file leon5mp_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.85 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4207 ; free virtual = 45751
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Implementation license expires in 7 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+122 Infos, 35 Warnings, 36 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4160 ; free virtual = 45703
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3946 ; free virtual = 45660
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 4114 ; free virtual = 45686
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Implementation license expires in 7 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 60afaf3d ConstDB: 0 ShapeSum: e21d21b9 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: d7d321a0
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:18 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3742 ; free virtual = 45333
+Post Restoration Checksum: NetGraph: 2b1a80ca NumContArr: acb8a0d6 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: d7d321a0
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3772 ; free virtual = 45347
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: d7d321a0
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3720 ; free virtual = 45296
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: d7d321a0
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:19 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3722 ; free virtual = 45295
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1277d13fe
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3659 ; free virtual = 45250
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.894  | TNS=0.000  | WHS=-2.574 | THS=-2514.612|
+
+Phase 2 Router Initialization | Checksum: c062f9f2
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:36 . Memory (MB): peak = 3621.508 ; gain = 0.000 ; free physical = 3621 ; free virtual = 45217
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00211393 %
+  Global Horizontal Routing Utilization  = 0.00173692 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 80491
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 80488
+  Number of Partially Routed Nets     = 3
+  Number of Node Overlaps             = 1
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 21b30a274
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:00:42 . Memory (MB): peak = 3635.422 ; gain = 13.914 ; free physical = 3688 ; free virtual = 45263
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 24712
+ Number of Nodes with overlaps = 4845
+ Number of Nodes with overlaps = 1771
+ Number of Nodes with overlaps = 679
+ Number of Nodes with overlaps = 260
+ Number of Nodes with overlaps = 100
+ Number of Nodes with overlaps = 56
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.076 | TNS=-0.557 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 162b74ee1
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:02:21 . Memory (MB): peak = 3638.422 ; gain = 16.914 ; free physical = 3658 ; free virtual = 45240
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2822
+ Number of Nodes with overlaps = 698
+ Number of Nodes with overlaps = 297
+ Number of Nodes with overlaps = 170
+ Number of Nodes with overlaps = 67
+ Number of Nodes with overlaps = 48
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.131  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: aabae787
+
+Time (s): cpu = 00:06:19 ; elapsed = 00:02:56 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+Phase 4 Rip-up And Reroute | Checksum: aabae787
+
+Time (s): cpu = 00:06:19 ; elapsed = 00:02:56 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+Phase 5.1.1 Delay CleanUp | Checksum: aabae787
+
+Time (s): cpu = 00:06:19 ; elapsed = 00:02:56 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+Phase 5.1 TNS Cleanup | Checksum: aabae787
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:02:56 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: aabae787
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:02:57 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+Phase 5 Delay and Skew Optimization | Checksum: aabae787
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:02:57 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: a4b029c6
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:02:59 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45319
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.156  | TNS=0.000  | WHS=-3.736 | THS=-18.611|
+
+Phase 6.1 Hold Fix Iter | Checksum: f9976425
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:02:59 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3734 ; free virtual = 45316
+Phase 6 Post Hold Fix | Checksum: d4030940
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:03:00 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3733 ; free virtual = 45316
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 76cce5de
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:03:02 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.156  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 76cce5de
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:03:02 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3737 ; free virtual = 45320
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.20963 %
+  Global Horizontal Routing Utilization  = 11.8106 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 76cce5de
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:03:03 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3736 ; free virtual = 45319
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 76cce5de
+
+Time (s): cpu = 00:06:40 ; elapsed = 00:03:03 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3729 ; free virtual = 45311
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: acb1ace9
+
+Time (s): cpu = 00:06:44 ; elapsed = 00:03:08 . Memory (MB): peak = 3639.422 ; gain = 17.914 ; free physical = 3731 ; free virtual = 45313
+
+Phase 11 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.169  | TNS=0.000  | WHS=-3.734 | THS=-18.599|
+
+WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Phase 11 Post Router Timing | Checksum: 15f5f6d48
+
+Time (s): cpu = 00:07:12 ; elapsed = 00:03:14 . Memory (MB): peak = 3651.422 ; gain = 29.914 ; free physical = 3678 ; free virtual = 45260
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:07:12 ; elapsed = 00:03:14 . Memory (MB): peak = 3651.422 ; gain = 29.914 ; free physical = 3928 ; free virtual = 45510
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+141 Infos, 36 Warnings, 36 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:07:17 ; elapsed = 00:03:16 . Memory (MB): peak = 3651.422 ; gain = 29.914 ; free physical = 3928 ; free virtual = 45510
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3651.422 ; gain = 0.000 ; free physical = 3928 ; free virtual = 45510
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3651.422 ; gain = 0.000 ; free physical = 3688 ; free virtual = 45474
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3651.422 ; gain = 0.000 ; free physical = 3880 ; free virtual = 45499
+INFO: [runtcl-4] Executing : report_drc -file leon5mp_drc_routed.rpt -pb leon5mp_drc_routed.pb -rpx leon5mp_drc_routed.rpx
+Command: report_drc -file leon5mp_drc_routed.rpt -pb leon5mp_drc_routed.pb -rpx leon5mp_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 3683.438 ; gain = 32.016 ; free physical = 3850 ; free virtual = 45469
+INFO: [runtcl-4] Executing : report_methodology -file leon5mp_methodology_drc_routed.rpt -pb leon5mp_methodology_drc_routed.pb -rpx leon5mp_methodology_drc_routed.rpx
+Command: report_methodology -file leon5mp_methodology_drc_routed.rpt -pb leon5mp_methodology_drc_routed.pb -rpx leon5mp_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:48 ; elapsed = 00:00:13 . Memory (MB): peak = 3683.438 ; gain = 0.000 ; free physical = 3886 ; free virtual = 45508
+INFO: [runtcl-4] Executing : report_power -file leon5mp_power_routed.rpt -pb leon5mp_power_summary_routed.pb -rpx leon5mp_power_routed.rpx
+Command: report_power -file leon5mp_power_routed.rpt -pb leon5mp_power_summary_routed.pb -rpx leon5mp_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+153 Infos, 37 Warnings, 36 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:43 ; elapsed = 00:00:22 . Memory (MB): peak = 3683.438 ; gain = 0.000 ; free physical = 3806 ; free virtual = 45465
+INFO: [runtcl-4] Executing : report_route_status -file leon5mp_route_status.rpt -pb leon5mp_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file leon5mp_timing_summary_routed.rpt -pb leon5mp_timing_summary_routed.pb -rpx leon5mp_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.delay_rgmii_rx_ctl0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[0].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[1].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[2].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[3].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file leon5mp_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file leon5mp_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file leon5mp_bus_skew_routed.rpt -pb leon5mp_bus_skew_routed.pb -rpx leon5mp_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Implementation license expires in 7 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+171 Infos, 37 Warnings, 41 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3683.438 ; gain = 0.000 ; free physical = 3770 ; free virtual = 45439
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3683.438 ; gain = 0.000 ; free physical = 3514 ; free virtual = 45386
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/leon5mp_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3683.438 ; gain = 0.000 ; free physical = 3720 ; free virtual = 45425
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file leon5mp_timing_summary_postroute_physopted.rpt -pb leon5mp_timing_summary_postroute_physopted.pb -rpx leon5mp_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.delay_rgmii_rx_ctl0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[0].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[1].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[2].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-469] The REFCLK pin of IDELAYCTRL eth0.dlyctrl0 has a clock period of 4.000 ns (frequency 250.000 Mhz) but IDELAYE2 eth0.rgmii_rxd[3].delay_rgmii_rxd0 has REFCLK_FREQUENCY of 200.000 Mhz (period 5.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE2 REFCLK_FREQUENCY property.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE2/ODELAYE2>.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file leon5mp_bus_skew_postroute_physopted.rpt -pb leon5mp_bus_skew_postroute_physopted.pb -rpx leon5mp_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force leon5mp.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Implementation license expires in 7 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[1].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[2].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[3].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[4].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[5].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[6].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[7].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/ input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm//A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/ input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm//B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0 input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0 input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1] input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1] input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0 input l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/p_0_out input l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/p_0_out/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/p_0_out input l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/p_0_out/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/srstregs.r_reg[mulo] input l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/srstregs.r_reg[mulo]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/ output l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm//P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0 output l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/ multiplier stage l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm//P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0 multiplier stage l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1] multiplier stage l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0 multiplier stage l5sys/cpuloop[0].nocgcpu.core/mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/srstregs.r_reg[mulo] multiplier stage l5sys/cpuloop[0].nocgcpu.core/nfpugen.nfpu0/srstregs.r_reg[mulo]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net eth0.rgmii0/no10support.clkmux25o/clk10_100o is a gated clock net sourced by a combinational pin eth0.rgmii0/no10support.clkmux25o/V7.U0_i_1/O, cell eth0.rgmii0/no10support.clkmux25o/V7.U0_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/pll_clk3_out on the mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of mig_gen.gen_mig.ddrc/MCB_inst/u_mig_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 28 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./leon5mp.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/leon5-xilinx-kc705/vivado/leon5-xilinx-kc705/leon5-xilinx-kc705.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Feb  1 15:20:06 2023. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+191 Infos, 65 Warnings, 47 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:47 ; elapsed = 00:00:25 . Memory (MB): peak = 4023.449 ; gain = 340.012 ; free physical = 3663 ; free virtual = 45397
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  1 15:20:06 2023...

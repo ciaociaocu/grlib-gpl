@@ -67,8 +67,8 @@ entity noelvmp is
     );
   port (
     -- Clock and Reset
-    clk300p          : in    std_ulogic;
-    clk300n          : in    std_ulogic;
+    clk200p          : in    std_ulogic;
+    clk200n          : in    std_ulogic;
     -- LEDs. 0: off, 1: on
     led                : out   std_logic_vector(7 downto 0);
     -- Buttons 0: not pressed, 1: pressed
@@ -79,9 +79,9 @@ entity noelvmp is
     uart_tx_in        : in    std_ulogic;
     uart_rx_out       : out   std_ulogic;
     -- DDR3
-    ddr3_dq           : inout std_logic_vector(15 downto 0);
-    ddr3_dqs_p        : inout std_logic_vector(1 downto 0);
-    ddr3_dqs_n        : inout std_logic_vector(1 downto 0);
+    ddr3_dq           : inout std_logic_vector(31 downto 0);
+    ddr3_dqs_p        : inout std_logic_vector(3 downto 0);
+    ddr3_dqs_n        : inout std_logic_vector(3 downto 0);
     ddr3_addr         : out   std_logic_vector(14 downto 0);
     ddr3_ba           : out   std_logic_vector(2 downto 0);
     ddr3_ras_n        : out   std_logic;
@@ -92,7 +92,7 @@ entity noelvmp is
     ddr3_ck_n         : out   std_logic_vector(0 downto 0);
     ddr3_cke          : out   std_logic_vector(0 downto 0);
     ddr3_cs_n         : out   std_logic_vector(0 downto 0);
-    ddr3_dm           : out   std_logic_vector(1 downto 0);
+    ddr3_dm           : out   std_logic_vector(3 downto 0);
     ddr3_odt          : out   std_logic_vector(0 downto 0);
 
     -- Ethernet PHY, 10/100 Mbit
@@ -112,12 +112,12 @@ end;
 
 architecture rtl of noelvmp is
   constant OEPOL        : integer := padoen_polarity(padtech);
-  constant BOARD_FREQ : integer := 300000;                                -- CLK input frequency in KHz
+  constant BOARD_FREQ : integer := 200000;                                -- CLK input frequency in KHz
   
   function CPU_FREQ return integer is
   begin
     if CFG_MIG_7SERIES = 1 then
-      return BOARD_FREQ / 3 * 10 / 6 / 2;
+      return BOARD_FREQ / 2 * 10 / 6 / 2;
     end if;
     return BOARD_FREQ * CFG_CLKMUL / CFG_CLKDIV;
   end;
@@ -169,7 +169,9 @@ architecture rtl of noelvmp is
   signal etho : eth_out_type;
   signal eth_apbi       : apb_slv_in_type;
   signal eth_apbo       : apb_slv_out_type;
-  
+--  signal rgmiii         : eth_in_type; 
+--  signal rgmiio         : eth_out_type;
+      
   -- Memory
   signal mem_aximi      : axi_somi_type;
   signal mem_aximo      : axi_mosi_type;
@@ -258,8 +260,8 @@ begin
   clocker100MHz: clk_100MHz
     port map(
     clk_out1     => CLK100MHZ,   
-    clk_in1_p    => clk300p,   
-    clk_in1_n    => clk300n); 
+    clk_in1_p    => clk200p,   
+    clk_in1_n    => clk200n); 
   
   clockers0 : entity work.clockers_mig
   port map (
@@ -273,7 +275,7 @@ begin
   );
 
   lock <= calib_done and pll_locked;
-  
+--  lock <= pll_locked;
   
   
   
@@ -305,7 +307,7 @@ begin
     disas       => disas)
   port map (
     -- Clock & reset
-    clkm        => clkm, 
+    clkm        => clkm_gen, 
     resetn      => resetn,
     lock        => lock,
     rstno       => rstn,
@@ -336,8 +338,8 @@ begin
     -- Ethernet PHY
     ethi        => ethi,
     etho        => etho,
-    eth_apbi    => eth_apbi,
-    eth_apbo    => eth_apbo,
+    eth_apbi    => open,
+    eth_apbo    => apb_none,
     -- Debug UART
     duart_rx    => duart_rx,
     duart_tx    => duart_tx,
@@ -391,50 +393,50 @@ begin
     generic map (level => cmos, voltage => x18v, tech => padtech)
     port map (uart_rx_out, uart_tx_int);
 
-  -----------------------------------------------------------------------------
-  -- DDR3 Memory Controller (MIG) ---------------------------------------------
-  -----------------------------------------------------------------------------
-  mig_gen : if (CFG_MIG_7SERIES = 1) and (SIMULATION = 0) and (CFG_L2_AXI = 1) generate
-    -- No APB interface on memory controller  
-    mem_apbo0    <= apb_none;
+--  -----------------------------------------------------------------------------
+--  -- DDR3 Memory Controller (MIG) ---------------------------------------------
+--  -----------------------------------------------------------------------------
+--  mig_gen : if (CFG_MIG_7SERIES = 1) and (SIMULATION = 0) and (CFG_L2_AXI = 1) generate
+--    -- No APB interface on memory controller  
+--    mem_apbo0    <= apb_none;
 
-    ddr3c: entity work.axi_mig3_7series
-      port map (
-        ddr3_addr       => ddr3_addr,
-        ddr3_we_n       => ddr3_we_n,
-        ddr3_cas_n      => ddr3_cas_n,
-        ddr3_ras_n      => ddr3_ras_n,
-        ddr3_ba         => ddr3_ba,
-        ddr3_cke        => ddr3_cke,
-        ddr3_cs_n       => ddr3_cs_n,
-        ddr3_dm         => ddr3_dm,
-        ddr3_dq         => ddr3_dq,
-        ddr3_dqs_p      => ddr3_dqs_p,
-        ddr3_dqs_n      => ddr3_dqs_n,
-        ddr3_odt        => ddr3_odt,
-        ddr3_reset_n    => ddr3_reset_n,
-        ddr3_ck_p       => ddr3_ck_p,
-        ddr3_ck_n       => ddr3_ck_n,
-        --
-        ui_clk          => ui_clk,
-        ui_clk_sync_rst => open,
-        --
-        aximi           => mem_aximi,
-        aximo           => mem_aximo,
-        --
-        calib_done      => calib_done,
-        mmcm_locked     => mmcm_locked,
-        sys_clk_i       => clkinmig,
-        clk_ref_i       => clkref,
-        rst_n_syn       => migrstn,
-        amba_rstn       => rstn,
-        amba_clk        => clkm
-        );
-    clkm <= clkm_gen;
-  end generate mig_gen;
+--    ddr3c: entity work.axi_mig3_7series
+--      port map (
+--        ddr3_addr       => ddr3_addr,
+--        ddr3_we_n       => ddr3_we_n,
+--        ddr3_cas_n      => ddr3_cas_n,
+--        ddr3_ras_n      => ddr3_ras_n,
+--        ddr3_ba         => ddr3_ba,
+--        ddr3_cke        => ddr3_cke,
+--        ddr3_cs_n       => ddr3_cs_n,
+--        ddr3_dm         => ddr3_dm,
+--        ddr3_dq         => ddr3_dq,
+--        ddr3_dqs_p      => ddr3_dqs_p,
+--        ddr3_dqs_n      => ddr3_dqs_n,
+--        ddr3_odt        => ddr3_odt,
+--        ddr3_reset_n    => ddr3_reset_n,
+--        ddr3_ck_p       => ddr3_ck_p,
+--        ddr3_ck_n       => ddr3_ck_n,
+--        --
+--        ui_clk          => ui_clk,
+--        ui_clk_sync_rst => open,
+--        --
+--        aximi           => mem_aximi,
+--        aximo           => mem_aximo,
+--        --
+--        calib_done      => calib_done,
+--        mmcm_locked     => mmcm_locked,
+--        sys_clk_i       => clkinmig,
+--        clk_ref_i       => clkref,
+--        rst_n_syn       => migrstn,
+--        amba_rstn       => rstn,
+--        amba_clk        => clkm
+--        );
+--    clkm <= clkm_gen;
+--  end generate mig_gen;
   
   mig_ahb_gen : if (CFG_MIG_7SERIES = 1) and (SIMULATION = 0) and (CFG_L2_AXI /= 1) generate
-    ddrc:  entity work.ahb2axi_mig3_arty_a7
+    ddrc:  entity work.ahb2axi_mig3_genesys2
         generic map (
           hindex    => MEM_HSINDEX,
           haddr     => MEM_HADDR,
@@ -471,10 +473,9 @@ begin
           ui_clk          => clkm_mig,
           ui_clk_sync_rst => open
           );
-    clkm <= clkm_gen;
   end generate;
 
-  no_mig_gen : if (CFG_MIG_7SERIES = 0) generate  
+--  no_mig_gen : if (CFG_MIG_7SERIES = 0) generate  
     -- Tie-Off DDR4 Signals
     --ddr3_addr       <= (others => '0');
     --ddr3_we_n       <= '0';
@@ -492,8 +493,8 @@ begin
     --ddr3_ck_p       <= (others => '0');
     --ddr3_ck_n       <= (others => '0');
     
-    calib_done  <= '1';
-    mmcm_locked <= '1';
+--    calib_done  <= '1';
+--    mmcm_locked <= '1';
 
     --ddr3_ck_outpad : outpad_ds
     --  generic map (tech => padtech, level => sstl12_dci, voltage => x12v)
@@ -501,50 +502,50 @@ begin
 
     -- Seems impossible to get Vivado to accept outpad_ds as a differential 
     -- clock output. Instantiate a dummy mig.
-    ddr3c: entity work.axi_mig3_7series
-      port map (
-        ddr3_addr       => ddr3_addr,
-        ddr3_we_n       => ddr3_we_n,
-        ddr3_cas_n      => ddr3_cas_n,
-        ddr3_ras_n      => ddr3_ras_n,
-        ddr3_ba         => ddr3_ba,
-        ddr3_cke        => ddr3_cke,
-        ddr3_cs_n       => ddr3_cs_n,
-        ddr3_dm         => ddr3_dm,
-        ddr3_dq         => ddr3_dq,
-        ddr3_dqs_p      => ddr3_dqs_p,
-        ddr3_dqs_n      => ddr3_dqs_n,
-        ddr3_odt        => ddr3_odt,
-        ddr3_reset_n    => ddr3_reset_n,
-        ddr3_ck_p       => ddr3_ck_p,
-        ddr3_ck_n       => ddr3_ck_n,
-        --
-        ui_clk          => open,
-        ui_clk_sync_rst => open,
-        --
-        aximi           => open,
-        aximo           => mem_aximo,
-        --
-        calib_done      => open,
-        mmcm_locked     => open,
-        sys_clk_i       => clkinmig,
-        clk_ref_i       => clkref,
-        rst_n_syn       => migrstn,
-        amba_rstn       => rstn,
-        amba_clk        => clkm
-        );
+--    ddr3c: entity work.axi_mig3_7series
+--      port map (
+--        ddr3_addr       => ddr3_addr,
+--        ddr3_we_n       => ddr3_we_n,
+--        ddr3_cas_n      => ddr3_cas_n,
+--        ddr3_ras_n      => ddr3_ras_n,
+--        ddr3_ba         => ddr3_ba,
+--        ddr3_cke        => ddr3_cke,
+--        ddr3_cs_n       => ddr3_cs_n,
+--        ddr3_dm         => ddr3_dm,
+--        ddr3_dq         => ddr3_dq,
+--        ddr3_dqs_p      => ddr3_dqs_p,
+--        ddr3_dqs_n      => ddr3_dqs_n,
+--        ddr3_odt        => ddr3_odt,
+--        ddr3_reset_n    => ddr3_reset_n,
+--        ddr3_ck_p       => ddr3_ck_p,
+--        ddr3_ck_n       => ddr3_ck_n,
+--        --
+--        ui_clk          => open,
+--        ui_clk_sync_rst => open,
+--        --
+--        aximi           => open,
+--        aximo           => mem_aximo,
+--        --
+--        calib_done      => open,
+--        mmcm_locked     => open,
+--        sys_clk_i       => clkinmig,
+--        clk_ref_i       => clkref,
+--        rst_n_syn       => migrstn,
+--        amba_rstn       => rstn,
+--        amba_clk        => clkm
+--        );
 
-    clkm      <= clkm_gen;
-  end generate no_mig_gen;
+--    clkm      <= clkm_gen;
+--  end generate no_mig_gen;
   
   -- AHBRAM
   no_mig_mem_gen : if (CFG_MIG_7SERIES = 0) generate
     -- No APB interface on memory controller  
     mem_apbo0    <= apb_none;
 
-    axi_mem_gen : if (CFG_L2_AXI = 1) generate
-      mem_ahbso0 <= ahbs_none;
-    end generate axi_mem_gen;
+--    axi_mem_gen : if (CFG_L2_AXI = 1) generate
+--      mem_ahbso0 <= ahbs_none;
+--    end generate axi_mem_gen;
 
     ahb_mem_gen : if (CFG_L2_AXI = 0) generate
       ahbram1 : ahbram 
@@ -554,90 +555,86 @@ begin
           hmask       => L2C_HMASK,
           tech        => CFG_MEMTECH,
           kbytes      => 256)
-        port map (
-          rstn,
-          clkm,
-          mem_ahbsi0,
-          mem_ahbso0);
+        port map (rstn, clkm, mem_ahbsi0, mem_ahbso0);
     end generate ahb_mem_gen;
   end generate no_mig_mem_gen;
 
-  -- Simulation module
-  -- pragma translate_off
-  sim_mem_gen : if (CFG_MIG_7SERIES = 1) and (SIMULATION = 1) generate
-    -- No APB interface on memory controller  
-    mem_apbo0    <= apb_none;
+--  -- Simulation module
+--  -- pragma translate_off
+--  sim_mem_gen : if (CFG_MIG_7SERIES = 1) and (SIMULATION = 1) generate
+--    -- No APB interface on memory controller  
+--    mem_apbo0    <= apb_none;
 
-    calib_done  <= '1';
-    mmcm_locked <= '1';
-    clkm        <= clkm_gen;
+--    calib_done  <= '1';
+--    mmcm_locked <= '1';
+--    clkm        <= clkm_gen;
 
-    axi_mem_gen : if (CFG_L2_AXI = 1) generate
-      mig_axiram : aximem
-        generic map (
-          fname   => ramfile,
-          axibits => AXIDW,
-          rstmode => 0)
-        port map (
-          clk   => clkm,
-          rst   => rstn,
-          axisi => mem_aximo,
-          axiso => mem_aximi);
+--    axi_mem_gen : if (CFG_L2_AXI = 1) generate
+--      mig_axiram : aximem
+--        generic map (
+--          fname   => ramfile,
+--          axibits => AXIDW,
+--          rstmode => 0)
+--        port map (
+--          clk   => clkm,
+--          rst   => rstn,
+--          axisi => mem_aximo,
+--          axiso => mem_aximi);
 
-      mem_ahbso0 <= ahbs_none;
-    end generate axi_mem_gen;
+--      mem_ahbso0 <= ahbs_none;
+--    end generate axi_mem_gen;
 
-    ahb_mem_gen : if (CFG_L2_AXI = 0) generate
-      mig_ahbram : ahbram_sim
-        generic map (
-          hindex   => 0,
-          haddr    => L2C_HADDR,
-          hmask    => L2C_HMASK,
-          tech     => 0,
-          kbytes   => 1024,
-          pipe     => 0,
-          maccsz   => AHBDW,
-          fname    => ramfile)
-        port map(
-          rst     => rstn,
-          clk     => clkm,
-          ahbsi   => mem_ahbsi0,
-          ahbso   => mem_ahbso0);
-    end generate ahb_mem_gen;
-  end generate sim_mem_gen;
-  -- pragma translate_on
+--    ahb_mem_gen : if (CFG_L2_AXI = 0) generate
+--      mig_ahbram : ahbram_sim
+--        generic map (
+--          hindex   => 0,
+--          haddr    => L2C_HADDR,
+--          hmask    => L2C_HMASK,
+--          tech     => 0,
+--          kbytes   => 1024,
+--          pipe     => 0,
+--          maccsz   => AHBDW,
+--          fname    => ramfile)
+--        port map(
+--          rst     => rstn,
+--          clk     => clkm,
+--          ahbsi   => mem_ahbsi0,
+--          ahbso   => mem_ahbso0);
+--    end generate ahb_mem_gen;
+--  end generate sim_mem_gen;
+--  -- pragma translate_on
 
-  -----------------------------------------------------------------------
-  --  PROM
-  -----------------------------------------------------------------------
+--  -----------------------------------------------------------------------
+--  --  PROM
+--  -----------------------------------------------------------------------
 
-  prom_gen : if (SIMULATION = 0) generate
-    rom32 : if CFG_AHBDW = 32 generate
-      brom : entity work.ahbrom
-        generic map (
-          hindex  => 1,
-          haddr   => ROM_HADDR,
-          hmask   => ROM_HMASK,
-          pipe    => 0)
-        port map (
-          rst     => rstn,
-          clk     => clkm,
-          ahbsi   => rom_ahbsi1,
-          ahbso   => rom_ahbso1);
-    end generate;
-    rom64 : if CFG_AHBDW = 64 generate
-      brom : entity work.ahbrom64
-        generic map (
-          hindex  => 1,
-          haddr   => ROM_HADDR,
-          hmask   => ROM_HMASK,
-          pipe    => 0)
-        port map (
-          rst     => rstn,
-          clk     => clkm,
-          ahbsi   => rom_ahbsi1,
-          ahbso   => rom_ahbso1);
-    end generate;
+--  prom_gen : if (SIMULATION = 0) generate
+--    rom32 : if CFG_AHBDW = 32 generate
+--      brom : entity work.ahbrom
+--        generic map (
+--          hindex  => 1,
+--          haddr   => ROM_HADDR,
+--          hmask   => ROM_HMASK,
+--          pipe    => 0)
+--        port map (
+--          rst     => rstn,
+--          clk     => clkm,
+--          ahbsi   => rom_ahbsi1,
+--          ahbso   => rom_ahbso1);
+--    end generate;
+--    rom64 : if CFG_AHBDW = 64 generate
+--      brom : entity work.ahbrom64
+--        generic map (
+--          hindex  => 1,
+--          haddr   => ROM_HADDR,
+--          hmask   => ROM_HMASK,
+--          pipe    => 0)
+--        port map (
+--          rst     => rstn,
+--          clk     => clkm,
+--          ahbsi   => rom_ahbsi1,
+--          ahbso   => rom_ahbso1);
+--    end generate;
     rom128 : if CFG_AHBDW = 128 generate
       brom : entity work.ahbrom128
         generic map (
@@ -651,27 +648,27 @@ begin
           ahbsi   => rom_ahbsi1,
           ahbso   => rom_ahbso1);
     end generate;
-  end generate prom_gen;
+--  end generate prom_gen;
 
-  -- pragma translate_off
-  sim_prom_gen : if (SIMULATION /= 0) generate
-    mig_ahbram : ahbram_sim
-      generic map (
-        hindex   => 1,
-        haddr    => ROM_HADDR,
-        hmask    => ROM_HMASK,
-        tech     => 0,
-        kbytes   => 1024,
-        pipe     => 0,
-        maccsz   => AHBDW,
-        fname    => romfile)
-      port map(
-        rst     => rstn,
-        clk     => clkm,
-        ahbsi   => rom_ahbsi1,
-        ahbso   => rom_ahbso1);
-  end generate sim_prom_gen;
-  -- pragma translate_on
+--  -- pragma translate_off
+--  sim_prom_gen : if (SIMULATION /= 0) generate
+--    mig_ahbram : ahbram_sim
+--      generic map (
+--        hindex   => 1,
+--        haddr    => ROM_HADDR,
+--        hmask    => ROM_HMASK,
+--        tech     => 0,
+--        kbytes   => 1024,
+--        pipe     => 0,
+--        maccsz   => AHBDW,
+--        fname    => romfile)
+--      port map(
+--        rst     => rstn,
+--        clk     => clkm,
+--        ahbsi   => rom_ahbsi1,
+--        ahbso   => rom_ahbso1);
+--  end generate sim_prom_gen;
+--  -- pragma translate_on
 
 -----------------------------------------------------------------------
 -- GPIO                                                                
@@ -705,7 +702,7 @@ begin
   end generate;
 
 -----------------------------------------------------------------------
--- ETHERNET PHY
+-- ETHERNET PHY (where's the AHB-APB Bridge???  ---> Grethm_mb IP CORE)
 -----------------------------------------------------------------------
 
   eth0 : if CFG_GRETH = 1 generate -- Gaisler ethernet MAC
@@ -717,11 +714,11 @@ begin
 
       rgmii0 : rgmii
         generic map (
-          pindex          => GRETH_PINDEX,
+          pindex          => 6,
           paddr           => GRETH_PADDR,
           pmask           => GRETH_PMASK,
           tech            => fabtech,
-          gmii            => 1,
+          gmii            => 0,
           debugmem        => 0,
           abits           => 8,
           no_clk_mux      => 0,
@@ -742,6 +739,7 @@ begin
           debug_rgmii_phy_tx=> open,
           debug_rgmii_phy_rx=> open
         );
+
 
       emdio_pad : iopad generic map (tech => padtech)
         port map (eth_mdio, rgmiio.mdio_o, rgmiio.mdio_oe, rgmiii.mdio_i);
@@ -773,20 +771,20 @@ begin
       erst_pad : outpad generic map (tech => padtech)
         port map (eth_phyrst_n, rgmiio.reset);   
     
-      led(4) <= eth_int_b;
-      led(5) <= eth_rxctl;
---      led(6) <= etho.tx_en;  ----etho.tx_en = 0;
+--      led(4) <= eth_int_b;    ---- eth_int_b = 1 at the beginning = 0 after 1 second
+--      led(5) <= eth_rxctl;    ---- eth_rxctl = 0 at the beginning = 1 after 1 second
+--      led(6) <= etho.tx_en;  ----etho.tx_en = 1 when transmitting;
 --      led(7) <= etho.mdc;    ----etho.mdc = 1;
-      led(6) <= etho.speed;  ----etho.speed = 1;
-      led(7) <= etho.gbit;   ----etho.gbit = 0;
+--      led(6) <= etho.speed;  ----etho.speed = 1;
+--      led(7) <= etho.gbit;   ----etho.gbit = 0;
     end block eth_block;
   end generate;
     
 
 
-    noeth0 : if CFG_GRETH = 0 generate
-      -- TODO:
-    end generate;
+--    noeth0 : if CFG_GRETH = 0 generate
+--      -- TODO:
+--    end generate;
 
 -----------------------------------------------------------------------
 ---  Boot message  ----------------------------------------------------

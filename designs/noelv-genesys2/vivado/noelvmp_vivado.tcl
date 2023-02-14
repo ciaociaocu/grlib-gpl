@@ -431,7 +431,7 @@ set_property used_in_synthesis false [get_files ./../../lib/work/debug/grtestmod
 read_vhdl -library work ./../../lib/work/debug/cpu_disas.vhd
 set_property used_in_synthesis false [get_files ./../../lib/work/debug/cpu_disas.vhd]
 read_vhdl -library work ./rtl/axi_mig3_7series.vhd
-read_vhdl -library work ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+read_vhdl -library work ./rtl/ahb2axi_mig3_genesys2.vhd
 read_vhdl -library work ./rtl/clockers_mig.vhd
 read_vhdl -library work ./config.vhd
 read_vhdl -library work ./cfg/config_local.vhd
@@ -449,12 +449,6 @@ add_files -fileset sim_1 prom.srec ram.srec
 read_xdc ./../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc
 set_property used_in_synthesis true [get_files ./../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc]
 set_property used_in_implementation true [get_files ./../../boards/digilent-genesys2/Genesys-2-xc7k325t.xdc]
-read_xdc ./../../boards/digilent-genesys2/voltage_config.xdc
-set_property used_in_synthesis true [get_files ./../../boards/digilent-genesys2/voltage_config.xdc]
-set_property used_in_implementation true [get_files ./../../boards/digilent-genesys2/voltage_config.xdc]
-read_xdc ./../../boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc
-set_property used_in_synthesis true [get_files ./../../boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc]
-set_property used_in_implementation true [get_files ./../../boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc]
 # Board, part and design properties
 set_property target_simulator ModelSim [current_project]
 set_property top_lib work [current_fileset]

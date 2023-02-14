@@ -34,8 +34,8 @@ MGCPART=$(PART)$(PACKAGE)
 DEVICE=$(PART)-$(PACKAGE)$(SPEED)
 XDC  =
 XDC += $(BOARDDIR)/Genesys-2-$(PART).xdc
-XDC += $(BOARDDIR)/voltage_config.xdc
-XDC += $(BOARDDIR)/mig-$(PART)/mig-$(PART).xdc
+#XDC += $(BOARDDIR)/voltage_config.xdc
+#XDC += $(BOARDDIR)/mig-$(PART)/mig-$(PART).xdc
 
 #SDCFILE=$(BOARDDIR)/default.sdc
 FDCFILE=$(BOARDDIR)/default.fdc
@@ -105,7 +105,7 @@ VSIMOPT+= $(SIMTOP)
 
 VHDLSYNFILES  =
 VHDLSYNFILES += $(BASE_DIR)/rtl/axi_mig3_7series.vhd
-VHDLSYNFILES += $(BOARDDIR)/ahb2axi_mig3_arty_a7.vhd
+VHDLSYNFILES += $(BASE_DIR)/rtl/ahb2axi_mig3_genesys2.vhd
 VHDLSYNFILES += $(BASE_DIR)/rtl/clockers_mig.vhd
 VHDLSYNFILES += $(CFG_DIR)/config.vhd
 VHDLSYNFILES += $(CFG_LOCAL_DIR)/config_local.vhd

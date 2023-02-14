@@ -340,7 +340,7 @@ set_global_assignment -name VHDL_FILE ./../../lib/gaisler/noelv/subsys/noelvcpu.
 set_global_assignment -name VHDL_FILE ./../../lib/gaisler/noelv/subsys/dummy_pnp.vhd -library gaisler
 set_global_assignment -name VHDL_FILE ./../../lib/gaisler/noelv/subsys/noelvsys.vhd -library gaisler
 set_global_assignment -name VHDL_FILE ./rtl/axi_mig3_7series.vhd
-set_global_assignment -name VHDL_FILE ./../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+set_global_assignment -name VHDL_FILE ./rtl/ahb2axi_mig3_genesys2.vhd
 set_global_assignment -name VHDL_FILE ./rtl/clockers_mig.vhd
 set_global_assignment -name VHDL_FILE ./config.vhd
 set_global_assignment -name VHDL_FILE ./cfg/config_local.vhd

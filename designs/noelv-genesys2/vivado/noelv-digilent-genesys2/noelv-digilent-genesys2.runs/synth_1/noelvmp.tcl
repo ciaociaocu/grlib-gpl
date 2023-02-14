@@ -17,10 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 4
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7k325tffg900-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -388,7 +385,7 @@ read_vhdl -library gaisler {
 }
 read_vhdl -library work {
   /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/axi_mig3_7series.vhd
-  /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+  /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/ahb2axi_mig3_genesys2.vhd
   /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/rtl/clockers_mig.vhd
   /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/config.vhd
   /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/cfg/config_local.vhd
@@ -404,15 +401,15 @@ read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noel
 set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig/mig/user_design/constraints/mig_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig/mig/user_design/constraints/mig.xdc]
 
-read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz.xci
-set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz_board.xdc]
-set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz.xdc]
-set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz_ooc.xdc]
-
 read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig_cdc/mig_cdc.xci
 set_property used_in_synthesis false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig_cdc/mig_cdc_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig_cdc/mig_cdc_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/mig_cdc/mig_cdc_ooc.xdc]
+
+read_ip -quiet /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz.xci
+set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz_board.xdc]
+set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz.xdc]
+set_property used_in_implementation false [get_files -all /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/designs/noelv-genesys2/vivado/noelv-digilent-genesys2/noelv-digilent-genesys2.srcs/sources_1/ip/clk_100MHz/clk_100MHz_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -424,12 +421,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/Genesys-2-xc7k325t.xdc
 set_property used_in_implementation false [get_files /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/Genesys-2-xc7k325t.xdc]
-
-read_xdc /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/voltage_config.xdc
-set_property used_in_implementation false [get_files /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/voltage_config.xdc]
-
-read_xdc /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc
-set_property used_in_implementation false [get_files /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/boards/digilent-genesys2/mig-xc7k325t/mig-xc7k325t.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

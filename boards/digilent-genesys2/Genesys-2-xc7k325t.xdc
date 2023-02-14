@@ -4,29 +4,10 @@
 ### - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 # Clock Signal
-#create_clock -add -period 3.332 -name clk300 -waveform {0.000 1.666} [get_ports clk300p]
+#create_clock -period 5 -name clk200p [get_ports clk200p]
 set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets clocker100MHz/inst/clk_in1_clk_100MHz]
-set_property -dict {PACKAGE_PIN AD11 IOSTANDARD LVDS} [get_ports clk300n]
-set_property -dict {PACKAGE_PIN AD12 IOSTANDARD LVDS} [get_ports clk300p]
-
-create_clock -period 100.000 -name ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck -waveform {0.000 50.000} [get_pins ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/u0/TCK]
-#125MHz
-create_clock -period 8.000 -name eth_rx_clk -waveform {0.000 4.000} [get_ports eth_rxck]
-create_clock -period 8.000 -name eth_tx_clk -waveform {0.000 4.000} [get_ports eth_txck]
-set_clock_groups -asynchronous -group [get_clocks clkm_clockers] -group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]
-set_clock_groups -asynchronous -group [get_clocks eth_rx_clk] -group [get_clocks clkm_clockers]
-set_clock_groups -asynchronous -group [get_clocks eth_tx_clk] -group [get_clocks clkm_clockers]
-set_clock_groups -asynchronous -group [get_clocks clkm_clockers] -group [get_clocks eth_rx_clk]
-set_clock_groups -asynchronous -group [get_clocks clkm_clockers] -group [get_clocks eth_tx_clk]
-set_clock_groups -asynchronous -group [get_clocks clkm_clockers] -group [get_clocks clk_pll_i]
-set_clock_groups -asynchronous -group [get_clocks clk_pll_i] -group [get_clocks clkm_clockers]
-set_clock_groups -asynchronous -group [get_clocks clk_pll_i] -group [get_clocks eth_rx_clk]
-set_clock_groups -asynchronous -group [get_clocks eth_rx_clk] -group [get_clocks clk_pll_i]
-set_clock_groups -asynchronous -group [get_clocks clk_pll_i] -group [get_clocks eth_tx_clk]
-set_clock_groups -asynchronous -group [get_clocks eth_tx_clk] -group [get_clocks clk_pll_i]
-set_clock_groups -asynchronous -group [get_clocks clk_pll_i] -group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]
-
-set_false_path -from [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck] -to [get_clocks clkm_clockers]
+set_property -dict {PACKAGE_PIN AD11 IOSTANDARD LVDS} [get_ports clk200n]
+set_property -dict {PACKAGE_PIN AD12 IOSTANDARD LVDS} [get_ports clk200p]
 
 # Buttons
 set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS12} [get_ports {btn[0]}]
@@ -34,7 +15,7 @@ set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS12} [get_ports {btn[1]}]
 set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS12} [get_ports {btn[2]}]
 set_property -dict {PACKAGE_PIN C19 IOSTANDARD LVCMOS12} [get_ports {btn[3]}]
 set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS12} [get_ports {btn[4]}]
-set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { cpu_resetn }]; #IO_0_14 Sch=cpu_resetn
+#set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { cpu_resetn }]; #IO_0_14 Sch=cpu_resetn
 
 # LEDs
 set_property -dict {PACKAGE_PIN T28 IOSTANDARD LVCMOS33} [get_ports {led[0]}]
@@ -104,35 +85,9 @@ set_property -dict {PACKAGE_PIN AJ11 IOSTANDARD LVCMOS15} [get_ports {eth_txd[2]
 set_property -dict {PACKAGE_PIN AK10 IOSTANDARD LVCMOS15} [get_ports {eth_txd[3]}]
 set_property -dict {PACKAGE_PIN AK14 IOSTANDARD LVCMOS15} [get_ports eth_tx_en]
 
-# ETH CDC
-set_property ASYNC_REG true [get_cells {ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[done_sync1]}]
-set_property ASYNC_REG true [get_cells {ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[done_sync]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[rxstart][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[rxstart][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[rxwrite][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[rxwrite][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[rxdone][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[rxdone][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[txread][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[txread][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[txrestart][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[txrestart][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[txdone][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/r_reg[txdone][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[write_ack][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[write_ack][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[done_ack][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[done_ack][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[2]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[fullduplex][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[fullduplex][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[2]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[start][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[start][1]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[read_ack][0]}]
-set_property ASYNC_REG true [get_cells {eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[read_ack][1]}]
+create_clock -period 40.000 -name eth_rxck [get_ports eth_rxck]
+set_propagated_clock [get_clocks eth_rxck]
+
 
 ## VGA Connector
 #set_property -dict { PACKAGE_PIN AH20  IOSTANDARD LVCMOS33 } [get_ports { vga_b[0] }]; #IO_L22N_T3_12 Sch=vga_b[3]

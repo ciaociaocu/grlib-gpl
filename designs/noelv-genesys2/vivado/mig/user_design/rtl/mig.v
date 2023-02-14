@@ -69,9 +69,9 @@
 
 module mig (
   // Inouts
-  inout [15:0]       ddr3_dq,
-  inout [1:0]        ddr3_dqs_n,
-  inout [1:0]        ddr3_dqs_p,
+  inout [31:0]       ddr3_dq,
+  inout [3:0]        ddr3_dqs_n,
+  inout [3:0]        ddr3_dqs_p,
   // Outputs
   output [14:0]     ddr3_addr,
   output [2:0]        ddr3_ba,
@@ -83,7 +83,7 @@ module mig (
   output [0:0]       ddr3_ck_n,
   output [0:0]       ddr3_cke,
   output [0:0]        ddr3_cs_n,
-  output [1:0]     ddr3_dm,
+  output [3:0]     ddr3_dm,
   output [0:0]       ddr3_odt,
   // Inputs
   // Single-ended system clock
@@ -103,7 +103,7 @@ module mig (
   output            app_zq_ack,
   // Slave Interface Write Address Ports
   input [3:0]           s_axi_awid,
-  input [28:0]         s_axi_awaddr,
+  input [29:0]         s_axi_awaddr,
   input [7:0]           s_axi_awlen,
   input [2:0]           s_axi_awsize,
   input [1:0]           s_axi_awburst,
@@ -126,7 +126,7 @@ module mig (
   output            s_axi_bvalid,
   // Slave Interface Read Address Ports
   input [3:0]           s_axi_arid,
-  input [28:0]         s_axi_araddr,
+  input [29:0]         s_axi_araddr,
   input [7:0]           s_axi_arlen,
   input [2:0]           s_axi_arsize,
   input [1:0]           s_axi_arburst,

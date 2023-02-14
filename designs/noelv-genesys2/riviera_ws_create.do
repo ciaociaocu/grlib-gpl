@@ -418,7 +418,7 @@ design.file.add /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/work/de
 design.file.add /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/work/debug/grtestmod.vhd
 design.file.add /home/zhichao/Downloads/GRLIB/grlib-gpl-2022.4-b4280/lib/work/debug/cpu_disas.vhd
 design.file.add .././rtl/axi_mig3_7series.vhd
-design.file.add .././../../boards/digilent-genesys2/ahb2axi_mig3_arty_a7.vhd
+design.file.add .././rtl/ahb2axi_mig3_genesys2.vhd
 design.file.add .././rtl/clockers_mig.vhd
 design.file.add .././config.vhd
 design.file.add .././cfg/config_local.vhd
